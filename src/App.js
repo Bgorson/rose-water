@@ -1,24 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import Home from './components/Home';
+import NavbarComponent from './components/Navbar';
+import { Container } from '@mui/material';
+import './index.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <NavbarComponent className={'navbar'} />
+      <Container className={'container'} maxWidth="lg">
+        <Home />
+      </Container>
+    </>
   );
 }
 

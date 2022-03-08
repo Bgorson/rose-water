@@ -16,7 +16,7 @@ const HeaderText = styled.h1`
 export default function Hero() {
   return (
     <div>
-      <HeaderText>Rose Water Therapy</HeaderText>
+      <HeaderText>The Rose Water</HeaderText>
       <Image src={image} />
     </div>
   );

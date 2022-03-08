@@ -9,7 +9,9 @@ const Image = styled.img`
 const HeaderText = styled.h1`
   color: #ffb30f;
   text-align: center;
-  padding: 2em;
+  padding: 1em;
+  font-family: 'ArchivoNarrow';
+  font-size: 2em;
 `;
 export default function Hero() {
   return (

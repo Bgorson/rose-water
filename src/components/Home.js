@@ -8,6 +8,9 @@ const CardWrapper = styled.div`
   display: flex;
   gap: 10px;
   padding: 1em;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 const services = [

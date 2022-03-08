@@ -1,13 +1,13 @@
 import React from 'react';
 import GoogleMapReact from 'google-map-react';
 import './maps.css';
-// import { Icon } from '@iconify/react';
-// const LocationPin = ({ text }) => (
-//   <div className="pin">
-//     <Icon icon="topcoat:location" className="pin-icon" />
-//     <p className="pin-text">{text}</p>
-//   </div>
-// );
+import { Icon } from '@iconify/react';
+const LocationPin = ({ text }) => (
+  <div className="pin">
+    <Icon icon="topcoat:location" className="pin-icon" />
+    <p className="pin-text">{text}</p>
+  </div>
+);
 const apiKey = process.env.REACT_APP_GOOGLE;
 
 const Map = ({ location, zoomLevel }) => (
@@ -26,11 +26,11 @@ const Map = ({ location, zoomLevel }) => (
         defaultCenter={location}
         defaultZoom={zoomLevel}
       >
-        {/* <LocationPin
+        <LocationPin
           lat={location.lat}
           lng={location.lng}
           text={location.address}
-        /> */}
+        />
       </GoogleMapReact>
     </div>
   </div>

@@ -1,6 +1,13 @@
-.container {
-  background-color: #013220;
+.container #root {
+  background-color: #fefae0;
 }
 .nav {
-  background-color: #815438;
+  background-color: #606c38;
+}
+@font-face {
+  font-family: 'ArchivoNarrow';
+  src: local('Archivo'),
+    url(./fonts/ArchivoNarrow-VariableFont_wght.ttf) format('truetype');
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
 }

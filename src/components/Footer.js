@@ -14,6 +14,12 @@ const Container = styled.div`
   background: beige;
   display: flex;
   justify-content: center;
+  gap: 2em;
+  padding-bottom: 2em;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    padding-top: 5em;
+  }
 `;
 
 const data = [

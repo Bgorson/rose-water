@@ -1,7 +1,10 @@
 import styled from 'styled-components';
 import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import Container from 'react-bootstrap/Container';
 
-const NavBar = styled(Nav)`
+const NavBar = styled(Navbar)`
   padding: 1em 0;
   display: flex;
   align-items: center;
@@ -9,8 +12,13 @@ const NavBar = styled(Nav)`
   position: sticky;
   top: 0;
   z-index: 5;
+  border-radius: 0 0 10px 0px;
+  opacity: 0.9;
 `;
+
 const NavItem = styled(Nav.Item)`
+  font-family: 'ArchivoNarrow';
+  font-size: 1em;
   & > a {
     color: black;
   }
@@ -25,34 +33,30 @@ const Button = styled.button`
 
 export default function NavbarComponent() {
   return (
-    <NavBar
-      activeKey="/home"
-      //   onSelect={(selectedKey) => alert(`selected ${selectedKey}`)}
-    >
-      <NavItem
-        style={{
-          paddingLeft: '5em',
-          justifySelf: 'flex-start',
-          marginRight: 'auto',
-        }}
-      >
-        <div>Logo here</div>
-      </NavItem>
-      <NavItem>
-        <Nav.Link href="/home">Home</Nav.Link>
-      </NavItem>
-      <NavItem>
-        <Nav.Link href="#services">Services</Nav.Link>
-      </NavItem>
-      <NavItem>
-        <Nav.Link href="#about">About</Nav.Link>
-      </NavItem>
-      <NavItem>
-        <Nav.Link href="#contact">Contact</Nav.Link>
-      </NavItem>
-      <NavItem>
-        <Button>Get Started</Button>
-      </NavItem>
+    <NavBar bg="light" expand="lg">
+      <Container>
+        <Navbar.Brand href="#home">Logo Here</Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav>
+            <NavItem>
+              <Nav.Link href="/home">Home</Nav.Link>
+            </NavItem>
+            <NavItem>
+              <Nav.Link href="#services">Services</Nav.Link>
+            </NavItem>
+            <NavItem>
+              <Nav.Link href="#about">About</Nav.Link>
+            </NavItem>
+            <NavItem>
+              <Nav.Link href="#contact">Contact</Nav.Link>
+            </NavItem>
+            <NavItem>
+              <button>Get Started</button>
+            </NavItem>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
     </NavBar>
   );
 }

@@ -2,7 +2,8 @@
   background-color: #fefae0;
 }
 .nav {
-  background-color: #606c38;
+  font-size: '20px';
+  background-color: #fff;
 }
 @font-face {
   font-family: 'ArchivoNarrow';

@@ -1,10 +1,19 @@
 import React from 'react';
-import image from '../rose-water-759.jpg';
+import image from '../logoMain.png';
 
 import styled from 'styled-components';
 
 const Image = styled.img`
   width: 100%;
+  margin: auto;
+`;
+
+const ImageContainer = styled.div`
+  width: 75%;
+  margin: auto;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 const HeaderText = styled.h1`
   color: #ffb30f;
@@ -15,9 +24,8 @@ const HeaderText = styled.h1`
 `;
 export default function Hero() {
   return (
-    <div>
-      <HeaderText>The Rose Water</HeaderText>
+    <ImageContainer>
       <Image src={image} />
-    </div>
+    </ImageContainer>
   );
 }

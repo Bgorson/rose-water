@@ -4,46 +4,45 @@ import ServiceBox from '../components/ServiceBox';
 import styled from 'styled-components';
 import About from '../components/About';
 import Footer from '../components/Footer';
+import IndividualService from '../individual.jpg';
+import CouplesService from '../couples.jpg';
+
 const CardWrapper = styled.div`
   display: flex;
-  gap: 10px;
+  gap: 15em;
   padding: 1em;
+  margin-bottom: 5em;
   @media (max-width: 768px) {
     flex-direction: column;
+    gap: 1em;
+    margin-bottom: 0;
   }
 `;
 
 const services = [
   {
     title: 'Individual Therapy',
-    description:
-      ' Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    image: 'https://placekitten.com/g/300/300',
+
+    image: IndividualService,
   },
-  {
-    title: 'Group Therapy',
-    description:
-      ' Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    image: 'https://placekitten.com/g/300/300',
-  },
+
   {
     title: 'Couples Therapy',
-    description:
-      ' Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    image: 'https://placekitten.com/g/300/300',
+
+    image: CouplesService,
   },
 ];
 
 export default function Home() {
   return (
-    <div>
+    <div id="home">
       <Hero />
       <CardWrapper id={'services'}>
         {services.map((service) => (
           <ServiceBox service={service} />
         ))}
       </CardWrapper>
-      <About />
+      {/* <About /> */}
       <Footer />
     </div>
   );

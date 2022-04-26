@@ -10,6 +10,7 @@ const NavBar = styled(Navbar)`
   justify-content: flex-end;
   position: sticky;
   top: 0;
+  background-color: #fbede6;
   z-index: 5;
   border-radius: 0 0 10px 0px;
   opacity: 0.9;

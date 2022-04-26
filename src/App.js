@@ -1,6 +1,5 @@
 import Home from './components/Home';
 import NavbarComponent from './components/Navbar';
-import Image from './background.jpg';
 import { Routes, Route, Link } from 'react-router-dom';
 import About from './components/About';
 import Footer from './components/Footer';

@@ -91,10 +91,9 @@ export default function About() {
           development and supervision.
         </Description>
         <Description>
-          Outside of work, I believe that having balance in life is incredibly
-          important. I enjoy being a self-proclaimed foodie at all the amazing
-          Chicago restaurants, going to yoga, walks throughout the city with my
-          two dogs, and spending time growing my [urban] garden.
+          Outside of work, I enjoy being a self-proclaimed foodie at all the
+          amazing Chicago restaurants, walks throughout the city with my two
+          sweet doggies, and spending time growing my [urban] garden.
         </Description>
       </AboutContainer>
     </>

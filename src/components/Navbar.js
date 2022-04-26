@@ -1,7 +1,6 @@
 import styled, { keyframes } from 'styled-components';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import Container from 'react-bootstrap/Container';
 
 const NavBar = styled(Navbar)`
@@ -68,7 +67,9 @@ export default function NavbarComponent({ ishome }) {
   return (
     <NavBar className="nav" expand="lg">
       <Container>
-        <Navbar.Brand href="/">Rosewatter</Navbar.Brand>
+        <Navbar.Brand style={{ fontSize: '1.75rem' }} href="/">
+          Rosewatter
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav>
@@ -83,7 +84,12 @@ export default function NavbarComponent({ ishome }) {
               <Nav.Link href="/about">About</Nav.Link>
             </NavItem>
             <Button>
-              <Nav.Link href="/appointment">Book an Appointment</Nav.Link>
+              <Nav.Link
+                style={{ border: '1px solid grey', borderRadius: '20px' }}
+                href="/appointment"
+              >
+                Book an Appointment
+              </Nav.Link>
             </Button>
           </Nav>
         </Navbar.Collapse>

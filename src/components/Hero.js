@@ -1,5 +1,5 @@
 import React from 'react';
-import image from '../logoMain.png';
+import image from '../rosewatter.svg';
 
 import styled from 'styled-components';
 
@@ -11,6 +11,7 @@ const Image = styled.img`
 const ImageContainer = styled.div`
   width: 75%;
   margin: auto;
+  background-color: #fbede6;
   @media (max-width: 768px) {
     width: 100%;
   }

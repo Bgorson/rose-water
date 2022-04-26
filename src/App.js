@@ -9,9 +9,7 @@ import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import styled from 'styled-components';
 const Main = styled.div`
-  /* background-image: url(${Image}); */
-  /* background-repeat: no-repeat; */
-  background-color: #fff;
+  background-color: #fbede6;
 `;
 
 function App() {

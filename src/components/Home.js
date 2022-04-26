@@ -12,10 +12,12 @@ const CardWrapper = styled.div`
   gap: 15em;
   padding: 1em;
   margin-bottom: 5em;
+  margin-top: -8em;
   @media (max-width: 768px) {
     flex-direction: column;
     gap: 1em;
     margin-bottom: 0;
+    margin-top: -3em;
   }
 `;
 

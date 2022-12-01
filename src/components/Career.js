@@ -79,7 +79,7 @@ const Career = () => {
   return (
     <div>
       <Paragraph>
-        Rose water Chicagoland counseling is currently recruiting for
+        Rosewatter Chicagoland counseling is currently recruiting for
         pre-licensed individuals to join the practice. Please reach out with
         your name, a description of your credentials and your email address.
       </Paragraph>

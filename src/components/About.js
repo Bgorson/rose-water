@@ -29,7 +29,7 @@ export default function About() {
     <>
       <Header id={'about'}>Rachel Nitzarim Ph.D.</Header>
       <AboutContainer>
-        <AboutImage src={Rachel} />
+        <AboutImage alt="Rachel Nitzarim" src={Rachel} />
         <Description>
           Welcome to my private practice. I am Rachel Nitzarim, licensed
           clinical psychologist, and the owner of Rosewatter Chicagoland
@@ -67,7 +67,7 @@ export default function About() {
           story. Delving deeply into my clients’ family histories and stories is
           what I aim to do.
         </Description>
-        <AboutImage style={{ margin: 'auto' }} src={aboutImage} />
+        <AboutImage style={{ margin: 'auto' }} alt="Family" src={aboutImage} />
         <Description>
           I believe that our family origins are the foundation of who we are and
           also sometimes provide a pedestal for problems to emerge. I practice

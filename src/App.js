@@ -6,6 +6,8 @@ import styled from 'styled-components';
 import { Route, Routes } from 'react-router-dom';
 import About from './components/About';
 import Footer from './components/Footer';
+import Career from './components/Career';
+
 import { Container } from '@mui/material';
 import Home from './components/Home';
 const Main = styled.div`
@@ -39,6 +41,18 @@ function App() {
             element={
               <Container className={'container'} maxWidth="lg">
                 <Footer />
+              </Container>
+            }
+          />
+          <Route
+            path="career"
+            element={
+              <Container
+                className={'container'}
+                maxWidth="lg"
+                style={{ height: '100vh' }}
+              >
+                <Career />
               </Container>
             }
           />

@@ -109,11 +109,9 @@ export default function Footer() {
     message: '',
   });
   const onSubmit = (e) => {
-    console.log('SUBMITED');
     e.preventDefault();
     send('service_1e56ntk', 'template_xkdqpbe', toSend, 'nwpdF_7mfYJEQ3AcZ')
-      .then((response) => {
-        console.log('SUCCESS!', response.status, response.text);
+      .then(() => {
         setToSend({
           from_name: '',
           from_email: '',

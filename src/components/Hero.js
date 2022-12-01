@@ -26,7 +26,7 @@ const HeaderText = styled.h1`
 export default function Hero() {
   return (
     <ImageContainer>
-      <Image src={image} />
+      <Image alt="Rosewatter Chicago Counseling" src={image} />
     </ImageContainer>
   );
 }

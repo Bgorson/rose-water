@@ -6,15 +6,20 @@ import About from '../components/About';
 import Footer from '../components/Footer';
 import IndividualService from '../individual.jpg';
 import CouplesService from '../couples.jpg';
+import WorkShop from '../workshop-image.jpeg';
 
 const CardWrapper = styled.div`
   display: flex;
-  gap: 15em;
+  gap: 5em;
+  column-gap: 15em;
+  flex-wrap: wrap;
+  justify-content: center;
   padding: 1em;
   margin-bottom: 5em;
   margin-top: -8em;
   @media (max-width: 768px) {
     flex-direction: column;
+    column-gap: 0;
     gap: 1em;
     margin-bottom: 0;
     margin-top: -3em;
@@ -32,6 +37,11 @@ const services = [
     title: 'Couples Therapy',
 
     image: CouplesService,
+  },
+  {
+    title: 'Mental Health Workshops and Consultation',
+
+    image: WorkShop,
   },
 ];
 

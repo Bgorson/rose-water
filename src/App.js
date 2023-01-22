@@ -39,9 +39,7 @@ function App() {
           <Route
             path="appointment"
             element={
-              <Container className={'container'} maxWidth="lg">
                 <Footer />
-              </Container>
             }
           />
           <Route

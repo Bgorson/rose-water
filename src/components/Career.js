@@ -25,7 +25,7 @@ const MessageArea = styled.div`
 `;
 const Paragraph = styled.p`
   padding: 2em;
-  font-family: 'ArchivoNarrow';
+  font-family: 'Playfair';
   font-size: 21px;
 `;
 const Button = styled.button`
@@ -79,9 +79,9 @@ const Career = () => {
   return (
     <div>
       <Paragraph>
-        Rosewatter Chicagoland counseling is currently recruiting for
-        pre-licensed individuals to join the practice. Please reach out with
-        your name, a description of your credentials and your email address.
+        Rosewatter Chicagoland Counseling is currently recruiting for
+        pre-licensed or licensed mental health practioners to join the practice. Please reach out with
+        your name, a description of your credentials and your email address for more information.
       </Paragraph>
       <form onSubmit={onSubmit}>
         <InputContainer>

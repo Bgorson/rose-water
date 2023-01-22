@@ -10,7 +10,6 @@ const NavBar = styled(Navbar)`
   justify-content: flex-end;
   position: sticky;
   top: 0;
-  background-color: #fbede6;
   z-index: 5;
   border-radius: 0 0 10px 0px;
   opacity: 0.9;
@@ -24,7 +23,7 @@ const pulse = keyframes`
   }
 `;
 const NavItem = styled(Nav.Item)`
-  font-family: 'ArchivoNarrow';
+  font-family: 'Playfair';
   font-size: 1em;
   & > a {
     color: black;
@@ -35,7 +34,7 @@ const NavItem = styled(Nav.Item)`
 `;
 
 const Button = styled(Nav.Item)`
-  font-family: 'ArchivoNarrow';
+  font-family: 'Playfair';
   margin-left: 1em;
   padding-left: 0;
   text-align: center;
@@ -68,7 +67,7 @@ export default function NavbarComponent({ ishome }) {
   return (
     <NavBar className="nav" expand="lg">
       <Container>
-        <Navbar.Brand style={{ fontSize: '1.75rem' }} href="/">
+        <Navbar.Brand style={{ fontFamily: 'Playfair', fontSize: '1.75rem' }} href="/">
           Rosewatter
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />

@@ -1,32 +1,36 @@
 import React from 'react';
-import image from '../rosewatter.svg';
-
+import { colors } from '../utils/colors';
 import styled from 'styled-components';
 
 const Image = styled.img`
-  width: 100%;
   margin: auto;
+  width:100px;
 `;
 
 const ImageContainer = styled.div`
-  width: 75%;
+  width: 100%;
   margin: auto;
-  background-color: #fbede6;
+  display:flex;
+  flex-direction:column;
   @media (max-width: 768px) {
     width: 100%;
   }
+  padding:2em;
 `;
 const HeaderText = styled.h1`
-  color: #ffb30f;
   text-align: center;
-  padding: 1em;
-  font-family: 'ArchivoNarrow';
-  font-size: 2em;
+  padding: .5em;
+  font-family: 'Playfair';
+  font-size: 4em;
+  @media (max-width: 768px) {
+    font-size: 2em;
+  }
 `;
 export default function Hero() {
   return (
     <ImageContainer>
-      <Image alt="Rosewatter Chicago Counseling" src={image} />
+      {/* <Image alt="Rosewatter Chicago Counseling" src={image} /> */}
+      <HeaderText>Rosewatter Chicagoland Counseling PLLC </HeaderText>
     </ImageContainer>
   );
 }

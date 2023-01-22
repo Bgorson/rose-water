@@ -1,9 +1,10 @@
 import React from 'react';
-import Card from 'react-bootstrap/Card';
 import styled from 'styled-components';
 import Map from './Map';
 import { useState } from 'react';
 import { send } from 'emailjs-com';
+import { colors } from '../utils/colors'
+
 const blue = '#3498db';
 const blueHover = '#2980b9';
 // $cloud: #ecf0f1;
@@ -14,6 +15,7 @@ const radius = '3px';
 const InputContainer = styled.div`
   display: flex;
   gap: 2em;
+  border-radius: 16px;
   @media (max-width: 768px) {
     flex-direction: column;
   }
@@ -28,25 +30,32 @@ const MessageArea = styled.div`
 `;
 
 const Container = styled.div`
-  /* background: beige; */
   display: flex;
   justify-content: center;
   gap: 2em;
-  padding-top: 3em;
   flex-direction: column;
   justify-content: center;
-  padding-bottom: 2em;
+  text-align: left;
   @media (max-width: 768px) {
     flex-direction: row;
-    padding-top: 5em;
   }
 `;
 const ContactCard = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
+padding:1em 0;
+display:flex;
+font-size:32px;
+justify-content:center;
+gap:1em;  
+@media (max-width: 768px) {
+  font-size:21px;
+  flex-direction:column;
+align-items:center;
+}
+
 `;
-const InputBlock = styled.input``;
+const InputBlock = styled.input`
+
+`;
 
 const Button = styled.button`
   color: white;
@@ -70,37 +79,26 @@ const Button = styled.button`
     border-color: ${blueHover};
   }
 `;
-const data = [
-  {
-    title: 'Contact Me',
 
-    content: (
-      <ContactCard>
-        <div>
-          <h4>Email</h4>
-          <a href="mailto:RosewatterChiCounseling@gmail.com">
-            RosewatterChiCounseling@gmail.com
-          </a>
-        </div>
-        <div>
-          <h4>Phone</h4>
-          <a href=" tel:+17732317675">773-231-7675</a>
-        </div>
-      </ContactCard>
-    ),
-  },
-];
+const Card = styled.div`
+background-color:${colors.lightGreen}
+`
+const CardTitle = styled.div`
+text-align:center;
+font-size:32px;
 
-const FooterCard = ({ info }) => {
-  return (
-    <Card style={info.grow ? { flexGrow: '1' } : null}>
-      <Card.Body>
-        <Card.Title>{info.title}</Card.Title>
-        <Card.Text>{info.content}</Card.Text>
-      </Card.Body>
-    </Card>
-  );
-};
+`
+const FormContainer = styled.div`
+padding-top:2em;
+background:${colors.grey}
+`
+const ContactTags = styled.a`
+color:${colors.grey}
+`
+const ContactText = styled.p`
+text-align:center;
+font-size:32px; 
+`
 
 export default function Footer() {
   const [toSend, setToSend] = React.useState({
@@ -129,43 +127,59 @@ export default function Footer() {
 
   return (
     <>
-      <Container id="contact">
-        {data.map((IndividualData) => (
-          <FooterCard info={IndividualData} />
-        ))}
-      </Container>
-      <div style={{ paddingBottom: '2em' }}>
-        <form onSubmit={onSubmit}>
-          <InputContainer>
-            <InputBlock
-              type="text"
-              name="from_name"
-              placeholder="Name"
-              value={toSend.from_name}
-              onChange={handleChange}
-            />
-            <InputBlock
-              type="text"
-              name="from_email"
-              placeholder="Email"
-              value={toSend.from_email}
-              required={true}
-              onChange={handleChange}
-            />
-          </InputContainer>
-          <MessageArea>
-            <textarea
-              type="text"
-              name="message"
-              placeholder="Your message"
-              value={toSend.message}
-              onChange={handleChange}
-            />
-          </MessageArea>
+      <FormContainer>
 
-          <Button type="submit">Submit</Button>
-        </form>
-      </div>
+        <h2>Please Contact Me Using the Form Below</h2>
+        <div style={{ padding: '2em' }}>
+          <form onSubmit={onSubmit}>
+            <InputContainer>
+              <InputBlock
+                type="text"
+                name="from_name"
+                placeholder="Name"
+                value={toSend.from_name}
+                onChange={handleChange}
+              />
+              <InputBlock
+                type="text"
+                name="from_email"
+                placeholder="Email"
+                value={toSend.from_email}
+                required={true}
+                onChange={handleChange}
+              />
+            </InputContainer>
+            <MessageArea>
+              <textarea
+                style={{ borderRadius: '16px', padding: '1em' }}
+                type="text"
+                name="message"
+                placeholder="Your message"
+                value={toSend.message}
+                onChange={handleChange}
+              />
+            </MessageArea>
+
+            <Button type="submit">Submit</Button>
+          </form>
+        </div>
+      </FormContainer>
+
+      <Container id="contact">
+        <Card>
+          <CardTitle>Or Reach Out to Me</CardTitle>
+          <ContactCard >
+            <ContactTags className="contactInfo" href=" tel:+17732317675">773-231-7675</ContactTags>
+            <ContactTags className="contactInfo" href="mailto:RosewatterChiCounseling@gmail.com">
+              Rosewatterchicounseling@gmail.com
+            </ContactTags>
+
+
+          </ContactCard>
+          <ContactText>Rachel Nitzarim PhD, Chicago IL</ContactText>
+
+        </Card>
+      </Container>
     </>
   );
 }

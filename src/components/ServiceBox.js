@@ -1,30 +1,44 @@
-import Card from 'react-bootstrap/Card';
 import styled from 'styled-components';
+import { colors } from '../utils/colors';
 
 const Title = styled.h1`
   text-align: center;
 `;
 
 const CardContainer = styled.div`
-  flex-basis: 33%;
+  flex-basis: 40%;
   flex-grow: 1;
-  max-width: 500px;
+  // max-width: 500px;
+  padding-bottom:10px;
+
 `;
+
+export const Card = styled.div``
+export const Image = styled.img`
+height:300px;
+width:300px;
+border-radius: 50%;
+
+`
+export const CardBody = styled.div``
+export const CardText = styled.p``
+
 
 export default function ServiceBox({ service }) {
   return (
     <CardContainer>
-      <Title>{service.title}</Title>
-      <Card>
-        <Card.Img
-          style={{ maxHeight: '650px' }}
-          variant="top"
+      <Card >
+        <Image
           src={service.image}
           alt={service.title}
         />
-        {/* <Card.Body>
-          <Card.Text>{service.description}</Card.Text>
-        </Card.Body> */}
+        <Title>{service.title}</Title>
+
+        <CardBody
+        >
+          <CardText
+          >{service.description}</CardText>
+        </CardBody>
       </Card>
     </CardContainer>
   );

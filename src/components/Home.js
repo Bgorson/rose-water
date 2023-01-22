@@ -32,35 +32,35 @@ const services = [
     title: 'Individual Therapy',
 
     image: IndividualService,
-    description:'Individual therapy is a great way to improve your mental health.  I offer individual therapy for a variety of issues',
+    description: 'Individual psychotherapy is a form of mental health treatment in which an individual meets with a trained clinician one-on-one to discuss their thoughts, feelings and behaviors. I do not believe that there is a one-sized-fits-all approach to individual work. Rather, each individual comes to therapy with a particular set of concerns or experiences that they would like to process and understand. We work collaboratively to formulate goals and a plan, informed by a theoretical framework that I will provide to move towards meaningful change together.',
   },
 
   {
     title: 'Couples Therapy',
 
     image: CouplesService,
-    description:'Couples therapy can improve communication and intimacy in your relationship.'
+    description: 'Couples therapy is a type of psychotherapy that is designed to help couples understand their relationship. Sometimes couples come to counseling to improve their relationship, other times couples come to counseling to end their relationship, and everything in-between. During couples therapy, I will help you understand the patterns and issues that are underlying the concerns or experiences in your relationship. I will work with you to better understand each other and to develop strategies to improve communication, resolve conflicts, and build a stronger and more satisfying relationship.'
   },
   {
     title: 'Mental Health Workshops',
 
     image: WorkShop,
-    description:"A workshop can help you learn about a topic and get some hands on experience."
+    description: "Mental health workshops are training sessions that are designed to provide healthcare professionals with the knowledge, skills and tools they need to effectively address and manage mental health needs of the populations they serve. I have particular experience in training other mental health practitioners on social class, emotion regulation skills, healthy relationships, supervision of psychologists-in-training, conflict resolution and mindfulness training/technique."
 
   },
   {
-    title: 'Consultation',
+    title: 'Consultation/Supervision',
 
     image: Consultation,
-    description:"Consultation can provide advice on a specific issue."
+    description: "Consultation services and clinical supervision are also available. Please inquire for more information."
   }
-  ];
+];
 
 export default function Home() {
   return (
-    <div style={{textAlign:'center'}} id="home">
+    <div style={{ textAlign: 'center' }} id="home">
       <Hero />
-      <AboutMeHome/>
+      <AboutMeHome />
       <CardWrapper id={'services'}>
         {services.map((service) => (
           <ServiceBox service={service} />

@@ -7,7 +7,6 @@ import { Route, Routes } from 'react-router-dom';
 import About from './components/About';
 import Footer from './components/Footer';
 import Career from './components/Career';
-import { colors } from './utils/colors';
 
 import { Container } from '@mui/material';
 import Home from './components/Home';

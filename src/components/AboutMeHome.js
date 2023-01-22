@@ -42,9 +42,7 @@ border-radius:50%;
 max-width: 400px;
 max-height: 400px;
 `
-const ChicagoSkyline = styled.img`
-width:100%;
-`
+
 const Headline = styled.h1`
 color: ${colors.green};
 `

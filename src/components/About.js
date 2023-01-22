@@ -1,13 +1,10 @@
 import styled from 'styled-components';
 import aboutImage from '../grandparents.jpg';
-import CardImage from '../view.jpeg';
 import Rachel from '../RachelUpdate.jpg';
 
 const Header = styled.h1`
-  /* color: #ffb30f; */
 `;
 const Description = styled.p`
-  /* color: #ffb30f; */
 `;
 const AboutContainer = styled.div`
   display: flex;

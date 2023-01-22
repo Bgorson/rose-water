@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { colors } from '../utils/colors';
 
 const Title = styled.h1`
   text-align: center;

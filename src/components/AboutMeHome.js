@@ -27,11 +27,17 @@ background-repeat: no-repeat;
 background-attachment: fixed;
 background-position: center;
 background-size: cover;
+
 @media (max-width: 912px) {
     background-position: -230px;
     height:250px;
 
+
   }
+  _::-webkit-full-page-media, _:future, :root .safari_only {
+    background-position: 0;
+    background-attachment: scroll;
+   }
 }
 `
 const Description = styled.p`

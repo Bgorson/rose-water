@@ -62,8 +62,9 @@ object-fit: cover;
 export default function AboutMeHome() {
     const [isSafari, setIsSafari] = React.useState(false)
     React.useEffect(() => {
-        var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && window['safari'].pushNotification));
-        setIsSafari(isSafari)
+        let isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+  setIsSafari(isSafari)
+    
     }, [])
     return (
         <>

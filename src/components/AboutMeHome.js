@@ -13,7 +13,7 @@ justify-content: space-between;
 gap:3em;
 @media (max-width: 768px) {
     flex-direction: column;
-    width:100%;
+    width:90%;
     margin:auto;
   }
 `
@@ -29,6 +29,7 @@ background-position: center;
 background-size: cover;
 @media (max-width: 912px) {
     background-position: -230px;
+    height:250px;
 
   }
 }

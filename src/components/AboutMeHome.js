@@ -34,10 +34,6 @@ background-size: cover;
 
 
   }
-  _::-webkit-full-page-media, _:future, :root .safari_only {
-    background-position: 0;
-    background-attachment: scroll;
-   }
 }
 `
 const Description = styled.p`
@@ -57,9 +53,18 @@ const TextContent = styled.div`
 
 
 `
-
+const SkylineStatic = styled.img`
+width:100%;
+height:300px;
+object-fit: cover;
+`
 
 export default function AboutMeHome() {
+    const [isSafari, setIsSafari] = React.useState(false)
+    React.useEffect(() => {
+        var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && window['safari'].pushNotification));
+        setIsSafari(isSafari)
+    }, [])
     return (
         <>
             <AboutContainer>
@@ -70,19 +75,20 @@ export default function AboutMeHome() {
                     <Headline>
                         Welcome to My Private Practice
                     </Headline>
-                    <br/>
+                    <br />
                     <Description>
-                    My name is Rachel Nitzarim and I am a licensed clinical psychologist located in Chicago, Illinois. Since graduating with my doctorate in 2015, I have provided both short-term and long-term psychotherapy services to numerous individuals and couples within a private practice setting. <br/> <br/> More recently, I expanded my practice to include both mental health workshops and psychological/therapist-training consultation services.
+                        My name is Rachel Nitzarim and I am a licensed clinical psychologist located in Chicago, Illinois. Since graduating with my doctorate in 2015, I have provided both short-term and long-term psychotherapy services to numerous individuals and couples within a private practice setting. <br /> <br /> More recently, I expanded my practice to include both mental health workshops and psychological/therapist-training consultation services.
 
-Research tells us that the relationship between client and therapist is <i>the</i> central healing factor in psychotherapy. On this website you will find some information about me and how I approach my work. Knowing a little bit more about me may help you decide if I could be a good fit for you. <b>I am glad you are here.</b>
+                        Research tells us that the relationship between client and therapist is <i>the</i> central healing factor in psychotherapy. On this website you will find some information about me and how I approach my work. Knowing a little bit more about me may help you decide if I could be a good fit for you. <b>I am glad you are here.</b>
                     </Description>
                 </TextContent>
 
             </AboutContainer>
-            <Container>
+            {isSafari ? <SkylineStatic
+                src={Skyline}
+            /> : <Container> </Container>}
 
 
-            </Container>
 
         </>
 

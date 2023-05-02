@@ -99,7 +99,7 @@ const ContactTags = styled.a`
 `;
 const ContactText = styled.p`
   text-align: center;
-  font-size: 32px;
+  font-size: 24px;
 `;
 const LogoImage = styled.img`
   height: 300px;

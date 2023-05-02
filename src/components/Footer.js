@@ -4,6 +4,7 @@ import Map from "./Map";
 import { useState } from "react";
 import { send } from "emailjs-com";
 import { colors } from "../utils/colors";
+import Logo from "../../src/simple_logo.png";
 
 const blue = "#3498db";
 const blueHover = "#2980b9";
@@ -19,6 +20,10 @@ const InputContainer = styled.div`
   @media (max-width: 768px) {
     flex-direction: column;
   }
+`;
+const ContentText = styled.div`
+  display: flex;
+  flex-direction: column;
 `;
 const MessageArea = styled.div`
   width: 100%;
@@ -41,14 +46,15 @@ const Container = styled.div`
   }
 `;
 const ContactCard = styled.div`
-  padding: 1em 0;
+  // padding: 1em 0;
   display: flex;
   font-size: 32px;
   justify-content: center;
   gap: 1em;
+  align-items: center;
   @media (max-width: 768px) {
     font-size: 21px;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
   }
 `;
@@ -95,7 +101,10 @@ const ContactText = styled.p`
   text-align: center;
   font-size: 32px;
 `;
-
+const LogoImage = styled.img`
+  height: 300px;
+  margin: -2em 0;
+`;
 export default function Footer() {
   const [toSend, setToSend] = React.useState({
     from_name: "",
@@ -164,15 +173,18 @@ export default function Footer() {
         <Card>
           <CardTitle>Or Reach Out to Us</CardTitle>
           <ContactCard>
-            <ContactTags className="contactInfo" href=" tel:+17732317675">
-              773-231-7675
-            </ContactTags>
-            <ContactTags
-              className="contactInfo"
-              href="mailto:RosewatterChiCounseling@gmail.com"
-            >
-              Rosewatterchicounseling@gmail.com
-            </ContactTags>
+            <LogoImage src={Logo} alt="logo" />
+            <ContentText>
+              <ContactTags
+                className="contactInfo"
+                href="mailto:RosewatterChiCounseling@gmail.com"
+              >
+                Rosewatterchicounseling@gmail.com
+              </ContactTags>
+              <ContactTags className="contactInfo" href=" tel:+17732317675">
+                773-231-7675
+              </ContactTags>
+            </ContentText>
           </ContactCard>
           <ContactText>Rachel Nitzarim PhD, Chicago IL</ContactText>
         </Card>

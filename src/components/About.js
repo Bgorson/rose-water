@@ -106,6 +106,8 @@ export default function About() {
           parrot and two elderly doggies.{" "}
         </Description>
       </AboutContainer>
+      <Header>Sarah Jeziorski LCPC</Header>
+
       <AboutContainer>
         <AboutImage alt="Sarah Jeziorski" src={Sarah} />
         <Description>

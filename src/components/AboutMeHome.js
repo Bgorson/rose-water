@@ -46,7 +46,7 @@ const ProfilePicture = styled.img`
   max-height: 400px;
 `;
 
-const Headline = styled.h1`
+const Headline = styled.h2`
   color: ${colors.green};
 `;
 const TextContent = styled.div``;
@@ -67,7 +67,9 @@ export default function AboutMeHome() {
       <AboutContainer>
         <ProfilePicture src={Rachel} />
         <TextContent>
-          <Headline>Welcome to my private practice.</Headline>
+          <Headline>
+            Welcome to my private practice. We are glad you are here.
+          </Headline>
           <br />
           <Description>
             My name is Rachel Nitzarim and I am a licensed clinical psychologist
@@ -78,7 +80,6 @@ export default function AboutMeHome() {
             of therapy. On this website you will find some information about us
             and how we approach our work. Knowing a little bit more about our
             team will help you decide if we could be a good fit for you.{" "}
-            <b>We are glad you are here.</b>
           </Description>
         </TextContent>
       </AboutContainer>

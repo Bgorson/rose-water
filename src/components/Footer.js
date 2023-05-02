@@ -1,17 +1,17 @@
-import React from 'react';
-import styled from 'styled-components';
-import Map from './Map';
-import { useState } from 'react';
-import { send } from 'emailjs-com';
-import { colors } from '../utils/colors'
+import React from "react";
+import styled from "styled-components";
+import Map from "./Map";
+import { useState } from "react";
+import { send } from "emailjs-com";
+import { colors } from "../utils/colors";
 
-const blue = '#3498db';
-const blueHover = '#2980b9';
+const blue = "#3498db";
+const blueHover = "#2980b9";
 // $cloud: #ecf0f1;
 // $cloud--hover: #bdc3c7;
-const transition = 'all 146ms ease';
-const shadow = '0 30px 60px -30px rgba(0, 0, 0, .5)';
-const radius = '3px';
+const transition = "all 146ms ease";
+const shadow = "0 30px 60px -30px rgba(0, 0, 0, .5)";
+const radius = "3px";
 const InputContainer = styled.div`
   display: flex;
   gap: 2em;
@@ -41,21 +41,18 @@ const Container = styled.div`
   }
 `;
 const ContactCard = styled.div`
-padding:1em 0;
-display:flex;
-font-size:32px;
-justify-content:center;
-gap:1em;  
-@media (max-width: 768px) {
-  font-size:21px;
-  flex-direction:column;
-align-items:center;
-}
-
+  padding: 1em 0;
+  display: flex;
+  font-size: 32px;
+  justify-content: center;
+  gap: 1em;
+  @media (max-width: 768px) {
+    font-size: 21px;
+    flex-direction: column;
+    align-items: center;
+  }
 `;
-const InputBlock = styled.input`
-
-`;
+const InputBlock = styled.input``;
 
 const Button = styled.button`
   color: white;
@@ -81,44 +78,43 @@ const Button = styled.button`
 `;
 
 const Card = styled.div`
-background-color:${colors.lightGreen}
-`
+  background-color: ${colors.lightGreen};
+`;
 const CardTitle = styled.div`
-text-align:center;
-font-size:32px;
-
-`
+  text-align: center;
+  font-size: 32px;
+`;
 const FormContainer = styled.div`
-padding-top:2em;
-background:${colors.grey}
-`
+  padding-top: 2em;
+  background: ${colors.grey};
+`;
 const ContactTags = styled.a`
-color:${colors.grey}
-`
+  color: ${colors.grey};
+`;
 const ContactText = styled.p`
-text-align:center;
-font-size:32px; 
-`
+  text-align: center;
+  font-size: 32px;
+`;
 
 export default function Footer() {
   const [toSend, setToSend] = React.useState({
-    from_name: '',
-    from_email: '',
-    message: '',
+    from_name: "",
+    from_email: "",
+    message: "",
   });
   const onSubmit = (e) => {
     e.preventDefault();
-    send('service_1e56ntk', 'template_xkdqpbe', toSend, 'nwpdF_7mfYJEQ3AcZ')
+    send("service_1e56ntk", "template_xkdqpbe", toSend, "nwpdF_7mfYJEQ3AcZ")
       .then(() => {
         setToSend({
-          from_name: '',
-          from_email: '',
-          message: '',
+          from_name: "",
+          from_email: "",
+          message: "",
         });
-        alert('Thank you for your message and we will be in contact soon. ');
+        alert("Thank you for your message and we will be in contact soon. ");
       })
       .catch((err) => {
-        console.log('FAILED...', err);
+        console.log("FAILED...", err);
       });
   };
   const handleChange = (e) => {
@@ -128,9 +124,8 @@ export default function Footer() {
   return (
     <>
       <FormContainer>
-
-        <h2>Please Contact Me Using the Form Below</h2>
-        <div style={{ padding: '2em' }}>
+        <h2>Please Contact Us Using the Form Below</h2>
+        <div style={{ padding: "2em" }}>
           <form onSubmit={onSubmit}>
             <InputContainer>
               <InputBlock
@@ -151,7 +146,7 @@ export default function Footer() {
             </InputContainer>
             <MessageArea>
               <textarea
-                style={{ borderRadius: '16px', padding: '1em' }}
+                style={{ borderRadius: "16px", padding: "1em" }}
                 type="text"
                 name="message"
                 placeholder="Your message"
@@ -167,17 +162,19 @@ export default function Footer() {
 
       <Container id="contact">
         <Card>
-          <CardTitle>Or Reach Out to Me</CardTitle>
-          <ContactCard >
-            <ContactTags className="contactInfo" href=" tel:+17732317675">773-231-7675</ContactTags>
-            <ContactTags className="contactInfo" href="mailto:RosewatterChiCounseling@gmail.com">
+          <CardTitle>Or Reach Out to Us</CardTitle>
+          <ContactCard>
+            <ContactTags className="contactInfo" href=" tel:+17732317675">
+              773-231-7675
+            </ContactTags>
+            <ContactTags
+              className="contactInfo"
+              href="mailto:RosewatterChiCounseling@gmail.com"
+            >
               Rosewatterchicounseling@gmail.com
             </ContactTags>
-
-
           </ContactCard>
           <ContactText>Rachel Nitzarim PhD, Chicago IL</ContactText>
-
         </Card>
       </Container>
     </>

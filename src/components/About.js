@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import aboutImage from "../grandparents.jpg";
 import Rachel from "../RachelUpdate.jpg";
-import Sarah from "../sarah_j.jpg";
+import Sarah from "../sarah_j2.jpg";
 
 const Header = styled.h1``;
 const Description = styled.p``;

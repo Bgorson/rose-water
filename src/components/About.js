@@ -144,9 +144,10 @@ export default function About() {
           skills and perspectives they acquire in therapy in their lives outside
           of the therapy room. In my free time, I love to play pickleball,
           practice yoga, and travel. I also love Taylor Swift and the Dave
-          Matthews Band!!
+          Matthews Band!
         </Description>
       </AboutContainer>
+      <Header>Sarah Jeziorski LCPC</Header>
       <AboutContainer>
         <AboutImage alt="Sarah Jeziorski" src={Sarah} />
         <Description>

@@ -28,11 +28,12 @@ export default function About() {
   return (
     <>
       <Header id={"about"}>Rachel Nitzarim Ph.D.</Header>
+      <h5>Owner, Licensed Clinical Psychologist</h5>
       <AboutContainer>
         <AboutImage alt="Rachel Nitzarim" src={Rachel} />
         <Description>
-          Welcome to my private practice. I am Rachel Nitzarim, licensed
-          clinical psychologist, and the owner of Rosewatter Chicagoland
+          Welcome to my private practice. I am Rachel Nitzarim, a licensed
+          clinical psychologist and the owner of Rosewatter Chicagoland
           Counseling.
         </Description>
         <Description>
@@ -148,6 +149,7 @@ export default function About() {
         </Description>
       </AboutContainer>
       <Header>Sarah Jeziorski LCPC</Header>
+      <h5>Licensed Professional Counselor</h5>
       <AboutContainer>
         <AboutImage alt="Sarah Jeziorski" src={Sarah} />
         <Description>

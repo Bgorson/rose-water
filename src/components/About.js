@@ -108,7 +108,7 @@ export default function About() {
           parrot and three elderly doggies.{" "}
         </Description>
       </AboutContainer>
-      <Header>Sara Taxman, PsyD</Header>
+      {/* <Header>Sara Taxman, PsyD</Header>
       <h5>Psychology Postdoctoral Fellow</h5>
 
       <AboutContainer>
@@ -147,7 +147,7 @@ export default function About() {
           practice yoga, and travel. I also love Taylor Swift and the Dave
           Matthews Band!
         </Description>
-      </AboutContainer>
+      </AboutContainer> */}
       <Header>Sarah Jeziorski LCPC</Header>
       <h5>Licensed Professional Counselor</h5>
       <AboutContainer>

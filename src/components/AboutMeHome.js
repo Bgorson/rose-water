@@ -2,7 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import Rachel from "../RachelUpdate2.jpg";
 import { colors } from "../utils/colors";
-import Skyline from "../chicago-skyline-lake-michigan.jpg";
+import Skyline from "../chicago-skyline-lake-michigan.webp";
+
 const AboutContainer = styled.div`
   display: flex;
   padding: 1em;
@@ -18,24 +19,24 @@ const AboutContainer = styled.div`
   }
 `;
 const Container = styled.div`
-display: flex;
-align-items: center;
-height:500px;
-background-image: url(${Skyline});
-min-height: 100%;
-background-repeat: no-repeat;
-background-attachment: fixed;
-background-position: center;
-background-size: cover;
+  display: flex;
+  align-items: center;
+  height:500px;
+  background-image: url(${Skyline});
+  min-height: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
 
-@media (max-width: 912px) {
-    background-position: -230px;
-    height:250px;
+  @media (max-width: 912px) {
+      background-position: -230px;
+      height:250px;
 
 
+    }
   }
-}
-`;
+  `;
 const Description = styled.p`
   padding-left: 1em;
   font-size: 24px;
@@ -65,7 +66,7 @@ export default function AboutMeHome() {
   return (
     <>
       <AboutContainer>
-        <ProfilePicture src={Rachel} />
+        <ProfilePicture alt="Rachel Nitzarim" src={Rachel} />
         <TextContent>
           <Headline>
             Welcome to my private practice. We are glad you are here.

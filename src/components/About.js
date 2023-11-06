@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import aboutImage from "../grandparents.jpg";
 import Rachel from "../RachelUpdate.jpg";
+import Sara from "../SGT_headshot.jpeg";
 import Sarah from "../sarah_j2.jpg";
 
 const Header = styled.h1``;
@@ -103,11 +104,49 @@ export default function About() {
           documentaries, reality television series, fiction and nonfiction books
           as possible, spending time with friends and family, yoga/meditation,
           and tending to my mini zoo consisting of one turtle, one talkative
-          parrot and two elderly doggies.{" "}
+          parrot and three elderly doggies.{" "}
         </Description>
       </AboutContainer>
-      <Header>Sarah Jeziorski LCPC</Header>
+      <Header>Sara Taxman, PsyD</Header>
+      <h5>Psychology Postdoctoral Fellow</h5>
 
+      <AboutContainer>
+        <AboutImage alt="Sara Taxman" src={Sara} />
+        <Description>
+          My name is Sara Taxman and I received my doctorate in Clinical
+          Psychology from The Chicago School and completed my American
+          Psychological Association (APA)-accredited pre-doctoral residency at
+          Alexian Brothers Behavioral Health Hospital with a focus in children,
+          adolescents, and families. Following internship, I completed my
+          post-doctoral fellowship at The Family Institute at Northwestern
+          University on the Mindfulness and Behavioral Therapies Team. I have
+          extensive experience with youth and families across multiple treatment
+          settings including therapeutic day and boarding schools, residential
+          treatment centers, outpatient psychiatric clinics, and inpatient
+          psychiatric hospitals.{" "}
+        </Description>
+        <Description>
+          Currently, I am working at Rosewatter Chicagoland Counseling providing
+          psychotherapy to youth, young adults, and families with emotion
+          regulation difficulties, eating disorders, trauma, addiction,
+          suicidality, and self-injurious behaviors. I have comprehensive
+          training and experience using numerous evidence-based therapies,
+          including dialectical behavioral therapy (DBT) and cognitive
+          behavioral therapy (CBT). In addition to therapy, I am also excited to
+          work as an adjunct professor at The Chicago School of Professional
+          Psychology and honing my skills in psychological and
+          neuropsychological assessment.
+        </Description>
+        <Description>
+          My primary goal is to provide behaviorally driven therapeutic care to
+          clinically and culturally diverse adolescents and young adults. I want
+          to support my clients and their families and help them implement the
+          skills and perspectives they acquire in therapy in their lives outside
+          of the therapy room. In my free time, I love to play pickleball,
+          practice yoga, and travel. I also love Taylor Swift and the Dave
+          Matthews Band!!
+        </Description>
+      </AboutContainer>
       <AboutContainer>
         <AboutImage alt="Sarah Jeziorski" src={Sarah} />
         <Description>

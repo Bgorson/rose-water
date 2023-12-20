@@ -112,7 +112,7 @@ export default function About() {
       {new Date() >= new Date("2023-11-27") ? (
         <>
           <Header>Sara Taxman, PsyD</Header>
-          <h5>Psychology Postdoctoral Fellow</h5>
+          <h5>Licensed Clinical Psychologist</h5>
 
           <AboutContainer>
             <AboutImage alt="Sara Taxman" src={Sara} />

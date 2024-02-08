@@ -3,7 +3,7 @@ import aboutImage from "../grandparents.jpg";
 import Rachel from "../RachelUpdate.jpg";
 import Sara from "../SGT_headshot.jpeg";
 import Sarah from "../sarah_j2.jpg";
-
+import Elisabeth from '../elisabeth.jpeg'
 const Header = styled.h1``;
 const Description = styled.p``;
 const AboutContainer = styled.div`
@@ -20,7 +20,7 @@ const AboutImage = styled.img`
   border-radius: 50%;
   margin-bottom: 2em;
   @media (max-width: 768px) {
-    max-width: 200px;
+    max-width: 300px;
     margin: 2em auto;
   }
 `;
@@ -111,7 +111,7 @@ export default function About() {
 
       {new Date() >= new Date("2023-11-27") ? (
         <>
-          <Header>Sara Taxman, PsyD</Header>
+          <Header>Sara Taxman PsyD</Header>
           <h5>Licensed Clinical Psychologist</h5>
 
           <AboutContainer>
@@ -178,6 +178,24 @@ export default function About() {
           and group settings. I have recently decided to focus solely on therapy
           with Rosewatter Counseling. I look forward to working with you.
         </Description>
+      </AboutContainer>
+      <Header>Elisabeth Pratt PsyD</Header>
+      <h5>Clinical Psychologist</h5>
+      <AboutContainer>
+        <AboutImage alt="Elisabeth Pratt" src={Elisabeth} />
+        <Description>
+        My name is Elisabeth Pratt. I received my doctorate degree in clinical psychology from The Chicago School of Professional Psychology. I have received training in a variety of settings, including a trauma-focused clinic at a local Department of Veteran Affairs hospital, in private practice settings with a variety of presentations, and within the criminal justice system on both state and federal levels. I completed my APA-accredited predoctoral internship with the Wisconsin Department of Corrections, and completed my post-doctoral training here in Chicago at a local private practice.
+        </Description>
+        <Description><b>“It takes two to speak the truth - one to speak, the other to hear.” -Henry David Thoreau</b></Description>
+        <Description>
+        Therapy requires bravery and a willingness to explore the complexities of who you are. Through a warm and caring therapeutic alliance, we can work together to highlight your best qualities and work toward changing areas of your life that you have identified as unsatisfactory. I practice through a relational-cultural lens, meaning not only am I a human in the room with you, but I pay special attention to the past and current relationships (on all levels of society) that have had a significant influence on the development of the current self. I have strong roots in anti-oppressive approaches and highly value empowering my clients.
+        </Description>
+        <Description>
+        While most of our work will be unstructured, I do incorporate techniques from evidence-based interventions (DBT, CPT, CBT, positive psychology) to give you real skills to use outside of our sessions. Our work together will not only focus on what is going wrong but will also focus on what is going right. We will continue to foster and develop your personal strengths that will help see you through the challenges life brings your way. Together we will navigate the path toward healthy relationships, self-compassion, and learn to find the brightest of light in the darkest of places.</Description>
+        <Description>
+        I enjoy working with adults ages 18+ and have experience with diverse clientele from all walks of life. While I am open to working on a wide variety of concerns, I am especially interested in trauma-focused treatment, relationship concerns, mood disorders, grief and loss, substance misuse, and emotional regulation. </Description>
+        <Description><b>“What are the words you do not yet have? What do you need to say? … There are so many silences to be broken.” – Audre Lorde</b></Description>
+      <Description>When not working, I enjoy rock climbing, hiking, trying new restaurants, spending time with friends and family, reading (get ready for book recommendations!), live music, and exploring creative outlets.</Description>
       </AboutContainer>
     </>
   );

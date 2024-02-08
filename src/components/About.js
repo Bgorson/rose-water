@@ -180,7 +180,7 @@ export default function About() {
         </Description>
       </AboutContainer>
       <Header>Elisabeth Pratt PsyD</Header>
-      <h5>Clinical Psychologist</h5>
+      <h5>Postdoctoral Fellow</h5>
       <AboutContainer>
         <AboutImage alt="Elisabeth Pratt" src={Elisabeth} />
         <Description>

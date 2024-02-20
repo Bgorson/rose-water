@@ -51,9 +51,8 @@ export default function About() {
           After my formal education was complete, I knew that my next steps were
           to involve a combination of both academic/training and clinically
           focused work. Currently, I am the Director of Clinical Training at The
-          Chicago School of Professional Psychology, Clinical PsyD Doctoral
-          Program. I have been with TCSPP since 2017 and moved into the DCT role
-          in 2019.{" "}
+          Chicago School, Clinical PsyD Doctoral Program. I have been with The
+          Chicago School since 2017 and moved into the DCT role in 2019.
         </Description>
         <Description>
           Simultaneously, I grew my private practice work at Smith Psychotherapy

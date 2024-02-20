@@ -1,7 +1,7 @@
-import styled, { keyframes } from 'styled-components';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import Container from 'react-bootstrap/Container';
+import styled, { keyframes } from "styled-components";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import Container from "react-bootstrap/Container";
 
 const NavBar = styled(Navbar)`
   padding: 1em 0;
@@ -23,7 +23,7 @@ const pulse = keyframes`
   }
 `;
 const NavItem = styled(Nav.Item)`
-  font-family: 'Playfair';
+  font-family: "Playfair";
   font-size: 1em;
   & > a {
     color: black;
@@ -34,7 +34,7 @@ const NavItem = styled(Nav.Item)`
 `;
 
 const Button = styled(Nav.Item)`
-  font-family: 'Playfair';
+  font-family: "Playfair";
   margin-left: 1em;
   padding-left: 0;
   text-align: center;
@@ -67,11 +67,14 @@ export default function NavbarComponent({ ishome }) {
   return (
     <NavBar className="nav" expand="lg">
       <Container>
-        <Navbar.Brand style={{ fontFamily: 'Playfair', fontSize: '1.75rem' }} href="/">
+        <Navbar.Brand
+          style={{ fontFamily: "Playfair", fontSize: "1.75rem" }}
+          href="/"
+        >
           Rosewatter
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav" style={{ alignSelf: 'end' }}>
+        <Navbar.Collapse id="basic-navbar-nav" style={{ alignSelf: "end" }}>
           <Nav>
             <NavItem>
               <Nav.Link href="/">Home</Nav.Link>
@@ -85,9 +88,12 @@ export default function NavbarComponent({ ishome }) {
             <NavItem>
               <Nav.Link href="/about">About</Nav.Link>
             </NavItem>
+            <NavItem>
+              <Nav.Link href="/locations">Locations</Nav.Link>
+            </NavItem>
             <Button>
               <Nav.Link
-                style={{ border: '1px solid grey', borderRadius: '20px' }}
+                style={{ border: "1px solid grey", borderRadius: "20px" }}
                 href="/appointment"
               >
                 Book an Appointment

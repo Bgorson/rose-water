@@ -7,7 +7,7 @@ import AboutMeHome from "./AboutMeHome.js";
 import Footer from "../components/Footer";
 import IndividualService from "../individual.jpg";
 import CouplesService from "../couples.jpg";
-import WorkShop from "../workshop-image.jpeg";
+import WorkShop from "../workshop-image_fixed2.png";
 import Consultation from "../consultation.jpg";
 
 const CardWrapper = styled.div`

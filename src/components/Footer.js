@@ -177,9 +177,9 @@ export default function Footer() {
             <ContentText>
               <ContactTags
                 className="contactInfo"
-                href="mailto:RosewatterChiCounseling@gmail.com"
+                href="mailto:RNitzarim@rosewatterchicounseling.com"
               >
-                Rosewatterchicounseling@gmail.com
+                RNitzarim@rosewatterchicounseling.com
               </ContactTags>
               <ContactTags className="contactInfo" href=" tel:+17732317675">
                 773-231-7675

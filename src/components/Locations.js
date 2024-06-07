@@ -1,7 +1,6 @@
 const React = require("react");
 import BucktownOfficeImage from "../bucktown_1.jpeg";
 import BucktownOfficeImage2 from "../bucktown_2.jpeg";
-import GlenviewOfficeImage from "../glenview_1.jpeg";
 
 import styled from "styled-components";
 
@@ -54,19 +53,6 @@ const Container = styled.div`
 const Locations = () => {
   return (
     <Container>
-      <MainContainer>
-        <h2>Glenview Office</h2>
-        <OfficeImage src={GlenviewOfficeImage} alt="Glenview Office" />
-        <iframe
-          title="Glenview Location"
-          width={"100%"}
-          height="450"
-          frameBorder="0"
-          style={{ border: 0 }}
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2960.9171298975834!2d-87.81297762340762!3d42.08782505225652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fc6522021b869%3A0x76b4ca577b043d3b!2s1800%20Johns%20Dr%2C%20Glenview%2C%20IL%2060025!5e0!3m2!1sen!2sus!4v1708462213407!5m2!1sen!2sus"
-          allowFullScreen
-        ></iframe>
-      </MainContainer>
       <MainContainer>
         <h2>Bucktown Office</h2>
         <HorizontalContainer>

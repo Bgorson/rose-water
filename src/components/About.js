@@ -3,7 +3,8 @@ import aboutImage from "../grandparents.jpg";
 import Rachel from "../RachelUpdate.jpg";
 import Sara from "../SGT_headshot.jpeg";
 import Sarah from "../sarah_j2.jpg";
-import Elisabeth from '../elisabeth.jpeg'
+import Elisabeth from "../elisabeth.jpeg";
+import Sydnie from "../Sydnie_Dobkin.jpg";
 const Header = styled.h1``;
 const Description = styled.p``;
 const AboutContainer = styled.div`
@@ -13,7 +14,7 @@ const AboutContainer = styled.div`
   @media (max-width: 768px) {
     flex-direction: column;
   }
-  margin-bottom: 1em;
+  margin-bottom: 2em;
 `;
 const AboutImage = styled.img`
   max-width: 300px;
@@ -24,9 +25,12 @@ const AboutImage = styled.img`
     margin: 2em auto;
   }
 `;
+const Container = styled.div`
+  margin-bottom: 10em;
+`;
 export default function About() {
   return (
-    <>
+    <Container>
       <Header id={"about"}>Rachel Nitzarim Ph.D.</Header>
       <h5>Owner, Licensed Clinical Psychologist</h5>
       <AboutContainer>
@@ -108,51 +112,46 @@ export default function About() {
         </Description>
       </AboutContainer>
 
-      {new Date() >= new Date("2023-11-27") ? (
-        <>
-          <Header>Sara Taxman PsyD</Header>
-          <h5>Licensed Clinical Psychologist</h5>
+      <Header>Sara Taxman PsyD</Header>
+      <h5>Licensed Clinical Psychologist</h5>
 
-          <AboutContainer>
-            <AboutImage alt="Sara Taxman" src={Sara} />
-            <Description>
-              My name is Sara Taxman and I received my doctorate in Clinical
-              Psychology from The Chicago School and completed my American
-              Psychological Association (APA)-accredited pre-doctoral residency
-              at Alexian Brothers Behavioral Health Hospital with a focus in
-              children, adolescents, and families. Following internship, I
-              completed my post-doctoral fellowship at The Family Institute at
-              Northwestern University on the Mindfulness and Behavioral
-              Therapies Team. I have extensive experience with youth and
-              families across multiple treatment settings including therapeutic
-              day and boarding schools, residential treatment centers,
-              outpatient psychiatric clinics, and inpatient psychiatric
-              hospitals.{" "}
-            </Description>
-            <Description>
-              Currently, I am working at Rosewatter Chicagoland Counseling
-              providing psychotherapy to youth, young adults, and families with
-              emotion regulation difficulties, eating disorders, trauma,
-              addiction, suicidality, and self-injurious behaviors. I have
-              comprehensive training and experience using numerous
-              evidence-based therapies, including dialectical behavioral therapy
-              (DBT) and cognitive behavioral therapy (CBT). In addition to
-              therapy, I am also excited to work as an adjunct professor at The
-              Chicago School of Professional Psychology and honing my skills in
-              psychological and neuropsychological assessment.
-            </Description>
-            <Description>
-              My primary goal is to provide behaviorally driven therapeutic care
-              to clinically and culturally diverse adolescents and young adults.
-              I want to support my clients and their families and help them
-              implement the skills and perspectives they acquire in therapy in
-              their lives outside of the therapy room. In my free time, I love
-              to play pickleball, practice yoga, and travel. I also love Taylor
-              Swift and the Dave Matthews Band!
-            </Description>
-          </AboutContainer>
-        </>
-      ) : null}
+      <AboutContainer>
+        <AboutImage alt="Sara Taxman" src={Sara} />
+        <Description>
+          My name is Sara Taxman and I received my doctorate in Clinical
+          Psychology from The Chicago School and completed my American
+          Psychological Association (APA)-accredited pre-doctoral residency at
+          Alexian Brothers Behavioral Health Hospital with a focus in children,
+          adolescents, and families. Following internship, I completed my
+          post-doctoral fellowship at The Family Institute at Northwestern
+          University on the Mindfulness and Behavioral Therapies Team. I have
+          extensive experience with youth and families across multiple treatment
+          settings including therapeutic day and boarding schools, residential
+          treatment centers, outpatient psychiatric clinics, and inpatient
+          psychiatric hospitals.{" "}
+        </Description>
+        <Description>
+          Currently, I am working at Rosewatter Chicagoland Counseling providing
+          psychotherapy to youth, young adults, and families with emotion
+          regulation difficulties, eating disorders, trauma, addiction,
+          suicidality, and self-injurious behaviors. I have comprehensive
+          training and experience using numerous evidence-based therapies,
+          including dialectical behavioral therapy (DBT) and cognitive
+          behavioral therapy (CBT). In addition to therapy, I am also excited to
+          work as an adjunct professor at The Chicago School of Professional
+          Psychology and honing my skills in psychological and
+          neuropsychological assessment.
+        </Description>
+        <Description>
+          My primary goal is to provide behaviorally driven therapeutic care to
+          clinically and culturally diverse adolescents and young adults. I want
+          to support my clients and their families and help them implement the
+          skills and perspectives they acquire in therapy in their lives outside
+          of the therapy room. In my free time, I love to play pickleball,
+          practice yoga, and travel. I also love Taylor Swift and the Dave
+          Matthews Band!
+        </Description>
+      </AboutContainer>
       <Header>Sarah Jeziorski LCPC</Header>
       <h5>Licensed Professional Counselor</h5>
       <AboutContainer>
@@ -183,19 +182,103 @@ export default function About() {
       <AboutContainer>
         <AboutImage alt="Elisabeth Pratt" src={Elisabeth} />
         <Description>
-        My name is Elisabeth Pratt. I received my doctorate degree in clinical psychology from The Chicago School of Professional Psychology. I have received training in a variety of settings, including a trauma-focused clinic at a local Department of Veteran Affairs hospital, in private practice settings with a variety of presentations, and within the criminal justice system on both state and federal levels. I completed my APA-accredited predoctoral internship with the Wisconsin Department of Corrections, and completed my post-doctoral training here in Chicago at a local private practice.
+          My name is Elisabeth Pratt. I received my doctorate degree in clinical
+          psychology from The Chicago School of Professional Psychology. I have
+          received training in a variety of settings, including a trauma-focused
+          clinic at a local Department of Veteran Affairs hospital, in private
+          practice settings with a variety of presentations, and within the
+          criminal justice system on both state and federal levels. I completed
+          my APA-accredited predoctoral internship with the Wisconsin Department
+          of Corrections, and completed my post-doctoral training here in
+          Chicago at a local private practice.
         </Description>
-        <Description><b>“It takes two to speak the truth - one to speak, the other to hear.” -Henry David Thoreau</b></Description>
         <Description>
-        Therapy requires bravery and a willingness to explore the complexities of who you are. Through a warm and caring therapeutic alliance, we can work together to highlight your best qualities and work toward changing areas of your life that you have identified as unsatisfactory. I practice through a relational-cultural lens, meaning not only am I a human in the room with you, but I pay special attention to the past and current relationships (on all levels of society) that have had a significant influence on the development of the current self. I have strong roots in anti-oppressive approaches and highly value empowering my clients.
+          <b>
+            “It takes two to speak the truth - one to speak, the other to hear.”
+            -Henry David Thoreau
+          </b>
         </Description>
         <Description>
-        While most of our work will be unstructured, I do incorporate techniques from evidence-based interventions (DBT, CPT, CBT, positive psychology) to give you real skills to use outside of our sessions. Our work together will not only focus on what is going wrong but will also focus on what is going right. We will continue to foster and develop your personal strengths that will help see you through the challenges life brings your way. Together we will navigate the path toward healthy relationships, self-compassion, and learn to find the brightest of light in the darkest of places.</Description>
+          Therapy requires bravery and a willingness to explore the complexities
+          of who you are. Through a warm and caring therapeutic alliance, we can
+          work together to highlight your best qualities and work toward
+          changing areas of your life that you have identified as
+          unsatisfactory. I practice through a relational-cultural lens, meaning
+          not only am I a human in the room with you, but I pay special
+          attention to the past and current relationships (on all levels of
+          society) that have had a significant influence on the development of
+          the current self. I have strong roots in anti-oppressive approaches
+          and highly value empowering my clients.
+        </Description>
         <Description>
-        I enjoy working with adults ages 18+ and have experience with diverse clientele from all walks of life. While I am open to working on a wide variety of concerns, I am especially interested in trauma-focused treatment, relationship concerns, mood disorders, grief and loss, substance misuse, and emotional regulation. </Description>
-        <Description><b>“What are the words you do not yet have? What do you need to say? … There are so many silences to be broken.” – Audre Lorde</b></Description>
-      <Description>When not working, I enjoy rock climbing, hiking, trying new restaurants, spending time with friends and family, reading (get ready for book recommendations!), live music, and exploring creative outlets.</Description>
+          While most of our work will be unstructured, I do incorporate
+          techniques from evidence-based interventions (DBT, CPT, CBT, positive
+          psychology) to give you real skills to use outside of our sessions.
+          Our work together will not only focus on what is going wrong but will
+          also focus on what is going right. We will continue to foster and
+          develop your personal strengths that will help see you through the
+          challenges life brings your way. Together we will navigate the path
+          toward healthy relationships, self-compassion, and learn to find the
+          brightest of light in the darkest of places.
+        </Description>
+        <Description>
+          I enjoy working with adults ages 18+ and have experience with diverse
+          clientele from all walks of life. While I am open to working on a wide
+          variety of concerns, I am especially interested in trauma-focused
+          treatment, relationship concerns, mood disorders, grief and loss,
+          substance misuse, and emotional regulation.{" "}
+        </Description>
+        <Description>
+          <b>
+            “What are the words you do not yet have? What do you need to say? …
+            There are so many silences to be broken.” – Audre Lorde
+          </b>
+        </Description>
+        <Description>
+          When not working, I enjoy rock climbing, hiking, trying new
+          restaurants, spending time with friends and family, reading (get ready
+          for book recommendations!), live music, and exploring creative
+          outlets.
+        </Description>
       </AboutContainer>
-    </>
+      <Header>Sydnie Dobkin LCPC</Header>
+      <h5>Licensed Clinical Professional Counselor</h5>
+
+      <AboutContainer>
+        <AboutImage alt="Sydnie Dobkin" src={Sydnie} />
+        <Description>
+          My name is Sydnie Dobkin and I received my Masters in Counseling from
+          the Family Institute at Northwestern University. I then completed my
+          post-graduate fellowship at The Family Institute at Northwestern
+          University on the Mindfulness and Behavioral Therapies Team. I have
+          nearly a decade of experience providing adherent comprehensive DBT to
+          adolescents and adults. Additionally, I work with families and parents
+          through a behavioral lens.
+        </Description>
+        <Description>
+          Currently, I am working at Rosewatter Chicagoland Counseling providing
+          psychotherapy to youth, young adults, and families with emotion
+          regulation difficulties, eating disorders, trauma, addiction,
+          suicidality, and self-injurious behaviors. I have comprehensive
+          training and experience using numerous evidence-based therapies,
+          including Dialectical Behavioral Therapy (DBT), Radically Open
+          Dialectical Behavioral Therapy (RODBT), Dialectical Behavioral Therapy
+          Prolonged Exposure (DBT PE), Supportive Parenting for Anxious
+          Childhood Emotions (SPACE), Cognitive Behavioral Therapy (CBT), and
+          Trauma Focused Cognitive Behavioral Therapy (TF CBT). In addition to
+          evidence-based practices, I am also trained in psychodynamic theory,
+          reiki, and yoga-informed psychotherapy.
+        </Description>
+        <Description>
+          My primary goal is to provide behaviorally driven therapeutic care to
+          clinically and culturally diverse adolescents and young adults. I want
+          to support my clients and help them generalize their skills outside of
+          the therapy room. In my free time, I love to travel, snuggle with my
+          dog Harold, and scope out the best places to eat sushi. I also love
+          Taylor Swift, The 1975, and Harry Styles! You can find me reading YA
+          novels, watching (maybe too much) television, and collecting crystals.
+        </Description>
+      </AboutContainer>
+    </Container>
   );
 }

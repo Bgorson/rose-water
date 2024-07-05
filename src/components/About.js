@@ -5,7 +5,39 @@ import Sara from "../SGT_headshot.jpeg";
 import Sarah from "../sarah_j2.jpg";
 import Elisabeth from "../elisabeth.jpeg";
 import Sydnie from "../Sydnie_Dobkin.jpg";
+import Reagan from "../r_sword.jpeg";
+import Nikki from "../nikki.jpg";
 const Header = styled.h1``;
+
+const HeaderTrainees = styled.h3``;
+const Decorated = styled.div`
+  overflow: hidden;
+  text-align: center;
+`;
+
+const HeaderTraineesDivider = styled.h2`
+  margin: 2em 0;
+  position: relative;
+  display: inline-block;
+
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    border-bottom: 2px solid;
+    width: 100vw;
+    margin: 0 20px;
+  }
+
+  &:before {
+    right: 100%;
+  }
+
+  &:after {
+    left: 100%;
+  }
+`;
 const Description = styled.p``;
 const AboutContainer = styled.div`
   display: flex;
@@ -111,10 +143,8 @@ export default function About() {
           parrot and three elderly doggies.{" "}
         </Description>
       </AboutContainer>
-
       <Header>Sara Taxman PsyD</Header>
       <h5>Licensed Clinical Psychologist</h5>
-
       <AboutContainer>
         <AboutImage alt="Sara Taxman" src={Sara} />
         <Description>
@@ -243,7 +273,6 @@ export default function About() {
       </AboutContainer>
       <Header>Sydnie Dobkin LCPC</Header>
       <h5>Licensed Clinical Professional Counselor</h5>
-
       <AboutContainer>
         <AboutImage alt="Sydnie Dobkin" src={Sydnie} />
         <Description>
@@ -277,6 +306,84 @@ export default function About() {
           dog Harold, and scope out the best places to eat sushi. I also love
           Taylor Swift, The 1975, and Harry Styles! You can find me reading YA
           novels, watching (maybe too much) television, and collecting crystals.
+        </Description>
+      </AboutContainer>
+      <Decorated>
+        <HeaderTraineesDivider>Trainees</HeaderTraineesDivider>
+      </Decorated>
+      <HeaderTrainees>Reagan Sword, Trainee</HeaderTrainees>
+      <AboutContainer>
+        <AboutImage alt="Reagan Sword" src={Reagan} />
+
+        <Description>
+          My name is Reagan Sword, and I hold a B.A. in Fine Art from Columbia
+          College Chicago and a Master of Arts in Counseling: Art Therapy. As a
+          pre-licensed counselor and art therapist, my approach is integrative
+          and tailored to each client's unique needs. I draw from
+          strengths-based, person-centered, cognitive behavioral therapy (CBT),
+          and art therapy techniques to support individuals' personal growth.
+          While working towards my licensure at Rosewatter Chicagoland
+          Counseling, I will primarily be supervised by Sarah Jeziorski, LCPC.
+        </Description>
+        <Description>
+          My experience includes supporting clients dealing with anxiety,
+          depression, trauma, and grief. I have also worked considerably with
+          older adults who are managing a cancer diagnosis or medical condition.
+          I am particularly excited about expanding my work with adolescents, as
+          I am interested in helping young people navigate their unique
+          challenges and developmental stages.
+        </Description>
+        <Description>
+          I am passionate about assisting clients in discovering their strengths
+          and achieving their goals. My priority is to empower people to feel
+          more confident in managing life's challenges. I believe therapy is a
+          collaborative journey where you are the expert on your own life, and I
+          provide support, resources, and guidance to help you along the way.
+        </Description>
+        <Description>
+          Outside of work, I enjoy spending time with my cats, watching reality
+          TV, painting, reading, yoga, and exploring new foods. These activities
+          help me stay balanced and energized, so I can best support my clients!
+        </Description>
+      </AboutContainer>
+      <HeaderTrainees>Nicole (Nikki) Sharf, Trainee</HeaderTrainees>
+      <AboutContainer>
+        <AboutImage alt="Nicole Sharf" src={Nikki} />
+
+        <Description>
+          My name is Nicole (Nikki) Sharf, M.A. I received my Bachelor of
+          Science in Psychology from the University of Florida and my Master’s
+          in Clinical Psychology from The Chicago School. I am currently working
+          towards my Doctorate in Clinical Psychology. Over the last few years,
+          I have had the opportunity to work with adults across a variety of
+          clinical settings, including private practice, outpatient hospitals,
+          integrated primary care, inpatient rehabilitation, and residential
+          care. I have training in individual and group therapy, and
+          psychological and neuropsychological assessments. While at Rosewatter
+          Chicagoland Counseling, I will be primarily supervised by Dr.
+          Elisabeth Pratt.
+        </Description>
+        <Description>
+          My therapeutic approach is integrative, drawing from evidence-based
+          approaches like CBT, DBT, and ACT, as well as psychodynamic,
+          humanistic, and positive psychology. I strive to incorporate warmth,
+          humor, curiosity, and creativity in the therapy room to help clients
+          understand the impact of past events and relationships on their
+          current thoughts, emotions, and behaviors, nurture self-compassion,
+          and find new perspectives to facilitate healing, growth, and
+          meaningful change. I especially enjoy working with adults across the
+          lifespan on issues related to mood and emotional dysregulation,
+          anxiety, depression, relationship concerns, major life transitions,
+          trauma, self-esteem and body image concerns, women’s issues, sexual
+          health concerns, adjustment to chronic illness and disability, and
+          medical conditions.
+        </Description>
+
+        <Description>
+          In my free time, I enjoy spending time with family and friends,
+          walking or biking by the lake, trying as many of the delicious
+          Chicagoland restaurants as I can, attending comedy shows or musicals,
+          and traveling.
         </Description>
       </AboutContainer>
     </Container>

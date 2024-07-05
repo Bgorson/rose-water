@@ -69,6 +69,17 @@ const Locations = () => {
           allowFullScreen
         ></iframe>
       </MainContainer>
+      <MainContainer>
+        <h2>Skokie Office</h2>
+        <iframe
+          title="Skokie Office"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2962.142797989279!2d-87.75330022349954!3d42.061558471222156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fc5cf42faff05%3A0x568b1ce43ab6ef7b!2s4905%20Old%20Orchard%20Rd%2C%20Skokie%2C%20IL%2060077!5e0!3m2!1sen!2sus!4v1720212556387!5m2!1sen!2sus"
+          width={"100%"}
+          height="450"
+          style={{ border: 0 }}
+          allowfullscreen
+        ></iframe>
+      </MainContainer>
     </Container>
   );
 };

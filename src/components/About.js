@@ -7,6 +7,7 @@ import Elisabeth from "../elisabeth.jpeg";
 import Sydnie from "../Sydnie_Dobkin.jpg";
 import Reagan from "../r_sword.jpeg";
 import Nikki from "../nikki.jpg";
+
 const Header = styled.h1``;
 
 const HeaderTrainees = styled.h3``;
@@ -16,7 +17,7 @@ const Decorated = styled.div`
 `;
 
 const HeaderTraineesDivider = styled.h2`
-  margin: 2em 0;
+  margin: 1em 0;
   position: relative;
   display: inline-block;
 

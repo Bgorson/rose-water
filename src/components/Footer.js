@@ -85,6 +85,7 @@ const Button = styled.button`
 
 const Card = styled.div`
   background-color: ${colors.lightGreen};
+  width: 100%;
 `;
 const CardTitle = styled.div`
   text-align: center;

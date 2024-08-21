@@ -7,6 +7,7 @@ import Elisabeth from "../elisabeth.jpeg";
 import Sydnie from "../Sydnie_Dobkin.jpg";
 import Reagan from "../r_sword.jpeg";
 import Nikki from "../nikki.jpg";
+import DBT from "../dbt_badge.png";
 
 const Header = styled.h1``;
 
@@ -14,6 +15,12 @@ const HeaderTrainees = styled.h3``;
 const Decorated = styled.div`
   overflow: hidden;
   text-align: center;
+`;
+
+const EnhancedHeader = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 1em;
 `;
 
 const HeaderTraineesDivider = styled.h2`
@@ -61,6 +68,11 @@ const AboutImage = styled.img`
 const Container = styled.div`
   margin-bottom: 10em;
 `;
+
+const Badge = styled.img`
+  max-width: 100px;
+`;
+
 export default function About() {
   return (
     <Container>
@@ -272,18 +284,29 @@ export default function About() {
           outlets.
         </Description>
       </AboutContainer>
-      <Header>Sydnie Dobkin LCPC</Header>
+      <EnhancedHeader>
+        <Header>Sydnie Dobkin LCPC</Header>
+        <Badge
+          alt="DBT-Linehan
+          Board of Certification, Certified Clinician"
+          src={DBT}
+        />
+      </EnhancedHeader>
+
       <h5>Licensed Clinical Professional Counselor</h5>
       <AboutContainer>
         <AboutImage alt="Sydnie Dobkin" src={Sydnie} />
         <Description>
           My name is Sydnie Dobkin and I received my Masters in Counseling from
-          the Family Institute at Northwestern University. I then completed my
-          post-graduate fellowship at The Family Institute at Northwestern
-          University on the Mindfulness and Behavioral Therapies Team. I have
-          nearly a decade of experience providing adherent comprehensive DBT to
-          adolescents and adults. Additionally, I work with families and parents
-          through a behavioral lens.
+          the Family Institute at Northwestern University. I am a DBT-Linehan
+          Board of Certification, Certified Clinician™ and I have almost a
+          decade of experience providing comprehensive and adherent DBT. I then
+          completed my post-graduate fellowship at The Family Institute at
+          Northwestern University on the Mindfulness and Behavioral Therapies
+          Team. Following The Family Institute, I served as the Director of
+          Adolescent DBT at Great Lakes Therapy Center, a DBT-Linehan Certified
+          Program. Today, I continue to work with families and parents through a
+          behavioral lens.
         </Description>
         <Description>
           Currently, I am working at Rosewatter Chicagoland Counseling providing

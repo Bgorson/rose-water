@@ -7,6 +7,7 @@ import Elisabeth from "../elisabeth.jpeg";
 import Sydnie from "../Sydnie_Dobkin.jpg";
 import Reagan from "../r_sword.jpeg";
 import Nikki from "../nikki.jpg";
+import Ashley from "../ashley.jpg";
 import DBT from "../dbt_badge.png";
 
 const Header = styled.h1``;
@@ -408,6 +409,44 @@ export default function About() {
           walking or biking by the lake, trying as many of the delicious
           Chicagoland restaurants as I can, attending comedy shows or musicals,
           and traveling.
+        </Description>
+      </AboutContainer>
+      <HeaderTrainees>Ashley Levenson, Trainee</HeaderTrainees>
+      <AboutContainer>
+        <AboutImage alt="Ashley Levenson" src={Ashley} />
+
+        <Description>
+          My name is Ashley Levenson, M.A. I completed my Bachelor of Science in
+          Biopsychology, Cognition, and Neuroscience at the University of
+          Michigan and my Master’s in Clinical Psychology at The Chicago School.
+          Currently, I am a PsyD student at working towards obtaining my
+          Doctorate in Clinical Psychology from The Chicago School. I have
+          worked with individuals across the lifespan, with an emphasis on
+          adults. Throughout my training, I have gained experience in individual
+          therapy, group therapy, and neuropsychological assessment while
+          working in settings including private practice, outpatient clinics,
+          integrated primary care, and medical centers. At Rosewatter
+          Chicagoland Counseling, I am primarily supervised by Dr. Sara Taxman.
+        </Description>
+        <Description>
+          My approach to therapy is primarily cognitive-behavioral while
+          incorporating components from other theoretical orientations based on
+          individual client needs. I utilize evidence-based interventions such
+          as ACT, DBT, and cognitive restructuring in order to help clients
+          reach their therapeutic goals and minimize the impact of symptoms on
+          daily life. I strive to create a collaborative and comfortable
+          environment, where clients feel open to expressing themselves as well
+          as empowered to participate in shared decision-making for their
+          treatment. While I am trained in a wide variety of clinical concerns
+          and populations, I especially enjoy working with adults on issues
+          related to anxiety, OCD, disordered eating, body image, women’s
+          issues, and health- and illness- related concerns.
+        </Description>
+
+        <Description>
+          Outside of psychology, I enjoy spending my time doing yoga, going on
+          walks and hikes, singing, trying new restaurants, playing board games,
+          and spending time with friends and family.
         </Description>
       </AboutContainer>
     </Container>

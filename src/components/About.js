@@ -9,6 +9,7 @@ import Reagan from "../r_sword.jpeg";
 import Nikki from "../nikki.jpg";
 import Ashley from "../ashley.jpg";
 import DBT from "../dbt_badge.png";
+import Brandon from "../Brandon.JPG";
 
 const Header = styled.h1``;
 
@@ -447,6 +448,59 @@ export default function About() {
           Outside of psychology, I enjoy spending my time doing yoga, going on
           walks and hikes, singing, trying new restaurants, playing board games,
           and spending time with friends and family.
+        </Description>
+      </AboutContainer>
+      <HeaderTrainees>Brandon Less, Trainee</HeaderTrainees>
+      <AboutContainer>
+        <AboutImage alt="Brandon Less" src={Brandon} />
+
+        <Description>
+          Hello! My name is Brandon Less. I hold a Masters in Clinical
+          Psychology from The Chicago School and am currently working towards my
+          Psy.D. During my three years of graduate training, I've provided
+          services to youth and young adults in community mental health, medical
+          clinic, and outpatient psychiatric settings. While at Rosewatter
+          Chicagoland Counseling, I will be supervised by Dr. Sara Taxman.
+        </Description>
+        <Description>
+          I'm training as a generalist, so I have experience serving people
+          holding diverse cultural identities and treating a wide range of
+          mental health issues. I enjoy working with college-aged young adults
+          experiencing mood and anxiety symptoms, self-esteem and identity
+          concerns, as well as difficulties adjusting to trauma and loss. I’ve
+          trained in trauma-informed, multicultural and feminist,
+          psychodynamic/interpersonal, and humanistic-existential models of
+          therapy. I am also passionate about mindfulness and meditation, and
+          have experience incorporating ACT, DBT, and MBCT-based skills into
+          group and individual services.
+        </Description>
+
+        <Description>
+          My therapy style is warm, curious, and relational. I take a humanistic
+          approach by trying to understand all the "parts" that make up who you
+          are. I often think of therapy in musical terms: together, we explore
+          the combinations of rhythm, melody, and lyrics that define your
+          authentic self. I believe we are born with an inherent sense of worth
+          and an instinctive tendency to follow our own tune and tempo. When our
+          needs and traits feel or have felt "out of sync" with caregivers,
+          friends, and society at large, we learn to judge, withhold, or alter
+          parts of ourselves, leading to suffering and disconnection. In
+          session, I focus on the relationship to support person-centered goals.
+          I affirm you as you are, join you in processing experiences, and
+          listen for opportunities to face concerns together in the moment.
+          While following your lead, I am curious about family history, cultural
+          identities, and life-goals, and can offer mindfulness-based strategies
+          to help manage stress. I'll always invite you to give feedback and
+          direct our process. My goal is to create a space that gives you what
+          you need to find more self-compassion, authenticity, meaning, and
+          stability in your life.
+        </Description>
+        <Description>
+          To do this work well means showing up as another human being ready to
+          listen. So here are some fun facts about me: I grew up in St. Paul,
+          MN; I now live in Chicago with my wife and two cats; I'm a big Chicago
+          sports fan; I like to do yoga and play tennis to decompress; and my
+          favorite flavor of ice cream is cookies and cream :)
         </Description>
       </AboutContainer>
     </Container>

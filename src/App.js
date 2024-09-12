@@ -7,6 +7,7 @@ import { Route, Routes } from "react-router-dom";
 import About from "./components/About";
 import Footer from "./components/Footer";
 import Career from "./components/Career";
+import GroupFlyer from "./components/GroupFlyer";
 import Locations from "./components/Locations";
 import { Container } from "@mui/material";
 import Home from "./components/Home";
@@ -51,6 +52,18 @@ function App() {
                 style={{ height: "100vh" }}
               >
                 <Locations />
+              </Container>
+            }
+          />
+          <Route
+            path="group"
+            element={
+              <Container
+                className={"container"}
+                maxWidth="lg"
+                style={{ height: "100vh" }}
+              >
+                <GroupFlyer />
               </Container>
             }
           />

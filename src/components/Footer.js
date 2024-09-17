@@ -5,6 +5,7 @@ import { useState } from "react";
 import { send } from "emailjs-com";
 import { colors } from "../utils/colors";
 import Logo from "../../src/simple_logo.png";
+import { Link } from "react-router-dom";
 
 const blue = "#3498db";
 const blueHover = "#2980b9";
@@ -190,6 +191,7 @@ export default function Footer() {
           <ContactText>Rachel Nitzarim PhD, Chicago IL</ContactText>
         </Card>
       </Container>
+      <Link to="/admin">Admin</Link>
     </>
   );
 }

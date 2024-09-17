@@ -9,6 +9,8 @@ import Footer from "./components/Footer";
 import Career from "./components/Career";
 import GroupFlyer from "./components/GroupFlyer";
 import Locations from "./components/Locations";
+import Admin from "./components/Admin";
+
 import { Container } from "@mui/material";
 import Home from "./components/Home";
 const Main = styled.div`
@@ -64,6 +66,18 @@ function App() {
                 style={{ height: "100vh" }}
               >
                 <GroupFlyer />
+              </Container>
+            }
+          />
+          <Route
+            path="admin"
+            element={
+              <Container
+                className={"container"}
+                maxWidth="lg"
+                style={{ height: "100vh" }}
+              >
+                <Admin />
               </Container>
             }
           />

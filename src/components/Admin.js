@@ -1,28 +1,47 @@
 import { useState, useEffect } from "react";
 
 const Admin = () => {
+  const [loggedIn, setLoggedIn] = useState(false);
   const [userData, setUserData] = useState({});
   const [updatedData, setUpdatedData] = useState({});
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [password, setPassword] = useState("");
+  const [passwordError, setPasswordError] = useState("");
+
+  // Use an environment variable for the password
+  // Make sure to expose this variable securely in Netlify
+  const correctPassword = process.env.REACT_APP_ADMIN_PASSWORD;
+
+  const handleLogin = (e) => {
+    e.preventDefault();
+    if (password === correctPassword) {
+      setLoggedIn(true);
+      setPasswordError("");
+    } else {
+      setPasswordError("Incorrect password");
+    }
+  };
 
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch("/data/user-data.json"); // Fetch your initial JSON data
-        if (!response.ok) throw new Error("Failed to fetch data");
-        const data = await response.json();
-        setUserData(data);
-        setUpdatedData(data); // Initialize with fetched data
-        setLoading(false);
-      } catch (error) {
-        setError(error.message);
-        setLoading(false);
-      }
-    };
+    if (loggedIn) {
+      const fetchData = async () => {
+        try {
+          const response = await fetch("/data/user-data.json"); // Fetch your initial JSON data
+          if (!response.ok) throw new Error("Failed to fetch data");
+          const data = await response.json();
+          setUserData(data);
+          setUpdatedData(data); // Initialize with fetched data
+          setLoading(false);
+        } catch (error) {
+          setError(error.message);
+          setLoading(false);
+        }
+      };
 
-    fetchData();
-  }, []);
+      fetchData();
+    }
+  }, [loggedIn]);
 
   const handleCheckboxChange = (e) => {
     const { name, checked } = e.target;
@@ -35,7 +54,7 @@ const Admin = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("/.netlify/functions/update-user-data", {
+      const response = await fetch("/.netlify/functions/user-data", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -51,6 +70,23 @@ const Admin = () => {
       setError(error.message);
     }
   };
+
+  if (!loggedIn) {
+    return (
+      <div>
+        <form onSubmit={handleLogin}>
+          <input
+            type="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            placeholder="Enter password"
+          />
+          <button type="submit">Login</button>
+          {passwordError && <p style={{ color: "red" }}>{passwordError}</p>}
+        </form>
+      </div>
+    );
+  }
 
   if (loading) return <p>Loading...</p>;
   if (error) return <p style={{ color: "red" }}>{error}</p>;

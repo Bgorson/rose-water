@@ -22,6 +22,8 @@ exports.handler = async (event) => {
       body: JSON.stringify({ message: "Data updated successfully" }),
     };
   } catch (error) {
+    console.error("Detailed error:", error);
+
     return {
       statusCode: 500,
       body: JSON.stringify({ message: "Error updating data" }),

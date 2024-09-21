@@ -1,4 +1,4 @@
-import GroupFlyer from "../groupFlyer.png";
+import GroupFlyer from "../DBT_PAGE1.png";
 import styled from "styled-components";
 
 export default function Group() {
@@ -8,7 +8,6 @@ export default function Group() {
   const Container = styled.div``;
   return (
     <Container>
-      <p>Learn more</p>
       <FlyerImage src={GroupFlyer} alt="Group Flyer" />
     </Container>
   );

@@ -9,6 +9,8 @@ import IndividualService from "../individual.jpg";
 import CouplesService from "../couples.jpg";
 import WorkShop from "../workshop-image_fixed2.png";
 import Consultation from "../consultation.jpg";
+import GroupFlyer from "../Group_Thumbnail.png";
+import GroupFlyerPDF from "../DBTMFGFlyer.pdf";
 
 const CardWrapper = styled.div`
   display: flex;
@@ -54,6 +56,14 @@ const services = [
     image: Consultation,
     description:
       "Consultation services and clinical supervision are also available. Please inquire for more information.",
+  },
+  {
+    title: "Group Therapy",
+    image: GroupFlyer,
+    link: "/group",
+    pdf: GroupFlyerPDF,
+    description:
+      "Click for more information about our group starting in October!",
   },
 ];
 

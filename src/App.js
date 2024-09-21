@@ -9,6 +9,8 @@ import Footer from "./components/Footer";
 import Career from "./components/Career";
 import GroupFlyer from "./components/GroupFlyer";
 import Locations from "./components/Locations";
+import StaffPage from "./components/StaffPage";
+
 import Admin from "./components/Admin";
 
 import { Container } from "@mui/material";
@@ -24,6 +26,7 @@ function App() {
       <Main>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/about/:name" element={<StaffPage />} />
           <Route
             path="about"
             element={
@@ -69,7 +72,7 @@ function App() {
               </Container>
             }
           />
-          <Route
+          {/* <Route
             path="admin"
             element={
               <Container
@@ -80,7 +83,7 @@ function App() {
                 <Admin />
               </Container>
             }
-          />
+          /> */}
         </Routes>
       </Main>
     </div>

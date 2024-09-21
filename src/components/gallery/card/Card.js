@@ -59,6 +59,11 @@ const TextContainer = styled.div`
   text-align: center;
   width: 90%;
 `;
+const Image = styled.img`
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+`;
 
 const Card = ({ image, title, description, routeName, blurb }) => {
   const [isFlipped, setIsFlipped] = useState(false);
@@ -69,7 +74,12 @@ const Card = ({ image, title, description, routeName, blurb }) => {
   return (
     <ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
       <CardContainer onClick={handleClick}>
-        <img src={image} alt={title} />
+        <Image
+          src={image}
+          srcSet={`${image}?w=300 300w, ${image}?w=600 600w, ${image}?w=900 900w`}
+          sizes="(max-width: 768px) 100vw, 300px"
+          alt={title}
+        />{" "}
         <TapToFlipOverlay>Tap for Bio</TapToFlipOverlay>
       </CardContainer>
 

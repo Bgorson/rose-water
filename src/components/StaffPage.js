@@ -446,7 +446,6 @@ export const staffMembers = [
 
 const StaffPage = () => {
   const { name } = useParams();
-  console.log("NAME", name);
   const [selectedStaff, setSelectedStaff] = useState("null");
 
   useEffect(() => {

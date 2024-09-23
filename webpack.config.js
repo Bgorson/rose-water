@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const Dotenv = require("dotenv-webpack");
 
 module.exports = {
-  mode: "development", // Change to 'production' for production builds
+  mode: "production", // Change to 'production' for production builds
   entry: "./src/index.js", // Entry point of your application
   output: {
     path: path.resolve(__dirname, "dist"),

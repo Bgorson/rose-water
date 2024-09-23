@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-
+import React from "react";
 const Title = styled.h1`
   text-align: center;
 `;

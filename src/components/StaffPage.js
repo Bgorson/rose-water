@@ -11,7 +11,7 @@ import Reagan from "../r_sword.jpeg";
 import Nikki from "../nikki.jpg";
 import Ashley from "../ashley.jpg";
 import DBT from "../dbt_badge.png";
-import Brandon from "../Brandon.JPG";
+import Brandon from "../Brandon.jpg";
 import Jacob from "../jacob.jpg";
 import Annie from "../annie.png";
 

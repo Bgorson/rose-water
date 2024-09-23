@@ -4,7 +4,7 @@ import styled from "styled-components";
 import aboutImage from "../grandparents.jpg";
 import Rachel from "../RachelUpdate.jpg";
 import Sara from "../SGT_headshot.jpeg";
-import Sarah from "../sarah_j2.jpg";
+import Sarah from "../sarah.jpeg";
 import Elisabeth from "../elisabeth.jpeg";
 import Sydnie from "../Sydnie_Dobkin.jpg";
 import Reagan from "../r_sword.jpeg";
@@ -13,7 +13,7 @@ import Ashley from "../ashley.jpg";
 import DBT from "../dbt_badge.png";
 import Brandon from "../Brandon.JPG";
 import Jacob from "../jacob.jpg";
-import Annie from "../annie.jpeg";
+import Annie from "../annie.png";
 
 const Badge = styled.img`
   max-width: 100px;

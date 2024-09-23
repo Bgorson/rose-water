@@ -77,6 +77,9 @@ module.exports = {
     new CopyWebpackPlugin({
       patterns: [
         { from: "public/manifest.json", to: "manifest.json" }, // Adjust the path as needed
+        { from: "public/robots.txt", to: "robots.txt" }, // Add this line
+        { from: "public/sitemap.xml", to: "sitemap.xml" }, // Add this line
+        { from: "public/_redirects", to: "redirects" }, // Add this line
       ],
     }),
   ],

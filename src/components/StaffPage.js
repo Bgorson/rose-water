@@ -424,13 +424,8 @@ export const staffMembers = [
     description2: `Specializing in Dialectical Behavior Therapy (DBT) and mindfulness-based DBT-informed therapy, Jacob has gained extensive experience through an internship at The Family Institute's DBT program and a DBT Fellowship at the Great Lakes Therapy Center. There, he also served as a Staff Therapist and Mindfulness Services Coordinator. His approach is deeply influenced by his personal journey with meditation, infusing his practice with mindfulness and empathy to help clients build resilience and emotional balance.`,
     description3: `Jacob's educational background includes a Bachelor's degree in Politics with a focus on Constitutional Law from Princeton University, which adds a unique perspective to his therapeutic practice.
 `,
-    description4: `To do this work well means showing up as another human being ready to
-          listen. So here are some fun facts about me: I grew up in St. Paul,
-          MN; I now live in Chicago with my wife and two cats; I'm a big Chicago
-          sports fan; I like to do yoga and play tennis to decompress; and my
-          favorite flavor of ice cream is cookies and cream :)`,
-    description5: `Beyond his professional life, Jacob is an enthusiastic triathlete who enjoys running, biking, and swimming. His love for reading spans from coming-of-age novels to philosophy, scary stories, and physics. Music plays a significant role in his life, with last year's top Spotify artists featuring Taylor Swift, Dua Lipa, John Mayer, and John Coltrane. An ardent supporter of the Fighting Illini (a legacy from his dad) and Chicago sports teams, Jacob endures the highs and lows of his favorite teams with a mix of hope and humor.`,
-    description6: `In his personal time, Jacob treasures moments with his fiancée and their two cats, Binx and Wally.`,
+    description4: `Beyond his professional life, Jacob is an enthusiastic triathlete who enjoys running, biking, and swimming. His love for reading spans from coming-of-age novels to philosophy, scary stories, and physics. Music plays a significant role in his life, with last year's top Spotify artists featuring Taylor Swift, Dua Lipa, John Mayer, and John Coltrane. An ardent supporter of the Fighting Illini (a legacy from his dad) and Chicago sports teams, Jacob endures the highs and lows of his favorite teams with a mix of hope and humor.`,
+    description5: `In his personal time, Jacob treasures moments with his fiancée and their two cats, Binx and Wally.`,
   },
   {
     id: 11,

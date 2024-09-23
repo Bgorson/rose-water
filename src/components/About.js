@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import React from "react";
 import Card from "./gallery/card/Card";
 import { staffMembers } from "../components/StaffPage";
 

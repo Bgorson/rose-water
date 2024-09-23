@@ -70,6 +70,8 @@ module.exports = {
       filename: "index.html",
       inject: true,
     }),
-    new Dotenv(),
+    new Dotenv({
+      path: process.env.NODE_ENV === "production" ? undefined : "./.env", // Load only in development
+    }),
   ],
 };

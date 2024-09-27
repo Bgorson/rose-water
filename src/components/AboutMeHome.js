@@ -40,6 +40,7 @@ const Container = styled.div`
 const Description = styled.p`
   font-size: 24px;
   text-align: justify;
+  word-break: break-all;
 `;
 const ProfilePicture = styled.img``;
 

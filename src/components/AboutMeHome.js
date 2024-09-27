@@ -15,7 +15,6 @@ const AboutContainer = styled.div`
   gap: 3em;
   @media (max-width: 768px) {
     flex-direction: column;
-    width: 90%;
     margin: auto;
   }
 `;
@@ -39,8 +38,8 @@ const Container = styled.div`
   }
   `;
 const Description = styled.p`
-  padding-left: 1em;
   font-size: 24px;
+  text-align: justify;
 `;
 const ProfilePicture = styled.img``;
 
@@ -65,8 +64,8 @@ export default function AboutMeHome() {
       <AboutContainer>
         <TextContent>
           <Headline>
-            Welcome to Rosewatter Chicagoland Counseling, PLLC. We are glad you
-            are here.
+            Welcome to Rosewatter Chicagoland Counseling. We are glad you are
+            here.
           </Headline>
           <br />
           <Description>

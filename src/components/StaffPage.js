@@ -151,7 +151,7 @@ export const staffMembers = [
   {
     id: 3,
     routeName: "sarah",
-    blurb: `"I’m Sarah Jeziorski, a Licensed Clinical Professional Counselor and Registered Art Therapist at Rosewatter Counseling, specializing in trauma-informed, relational therapy for emerging adults and adults. I integrate talk therapy, creative arts, and EMDR (somatic trauma re-processing) to support personal growth and healing."`,
+    blurb: `I’m Sarah Jeziorski, a Licensed Clinical Professional Counselor and Registered Art Therapist at Rosewatter Counseling, specializing in trauma-informed, relational therapy for emerging adults and adults. I integrate talk therapy, creative arts, and EMDR (somatic trauma re-processing) to support personal growth and healing.`,
     header: "Sarah Jeziorski, LCPC",
     title: "Licensed Professional Counselor",
     image: Sarah,

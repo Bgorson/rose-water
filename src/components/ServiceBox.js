@@ -19,7 +19,7 @@ export const Image = styled.img`
   border-radius: 50%;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Maintain aspect ratio and cover the area */
+  object-fit: fill;
 `;
 
 export const CardBody = styled.div``;
@@ -28,8 +28,8 @@ export const CardText = styled.p``;
 
 const ImageWrapper = styled.div`
   margin: auto;
-  height: 300px;
-  width: 300px;
+  height: 325px;
+  width: 325px;
 `;
 
 const StyledLink = styled(Link)`

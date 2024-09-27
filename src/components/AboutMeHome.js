@@ -39,7 +39,6 @@ const Container = styled.div`
   `;
 const Description = styled.p`
   font-size: 24px;
-  text-align: justify;
 `;
 const ProfilePicture = styled.img``;
 

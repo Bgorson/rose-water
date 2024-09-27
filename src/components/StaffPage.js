@@ -431,7 +431,7 @@ export const staffMembers = [
   {
     id: 11,
     routeName: "annie",
-    header: "Annie Gleason",
+    header: "Annie Gleason, Operations Manager",
     blurb: `Annie Gleason is the Operations Manager at Rosewatter Chicagoland Counseling, pursuing a PhD in Industrial and Organizational Psychology while also serving as the Clinical Training Coordinator at The Chicago School, and she is passionate about problem-solving and effective organizational management.`,
     title: "Operations Manager",
     image: Annie,

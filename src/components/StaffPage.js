@@ -61,7 +61,7 @@ export const staffMembers = [
   {
     id: 1,
     routeName: "rachel",
-    header: "Rachel Nitzarim Ph.D",
+    header: "Rachel Nitzarim, Ph.D",
     blurb: `I'm Rachel Nitzarim, a licensed clinical psychologist and owner of Rosewatter Chicagoland Counseling. I have extensive clinical and training experience, and a passion for interpersonal psychotherapy, while also serving as the Director of Clinical Training, Clinical PsyD at The Chicago School, and offering a broad range of psychotherapy services, supervision, consultation, training and workshops.`,
     title: "Owner, Licensed Clinical Psychologist",
     image: Rachel,
@@ -115,7 +115,7 @@ export const staffMembers = [
     id: 2,
     routeName: "sara",
     blurb: `I’m Sara Taxman, a Clinical Psychologist with a doctorate from The Chicago School, specialized in treating youth and families with emotion regulation, trauma, and behavioral issues at Rosewatter Chicagoland Counseling, while also teaching at The Chicago School and engaging in psychological assessment.`,
-    header: "Sara Taxman PsyD",
+    header: "Sara Taxman, PsyD",
     title: "Licensed Clinical Psychologist",
     image: Sara,
     description1: `My name is Sara Taxman and I received my doctorate in Clinical
@@ -151,7 +151,7 @@ export const staffMembers = [
     id: 3,
     routeName: "sarah",
     blurb: `"I’m Sarah Jeziorski, a Licensed Clinical Professional Counselor and Registered Art Therapist at Rosewatter Counseling, specializing in trauma-informed, relational therapy for emerging adults and adults. I integrate talk therapy, creative arts, and EMDR (somatic trauma re-processing) to support personal growth and healing."`,
-    header: "Sarah Jeziorski LCPC",
+    header: "Sarah Jeziorski, LCPC",
     title: "Licensed Professional Counselor",
     image: Sarah,
     description1: `My name is Sarah Jeziorski. I am a Licensed Clinical Professional
@@ -175,7 +175,7 @@ export const staffMembers = [
     id: 4,
     routeName: "elisabeth",
     blurb: `I’m Elisabeth Pratt, a clinical psychologist with a doctorate from The Chicago School of Professional Psychology, specializing in trauma-focused and relational-cultural therapy, incorporating evidence-based techniques to empower clients through their personal strengths and challenges, while drawing on diverse experiences from the criminal justice system to private practice.`,
-    header: "Elisabeth Pratt PsyD",
+    header: "Elisabeth Pratt, PsyD",
     title: "Licensed Clinical Psychologist",
     image: Elisabeth,
     description1: `My name is Elisabeth Pratt. I received my doctorate degree in clinical
@@ -231,7 +231,7 @@ export const staffMembers = [
   {
     id: 5,
     routeName: "sydnie",
-    header: "Sydnie Dobkin LCPC",
+    header: "Sydnie Dobkin, MA",
     blurb: `I’m Sydnie Dobkin, a certified DBT clinician with a Master’s from the Family Institute at Northwestern University and extensive experience in evidence-based therapies, currently providing psychotherapy at Rosewatter Chicagoland Counseling to youth and families dealing with a range of issues, while also incorporating psychodynamic theory, reiki, and yoga-informed practices into my work.`,
     title: "Licensed Clinical Professional Counselor",
     image: Sydnie,
@@ -269,7 +269,7 @@ export const staffMembers = [
   {
     id: 6,
     routeName: "reagan",
-    header: "Reagan Sword",
+    header: "Reagan Sword, MA",
     blurb: `I’m Reagan Sword, a pre-licensed art therapist with a B.A. in Fine Art and a Master’s in Counseling: Art Therapy from Columbia College Chicago, offering integrative therapy at Rosewatter Chicagoland Counseling using a blend of CBT and art therapy to support personal growth in individuals dealing with anxiety, depression, trauma, and grief, while also focusing on expanding work with adolescents.`,
     title: "Trainee",
     image: Reagan,
@@ -299,7 +299,7 @@ export const staffMembers = [
   {
     id: 7,
     routeName: "nikki",
-    header: "Nicole (Nikki) Sharf",
+    header: "Nicole (Nikki) Sharf, MA",
     title: "Trainee",
     blurb: `I’m Nicole (Nikki) Sharf, an M.A. student in Clinical Psychology at The Chicago School,  currently working towards my Doctorate and providing integrative therapy at Rosewatter Chicagoland Counseling using CBT, DBT, ACT, and other approaches to support adults with issues such as mood dysregulation, anxiety, trauma, and life transitions.`,
     image: Nikki,
@@ -336,7 +336,7 @@ export const staffMembers = [
     id: 8,
     routeName: "ashley",
     blurb: `I’m Ashley Levenson, an M.A. student in Clinical Psychology at The Chicago School and PsyD candidate, with experience in individual and group therapy, and neuropsychological assessment across diverse settings, currently providing cognitive-behavioral therapy at Rosewatter Chicagoland Counseling with a focus on anxiety, OCD, disordered eating, and health-related concerns.`,
-    header: "Ashley Levenson",
+    header: "Ashley Levenson, MA",
     title: "Trainee",
     image: Ashley,
     description1: `My name is Ashley Levenson, M.A. I completed my Bachelor of Science in
@@ -369,7 +369,7 @@ export const staffMembers = [
   {
     id: 9,
     routeName: "brandon",
-    header: "Brandon Less",
+    header: "Brandon Less, MA",
     blurb: `I’m Brandon Less, a PsyD student at The Chicago School currently providing warm, relational therapy at Rosewatter Chicagoland Counseling with a focus on college-aged young adults dealing with mood, anxiety, self-esteem, and trauma, utilizing a blend of trauma-informed, psychodynamic, and mindfulness-based approaches.`,
     title: "Trainee",
     image: Brandon,
@@ -416,7 +416,7 @@ export const staffMembers = [
   {
     id: 10,
     routeName: "jacob",
-    header: "Jacob Sweetow",
+    header: "Jacob Sweetow, MSW",
     blurb: `I’m Jacob Sweetow, a psychotherapist with an MSW from the University of Chicago, specializing in emotion dysregulation and mood disorders with expertise in DBT and mindfulness-based therapies, while also enjoying triathlons, reading, and a diverse range of music.`,
     title: "MSW",
     image: Jacob,
@@ -432,7 +432,7 @@ export const staffMembers = [
     routeName: "annie",
     header: "Annie Gleason",
     blurb: `Annie Gleason is the Operations Manager at Rosewatter Chicagoland Counseling, pursuing a PhD in Industrial and Organizational Psychology while also serving as the Clinical Training Coordinator at The Chicago School, and she is passionate about problem-solving and effective organizational management.`,
-    title: "MSW",
+    title: "Operations Manager",
     image: Annie,
     description1: `My name is Annie Gleason and I am the Operations Manager at Rosewatter Chicagoland Counseling. I have a background in clinical mental health counseling and am currently obtaining my PhD in Industrial and Organizational Psychology (Business Psychology). I also currently serve as the Clinical Training Coordinator for training at The Chicago School, Chicago Campus PsyD Clinical PsyD program. Simply put, I am a self proclaimed “operations and infrastructure nerd.” I am energized by problem solving and thinking creatively about how to make effective lasting organizational change, create practical solutions for personnel, and establish organizational capacity for the unknown. My professional experiences to date have provided me with a unique perspective that allows me to ensure that the intricacies of clinical work, people management, and system oriented challenges are addressed proactively and pragmatically.`,
     description2: `I have earned my B.A. in Psychology from UW-Whitewater and an Ed.S. in Clinical Mental Health Counseling from Loyola University Chicago. I also own my own solo psychotherapy telehealth private practice in Chicago. In my free time, I am an avid consumer of the arts, awannabe yoga instructor, a Dog Mom to fur-baby Arugula, and a lover of any and all things Chicago!`,

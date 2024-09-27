@@ -14,6 +14,7 @@ import DBT from "../dbt_badge.png";
 import Brandon from "../Brandon1.jpg";
 import Jacob from "../jacob.jpg";
 import Annie from "../annie.png";
+import Samantha from "../Samantha.jpeg";
 
 const Badge = styled.img`
   max-width: 100px;
@@ -174,7 +175,7 @@ export const staffMembers = [
   {
     id: 4,
     routeName: "elisabeth",
-    blurb: `I’m Elisabeth Pratt, a clinical psychologist with a doctorate from The Chicago School of Professional Psychology, specializing in trauma-focused and relational-cultural therapy, incorporating evidence-based techniques to empower clients through their personal strengths and challenges, while drawing on diverse experiences from the criminal justice system to private practice.`,
+    blurb: `I’m Dr. Elisabeth Pratt, a Licensed Clinical Psychologist with a doctorate from The Chicago School. I specialize in trauma-focused treatment, substance misuse/early recovery, and grief processing. I work through a relational-cultural lens, incorporating evidence-based techniques and an anti-oppressive approach to empower clients and foster personal growth.`,
     header: "Elisabeth Pratt, PsyD",
     title: "Licensed Clinical Psychologist",
     image: Elisabeth,
@@ -370,7 +371,7 @@ export const staffMembers = [
     id: 9,
     routeName: "brandon",
     header: "Brandon Less, MA",
-    blurb: `I’m Brandon Less, a PsyD student at The Chicago School currently providing warm, relational therapy at Rosewatter Chicagoland Counseling with a focus on college-aged young adults dealing with mood, anxiety, self-esteem, and trauma, utilizing a blend of trauma-informed, psychodynamic, and mindfulness-based approaches.`,
+    blurb: `I’m Brandon Less, a doctoral (PsyD) student The Chicago School currently providing individual therapy services at Rosewatter Chicagoland Counseling to college students and young adults dealing with mood, anxiety, self-esteem, trauma, and grief concerns. My approach is rooted in trauma-informed, relational, and humanistic psychotherapy.`,
     title: "Trainee",
     image: Brandon,
     description1: `Hello! My name is Brandon Less. I hold a Masters in Clinical
@@ -436,6 +437,34 @@ export const staffMembers = [
     image: Annie,
     description1: `My name is Annie Gleason and I am the Operations Manager at Rosewatter Chicagoland Counseling. I have a background in clinical mental health counseling and am currently obtaining my PhD in Industrial and Organizational Psychology (Business Psychology). I also currently serve as the Clinical Training Coordinator for training at The Chicago School, Chicago Campus PsyD Clinical PsyD program. Simply put, I am a self proclaimed “operations and infrastructure nerd.” I am energized by problem solving and thinking creatively about how to make effective lasting organizational change, create practical solutions for personnel, and establish organizational capacity for the unknown. My professional experiences to date have provided me with a unique perspective that allows me to ensure that the intricacies of clinical work, people management, and system oriented challenges are addressed proactively and pragmatically.`,
     description2: `I have earned my B.A. in Psychology from UW-Whitewater and an Ed.S. in Clinical Mental Health Counseling from Loyola University Chicago. I also own my own solo psychotherapy telehealth private practice in Chicago. In my free time, I am an avid consumer of the arts, awannabe yoga instructor, a Dog Mom to fur-baby Arugula, and a lover of any and all things Chicago!`,
+  },
+  {
+    id: 11,
+    routeName: "samantha",
+    header: "Samantha Fitzwater, BA",
+    blurb: `My name is Samantha Fitzwater, and I currently am a graduate student at University of Chicago pursuing my masters in social work to become a clinical therapist working with individuals and families. As a therapist in training, my approach emphasizes mindfulness, acceptance and behavior change, empowering individuals to build healthier coping strategies and create meaningful, values-driven lives.`,
+    title: "Trainee",
+    image: Samantha,
+    description1: `My name is Samantha Fitzwater, and I currently am a graduate student at University of Chicago
+pursuing my masters in social work to become a clinical therapist working with individuals and
+families. Over the past few years, I have had the opportunity to work with children, adolescents,
+and adults across a variety of clinical settings, including outpatient psych hospitals, inpatient
+and outpatient recovery centers/rehabs, addiction treatment centers, and ABA residential
+homes.`,
+    description2: `As an intern with a strong foundation for mental health and social work, I love to specialize in
+Dialectical Behavioral Therapy (DBT) and Acceptance Commitment Therapy (ACT) to help
+clients navigate emotional and psychological challenges. My approach emphasizes
+mindfulness, acceptance, and behavior change, empowering individuals to build healthier
+coping strategies and create meaningful, values-driven lives. With experience in addictions,
+mental health, trauma, and a commitment to holistic well-being, I aim to foster resilience and
+emotional growth in every client I work with and provide a compassionate and nonjudgmental
+space for clients to explore their challenges and strengths, while learning to implement effective
+strategies for personal growth. My goal is to help individuals build resilience and improve their
+overall quality of life through collaborative, strengths-based approaches. While at Rosewatter I
+will be supervised by Sydnie Dobkin LCPC.`,
+    description3: `Outside of work I like to spend time with family and friends, be outdoors, travel, read books,
+watch movies, and learn new skills whether that’s professionally or personally, as I believe
+continuous growth is key to both life and therapy.`,
   },
 ];
 

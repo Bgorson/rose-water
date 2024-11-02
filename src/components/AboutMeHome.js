@@ -21,7 +21,7 @@ const AboutContainer = styled.div`
 const Container = styled.div`
   display: flex;
   align-items: center;
-  height:500px;
+  height: 500px;
   background-image: url(${Skyline});
   min-height: 100%;
   background-repeat: no-repeat;
@@ -30,13 +30,10 @@ const Container = styled.div`
   background-size: cover;
 
   @media (max-width: 912px) {
-      background-position: -230px;
-      height:250px;
-
-
-    }
+    background-position: -230px;
+    height: 250px;
   }
-  `;
+`;
 const Description = styled.p`
   font-size: 24px;
 `;

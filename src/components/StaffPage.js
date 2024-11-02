@@ -15,6 +15,8 @@ import Brandon from "../Brandon1.jpg";
 import Jacob from "../jacob.jpg";
 import Annie from "../annie.png";
 import Samantha from "../Samantha.jpeg";
+import Talia from "../talia.jpg";
+import Julia from "../julia.jpg";
 
 const Badge = styled.img`
   max-width: 100px;
@@ -465,6 +467,28 @@ will be supervised by Sydnie Dobkin LCPC.`,
     description3: `Outside of work I like to spend time with family and friends, be outdoors, travel, read books,
 watch movies, and learn new skills whether that’s professionally or personally, as I believe
 continuous growth is key to both life and therapy.`,
+  },
+  {
+    id: 12,
+    routeName: "talia",
+    header: "Talia Farrell-Rosen, MSW",
+    blurb: `I’m Talia Farrell-Rosen, a psychotherapist with my MSW from Boston College, specializing in DBT to support adolescents, families, and adults managing emotion dysregulation, mood disorders, ADHD, autism, and anxiety.`,
+    title: "Social Worker",
+    image: Talia,
+    description1: `Talia is a graduate of Boston College’s Master of Social Work program, bringing extensive experience from her previous roles in school and behavioral health settings, where she supported children and teens from diverse backgrounds. At Rosewatter, she provides therapy for both adults and adolescents under the supervision of Lauren Barris, LCSW, a Certified DBT Clinician and Dr. Rachel Nitzarim.`,
+    description2: `During her graduate studies, Talia focused on gaining hands-on experience with Latinx communities and implementing evidence-based therapies, including DBT and CBT. She specializes in working with individuals with autism, ADHD, anxiety, and emotional dysregulation, and is passionate about creating a supportive and empathetic environment for clients of all ages and backgrounds.`,
+    description3: `As a new resident of Chicago, Talia enjoys exploring her city, taking long walks along the lakefront, discovering new neighborhoods, and participating in dance classes.`,
+  },
+  {
+    id: 13,
+    routeName: "julia",
+    header: "Julia Friedland, LSW",
+    blurb: `I’m Julia Friedland, a Licensed Social Worker with a Master’s from Columbia University’s School of Social Work. I specialize in supporting both adolescents and adults managing symptoms of depression, anxiety, emotion dysregulation, and mood disorders.`,
+    title: "Licensed Social Worker",
+    image: Julia,
+    description1: `Julia Friedland is a Licensed Social Worker who brings a compassionate, skill-building approach to therapy, specializing in treating mood disorders and emotion dysregulation in adolescents and adults. She earned her Master of Social Work from Columbia University in NYC, where she focused on Dialectical Behavior Therapy (DBT) and evidence-based approaches to help clients manage life’s most difficult moments. At Rosewatter, she provides therapy to adolescents, families, and adults under the supervision of Rachel Nitzarim, Ph.D., and Lauren Barris, LCSW, a DBT-Linehan Board-Certified Clinician.`,
+    description2: `Julia’s approach emphasizes meeting clients where they are, combining practical tools with genuine validation and acceptance. Her experience includes hands-on DBT work with adolescents and adults at Metro NY DBT Center, as well as providing behavioral health and social support services to adults from diverse backgrounds at a primary care facility in Washington Heights, NYC through Columbia Doctors at NewYork-Presbyterian. Julia’s holistic and person-centered approach ensures that each individual's unique needs are met with warmth and understanding. Her passion for inclusivity has also been shaped by years of involvement in the disability community in Chicagoland, fostering a welcoming, supportive space for all her clients.`,
+    description3: `Outside of work, Julia enjoys traveling, exploring new music, and unwinding with a great podcast. She can often be found relaxing with her dog, Henry, or satisfying her sweet tooth by baking up a new recipe!`,
   },
 ];
 

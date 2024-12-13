@@ -179,19 +179,16 @@ export default function Footer() {
             <ContentText>
               <ContactTags
                 className="contactInfo"
-                href="mailto:RNitzarim@rosewatterchicounseling.com"
+                href="mailto:inquiry@rosewatterchicounseling.com"
               >
-                RNitzarim@rosewatterchicounseling.com
-              </ContactTags>
-              <ContactTags className="contactInfo" href=" tel:+17732317675">
-                773-231-7675
+                inquiry@rosewatterchicounseling.com
               </ContactTags>
             </ContentText>
           </ContactCard>
           <ContactText>Rachel Nitzarim PhD, Chicago IL</ContactText>
         </Card>
       </Container>
-      <Link to="/admin">Admin</Link>
+      {/* <Link to="/admin">Admin</Link> */}
     </>
   );
 }

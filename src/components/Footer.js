@@ -121,7 +121,7 @@ export default function Footer() {
     e.preventDefault();
 
     emailjs
-      .send(service, template, templateParams, {
+      .send(service, template, toSend, {
         publicKey: publicKey,
       })
       .then(() => {

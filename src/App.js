@@ -60,7 +60,7 @@ function App() {
                 maxWidth="lg"
                 style={{ height: "100vh" }}
               >
-                {/* <Career /> */}
+                <Career />
               </Container>
             }
           />

@@ -61,7 +61,7 @@ const Career = () => {
   const onSubmit = (e) => {
     e.preventDefault();
     emailjs
-      .send(service, template, templateParams, {
+      .send(service, template, toSend, {
         publicKey: publicKey,
       })
       .then(() => {

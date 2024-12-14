@@ -111,7 +111,7 @@ export default function Group() {
           from_email: "",
           message: "",
         });
-        alert("Thank you for your message and we will be in contact soon. ");
+        alert("Thank you for your message and we will be in contact soon.");
       });
   };
 

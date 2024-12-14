@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Map from "./Map";
 import { useState } from "react";
-import { send } from "emailjs-com";
+import emailjs from "@emailjs/browser";
 import { colors } from "../utils/colors";
 import Logo from "../../src/simple_logo.png";
 import { Link } from "react-router-dom";
@@ -118,7 +118,11 @@ export default function Footer() {
   });
   const onSubmit = (e) => {
     e.preventDefault();
-    send(service, template, toSend, publicKey)
+
+    emailjs
+      .send(service, template, templateParams, {
+        publicKey: publicKey,
+      })
       .then(() => {
         setToSend({
           from_name: "",
@@ -126,9 +130,6 @@ export default function Footer() {
           message: "",
         });
         alert("Thank you for your message and we will be in contact soon. ");
-      })
-      .catch((err) => {
-        console.log("FAILED...", err);
       });
   };
   const handleChange = (e) => {

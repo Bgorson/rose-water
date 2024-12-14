@@ -108,6 +108,9 @@ const LogoImage = styled.img`
   margin: -2em 0;
 `;
 export default function Footer() {
+  const service = process.env.SERVICE_EMAIL;
+  const template = process.env.TEMPLATE_EMAIL;
+  const publicKey = process.env.PUBLIC_EMAIL;
   const [toSend, setToSend] = React.useState({
     from_name: "",
     from_email: "",
@@ -115,7 +118,7 @@ export default function Footer() {
   });
   const onSubmit = (e) => {
     e.preventDefault();
-    send("service_1e56ntk", "template_xkdqpbe", toSend, "nwpdF_7mfYJEQ3AcZ")
+    send(service, template, toSend, publicKey)
       .then(() => {
         setToSend({
           from_name: "",

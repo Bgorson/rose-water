@@ -108,9 +108,9 @@ const LogoImage = styled.img`
   margin: -2em 0;
 `;
 export default function Footer() {
-  const service = process.env.SERVICE_EMAIL;
-  const template = process.env.TEMPLATE_EMAIL;
-  const publicKey = process.env.PUBLIC_EMAIL;
+  const service = process.env.REACT_APP_SERVICE_EMAIL;
+  const template = process.env.REACT_APP_TEMPLATE_EMAIL;
+  const publicKey = process.env.REACT_APP_PUBLIC_EMAIL;
   const [toSend, setToSend] = React.useState({
     from_name: "",
     from_email: "",

@@ -98,7 +98,9 @@ export default function Group() {
   });
 
   const [isModalOpen, setIsModalOpen] = useState(false);
-
+  const service = process.env.REACT_APP_SERVICE_EMAIL;
+  const template = process.env.REACT_APP_TEMPLATE_EMAIL;
+  const publicKey = process.env.REACT_APP_PUBLIC_EMAIL;
   const onSubmit = (e) => {
     e.preventDefault();
     emailjs

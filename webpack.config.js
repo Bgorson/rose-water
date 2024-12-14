@@ -72,14 +72,26 @@ module.exports = {
       inject: true,
     }),
     new Dotenv({
-      path: process.env.NODE_ENV === "production" ? undefined : "./.env", // Load only in development
+      path: process.env.NODE_ENV === "production" ? undefined : "./.env", // Load from .env only in development
+      systemvars: true, // Also use system environment variables (e.g., Netlify)
+    }),
+    new webpack.DefinePlugin({
+      "process.env.REACT_APP_SERVICE_EMAIL": JSON.stringify(
+        process.env.REACT_APP_SERVICE_EMAIL
+      ),
+      "process.env.REACT_APP_TEMPLATE_EMAIL": JSON.stringify(
+        process.env.REACT_APP_TEMPLATE_EMAIL
+      ),
+      "process.env.REACT_APP_PUBLIC_EMAIL": JSON.stringify(
+        process.env.REACT_APP_PUBLIC_EMAIL
+      ),
     }),
     new CopyWebpackPlugin({
       patterns: [
-        { from: "public/manifest.json", to: "manifest.json" }, // Adjust the path as needed
-        { from: "public/robots.txt", to: "robots.txt" }, // Add this line
-        { from: "public/sitemap.xml", to: "sitemap.xml" }, // Add this line
-        { from: "public/_redirects", to: "redirects" }, // Add this line
+        { from: "public/manifest.json", to: "manifest.json" },
+        { from: "public/robots.txt", to: "robots.txt" },
+        { from: "public/sitemap.xml", to: "sitemap.xml" },
+        { from: "public/_redirects", to: "redirects" },
       ],
     }),
   ],

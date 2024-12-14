@@ -1,13 +1,13 @@
-import styled from 'styled-components';
-import React from 'react';
-import { send } from 'emailjs-com';
-const blue = '#3498db';
-const blueHover = '#2980b9';
+import styled from "styled-components";
+import React from "react";
+import emailjs from "@emailjs/browser";
+const blue = "#3498db";
+const blueHover = "#2980b9";
 // $cloud: #ecf0f1;
 // $cloud--hover: #bdc3c7;
-const transition = 'all 146ms ease';
-const shadow = '0 30px 60px -30px rgba(0, 0, 0, .5)';
-const radius = '3px';
+const transition = "all 146ms ease";
+const shadow = "0 30px 60px -30px rgba(0, 0, 0, .5)";
+const radius = "3px";
 const InputContainer = styled.div`
   display: flex;
   gap: 2em;
@@ -25,7 +25,7 @@ const MessageArea = styled.div`
 `;
 const Paragraph = styled.p`
   padding: 2em;
-  font-family: 'Playfair';
+  font-family: "Playfair";
   font-size: 21px;
 `;
 const Button = styled.button`
@@ -54,23 +54,23 @@ const InputBlock = styled.input``;
 
 const Career = () => {
   const [toSend, setToSend] = React.useState({
-    from_name: '',
-    from_email: '',
-    message: '',
+    from_name: "",
+    from_email: "",
+    message: "",
   });
   const onSubmit = (e) => {
     e.preventDefault();
-    send('service_1e56ntk', 'template_xkdqpbe', toSend, 'nwpdF_7mfYJEQ3AcZ')
+    emailjs
+      .send(service, template, templateParams, {
+        publicKey: publicKey,
+      })
       .then(() => {
         setToSend({
-          from_name: '',
-          from_email: '',
-          message: '',
+          from_name: "",
+          from_email: "",
+          message: "",
         });
-        alert('Thank you for your message and we will be in contact soon. ');
-      })
-      .catch((err) => {
-        console.log('FAILED...', err);
+        alert("Thank you for your message and we will be in contact soon. ");
       });
   };
   const handleChange = (e) => {
@@ -80,8 +80,9 @@ const Career = () => {
     <div>
       <Paragraph>
         Rosewatter Chicagoland Counseling is currently recruiting for
-        pre-licensed or licensed mental health practioners to join the practice. Please reach out with
-        your name, a description of your credentials and your email address for more information.
+        pre-licensed or licensed mental health practioners to join the practice.
+        Please reach out with your name, a description of your credentials and
+        your email address for more information.
       </Paragraph>
       <form onSubmit={onSubmit}>
         <InputContainer>

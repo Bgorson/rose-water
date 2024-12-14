@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { send } from "emailjs-com";
+import emailjs from "@emailjs/browser";
 import GroupFlyer from "../DBT_PAGE1.png";
 import GroupFlyerPDF from "../DBTMFGFlyer.pdf";
 
@@ -101,18 +101,17 @@ export default function Group() {
 
   const onSubmit = (e) => {
     e.preventDefault();
-    send("service_1e56ntk", "template_xkdqpbe", toSend, "nwpdF_7mfYJEQ3AcZ")
+    emailjs
+      .send(service, template, templateParams, {
+        publicKey: publicKey,
+      })
       .then(() => {
         setToSend({
           from_name: "",
           from_email: "",
           message: "",
-          subject: "DBT Multifamily Group Inquiry",
         });
-        alert("Thank you for your message and we will be in contact soon.");
-      })
-      .catch((err) => {
-        console.log("FAILED...", err);
+        alert("Thank you for your message and we will be in contact soon. ");
       });
   };
 

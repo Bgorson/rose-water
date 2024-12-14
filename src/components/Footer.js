@@ -139,7 +139,7 @@ export default function Footer() {
 
   return (
     <>
-      <FormContainer>
+      {/* <FormContainer>
         <h2>Please Contact Us Using the Form Below</h2>
         <div style={{ padding: "2em" }}>
           <form onSubmit={onSubmit}>
@@ -174,7 +174,7 @@ export default function Footer() {
             <Button type="submit">Submit</Button>
           </form>
         </div>
-      </FormContainer>
+      </FormContainer> */}
 
       <Container id="contact">
         <Card>

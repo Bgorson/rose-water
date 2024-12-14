@@ -139,7 +139,7 @@ export default function Group() {
       <StyledAnchor href={GroupFlyerPDF} download>
         Download Flyer
       </StyledAnchor>
-      <Text>Contact Us Here:</Text>
+      {/* <Text>Contact Us Here:</Text>
       <form onSubmit={onSubmit}>
         <InputContainer>
           <InputBlock
@@ -169,7 +169,7 @@ export default function Group() {
           />
         </MessageArea>
         <Button type="submit">Submit</Button>
-      </form>
+      </form> */}
       {isModalOpen && (
         <Modal onClick={closeModal}>
           <ModalImage src={GroupFlyer} alt="Group Flyer" />

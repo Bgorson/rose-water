@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import styled from "styled-components";
-import ReactCardFlip from "react-card-flip";
-import { Link } from "react-router-dom";
+import React, { useState } from 'react';
+import styled from 'styled-components';
+import ReactCardFlip from 'react-card-flip';
+import { Link } from 'react-router-dom';
 
 const CardContainer = styled.div`
   width: 300px;
@@ -14,7 +14,9 @@ const CardContainer = styled.div`
   border-radius: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   cursor: pointer;
-  transition: transform 0.6s, box-shadow 0.3s;
+  transition:
+    transform 0.6s,
+    box-shadow 0.3s;
   backface-visibility: hidden;
   position: relative;
 
@@ -97,7 +99,7 @@ const Card = ({ image, title, description, routeName, blurb }) => {
         </TextContainer>
 
         <Link
-          to={`/about/${routeName.toLowerCase().replace(" ", "-")}`}
+          to={`/about/${routeName.toLowerCase().replace(' ', '-')}`}
           target="_blank"
           rel="noopener noreferrer"
         >

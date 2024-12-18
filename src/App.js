@@ -1,19 +1,20 @@
-import React, { useEffect, useState } from "react";
-import NavbarComponent from "./components/Navbar";
-import "./index.css";
-import "bootstrap/dist/css/bootstrap.min.css";
-import styled from "styled-components";
-import { Route, Routes, useLocation } from "react-router-dom";
-import About from "./components/About";
-import Footer from "./components/Footer";
-import Career from "./components/Career";
-import GroupFlyer from "./components/GroupFlyer";
-import Locations from "./components/Locations";
-import StaffPage from "./components/StaffPage";
-import Admin from "./components/Admin";
-import { Container } from "@mui/material";
-import Home from "./components/Home";
-import Popup from "./components/Popup"; // Import the Popup component
+import React, { useEffect, useState } from 'react';
+import NavbarComponent from './components/Navbar';
+import './index.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import styled from 'styled-components';
+import { Route, Routes, useLocation } from 'react-router-dom';
+import About from './components/About';
+import Footer from './components/Footer';
+import Career from './components/Career';
+import GroupFlyer from './components/GroupFlyer';
+import Locations from './components/Locations';
+import StaffPage from './components/StaffPage';
+import Admin from './components/Admin';
+import { Container } from '@mui/material';
+import Home from './components/Home';
+import AdultDbt from './components/AdultDbt';
+import Popup from './components/Popup'; // Import the Popup component
 
 const Main = styled.div`
   // background-color: #fbede6;
@@ -24,10 +25,10 @@ function App() {
   const location = useLocation();
 
   useEffect(() => {
-    const isFirstVisit = localStorage.getItem("isFirstVisit");
-    if (!isFirstVisit && location.pathname === "/") {
+    const isFirstVisit = localStorage.getItem('isFirstVisit');
+    if (!isFirstVisit && location.pathname === '/') {
       setShowPopup(true);
-      localStorage.setItem("isFirstVisit", "true");
+      localStorage.setItem('isFirstVisit', 'true');
     }
   }, [location.pathname]);
 
@@ -37,7 +38,7 @@ function App() {
 
   return (
     <div>
-      <NavbarComponent className={"navbar"} />
+      <NavbarComponent className={'navbar'} />
       <Main>
         {showPopup && <Popup onClose={handleClosePopup} />}
         <Routes>
@@ -46,7 +47,7 @@ function App() {
           <Route
             path="about"
             element={
-              <Container className={"container"} maxWidth="lg">
+              <Container className={'container'} maxWidth="lg">
                 <About />
               </Container>
             }
@@ -56,9 +57,9 @@ function App() {
             path="career"
             element={
               <Container
-                className={"container"}
+                className={'container'}
                 maxWidth="lg"
-                style={{ height: "100vh" }}
+                style={{ height: '100vh' }}
               >
                 <Career />
               </Container>
@@ -68,9 +69,9 @@ function App() {
             path="locations"
             element={
               <Container
-                className={"container"}
+                className={'container'}
                 maxWidth="lg"
-                style={{ height: "100vh" }}
+                style={{ height: '100vh' }}
               >
                 <Locations />
               </Container>
@@ -80,11 +81,23 @@ function App() {
             path="group"
             element={
               <Container
-                className={"container"}
+                className={'container'}
                 maxWidth="lg"
-                style={{ height: "100vh" }}
+                style={{ height: '100vh' }}
               >
                 <GroupFlyer />
+              </Container>
+            }
+          />
+          <Route
+            path="adult-dbt"
+            element={
+              <Container
+                className={'container'}
+                maxWidth="lg"
+                style={{ height: '100vh' }}
+              >
+                <AdultDbt />
               </Container>
             }
           />

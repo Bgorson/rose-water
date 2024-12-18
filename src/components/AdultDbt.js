@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import emailjs from '@emailjs/browser';
-import GroupFlyer from '../DBT_PAGE1.png';
-import GroupFlyerPDF from '../DBTMFGFlyer.pdf';
+import AdultSkills from '../adult_dbt_skills.png';
 
 const FlyerImage = styled.img`
   width: 100%;
@@ -132,15 +131,13 @@ export default function Group() {
   return (
     <Container>
       <FlyerImage
-        src={GroupFlyer}
-        srcSet={`${GroupFlyer} 1x, ${GroupFlyer} 2x`}
+        src={AdultSkills}
+        srcSet={`${AdultSkills} 1x, ${AdultSkills} 2x`}
         sizes="(max-width: 600px) 100vw, 800px"
         alt="Group Flyer"
         onClick={openModal}
       />
-      <StyledAnchor href={GroupFlyerPDF} download>
-        Download Flyer
-      </StyledAnchor>
+
       <Text>Contact Us Here:</Text>
       <form onSubmit={onSubmit}>
         <InputContainer>
@@ -174,7 +171,7 @@ export default function Group() {
       </form>
       {isModalOpen && (
         <Modal onClick={closeModal}>
-          <ModalImage src={GroupFlyer} alt="Group Flyer" />
+          <ModalImage src={AdultSkills} alt="Adult DBT Flyer" />
         </Modal>
       )}
     </Container>

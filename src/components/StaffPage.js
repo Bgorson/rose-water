@@ -13,7 +13,7 @@ import Ashley from '../ashley.jpg';
 import DBT from '../dbt_badge.png';
 import Brandon from '../Brandon1.jpg';
 import Jacob from '../jacob.jpg';
-import Annie from '../annie.png';
+import Annie from '../annie.jpg';
 import Samantha from '../Samantha.jpeg';
 import Talia from '../talia.jpg';
 import Julia from '../julia.jpg';

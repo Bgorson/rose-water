@@ -7,13 +7,13 @@
         xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
 
     <url>
-        <loc>http://www.rosewatterchicounseling.com/</loc>
+        <loc>https://www.rosewatterchicounseling.com/</loc>
     </url>
     <url>
-        <loc>http://www.rosewatterchicounseling.com/about</loc>
+        <loc>https://www.rosewatterchicounseling.com/about</loc>
     </url>
     <url>
-        <loc>http://www.rosewatterchicounseling.com/appointment</loc>
+        <loc>https://www.rosewatterchicounseling.com/appointment</loc>
     </url>
     <url>
         <loc>https://www.rosewatterchicounseling.com/about/rachel</loc>
@@ -57,19 +57,19 @@
     <url>
         <loc>https://www.rosewatterchicounseling.com/locations</loc>
     </url>
-        <url>
+    <url>
         <loc>https://www.rosewatterchicounseling.com/individual-therapy</loc>
     </url>
-            <url>
+    <url>
         <loc>https://www.rosewatterchicounseling.com/couples-therapy</loc>
     </url>
     <url>
         <loc>https://www.rosewatterchicounseling.com/consultation-supervision</loc>
     </url>
-     <url>
+    <url>
         <loc>https://www.rosewatterchicounseling.com/support-group</loc>
     </url>
-     <url>
+    <url>
         <loc>https://www.rosewatterchicounseling.com/mental-health-workshops</loc>
     </url>
 

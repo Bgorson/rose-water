@@ -15,12 +15,23 @@ import { Container } from '@mui/material';
 import Home from './components/Home';
 import AdultDbt from './components/AdultDbt';
 import Popup from './components/Popup'; // Import the Popup component
+import ContentBlog from './components/ContentBlog';
+import { Helmet } from 'react-helmet';
 
 const Main = styled.div`
   // background-color: #fbede6;
 `;
 
 function App() {
+  console.log(`
+▗▄▄▖  ▗▄▖  ▗▄▄▖▗▄▄▄▖▗▖ ▗▖ ▗▄▖▗▄▄▄▖▗▄▄▄▖▗▄▄▄▖▗▄▄▖ 
+▐▌ ▐▌▐▌ ▐▌▐▌   ▐▌   ▐▌ ▐▌▐▌ ▐▌ █    █  ▐▌   ▐▌ ▐▌
+▐▛▀▚▖▐▌ ▐▌ ▝▀▚▖▐▛▀▀▘▐▌ ▐▌▐▛▀▜▌ █    █  ▐▛▀▀▘▐▛▀▚▖
+▐▌ ▐▌▝▚▄▞▘▗▄▄▞▘▐▙▄▄▖▐▙█▟▌▐▌ ▐▌ █    █  ▐▙▄▄▖▐▌ ▐▌
+                                                 
+                                                 
+                                      
+    Email: brandon@rosewatterchicounseling.com with any issues.`);
   const [showPopup, setShowPopup] = useState(false);
   const location = useLocation();
 
@@ -38,6 +49,36 @@ function App() {
 
   return (
     <div>
+      <Helmet>
+        <link rel="manifest" href="/manifest.json" />
+        <link rel="icon" href="/favicon.ico" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#000000" />
+        <meta
+          name="description"
+          content="Rachel Nitzarim PhD Chicago Mental Health Therapy"
+        />
+        <meta property="og:site_name" content="Rosewatter Chicago Counseling" />
+        <meta property="og:title" content="Rosewatter" />
+        <meta
+          property="og:url"
+          content="http://www.rosewatterchicounseling.com"
+        />
+        <meta property="og:type" content="website" />
+        <meta
+          name="keywords"
+          content="Rachel Nitzarim, mental health, therapy, rosewatter counseling, chicago, DBT-Linehan
+  Board of Certification"
+        />
+        <meta itemprop="name" content="Rosewatter Chicago Counseling" />
+        <meta itemprop="url" content="http://www.rosewatterchicounseling.com" />
+        <meta
+          name="google-site-verification"
+          content="BPqPfpBjzyOdMBaCa9YnxrTeYgLgQBcOQkhX3Ccwq1U"
+        />
+        <title>Rosewatter Chicago Counseling</title>
+      </Helmet>
       <NavbarComponent className={'navbar'} />
       <Main>
         {showPopup && <Popup onClose={handleClosePopup} />}
@@ -78,7 +119,7 @@ function App() {
             }
           />
           <Route
-            path="group"
+            path="groupDBT"
             element={
               <Container
                 className={'container'}
@@ -98,6 +139,66 @@ function App() {
                 style={{ height: '100vh' }}
               >
                 <AdultDbt />
+              </Container>
+            }
+          />
+          <Route
+            path="individual-therapy"
+            element={
+              <Container
+                className={'container'}
+                maxWidth="lg"
+                style={{ height: '100vh' }}
+              >
+                <ContentBlog type="individual" />
+              </Container>
+            }
+          />
+          <Route
+            path="couples-therapy"
+            element={
+              <Container
+                className={'container'}
+                maxWidth="lg"
+                style={{ height: '100vh' }}
+              >
+                <ContentBlog type="couples" />
+              </Container>
+            }
+          />
+          <Route
+            path="consultation-supervision"
+            element={
+              <Container
+                className={'container'}
+                maxWidth="lg"
+                style={{ height: '100vh' }}
+              >
+                <ContentBlog type="consultation" />
+              </Container>
+            }
+          />
+          <Route
+            path="support-group"
+            element={
+              <Container
+                className={'container'}
+                maxWidth="lg"
+                style={{ height: '100vh' }}
+              >
+                <ContentBlog type="group" />
+              </Container>
+            }
+          />
+          <Route
+            path="mental-health-workshops"
+            element={
+              <Container
+                className={'container'}
+                maxWidth="lg"
+                style={{ height: '100vh' }}
+              >
+                <ContentBlog type="workshop" />
               </Container>
             }
           />

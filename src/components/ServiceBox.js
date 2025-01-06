@@ -1,6 +1,6 @@
-import styled from "styled-components";
-import { Link } from "react-router-dom";
-import React from "react";
+import styled from 'styled-components';
+import { Link } from 'react-router-dom';
+import React from 'react';
 const Title = styled.h1`
   text-align: center;
 `;
@@ -12,7 +12,9 @@ const CardContainer = styled.div`
 `;
 
 export const Card = styled.div`
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
 `;
 
 export const Image = styled.img`

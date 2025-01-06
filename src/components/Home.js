@@ -12,6 +12,7 @@ import Consultation from '../consultation.jpg';
 import GroupFlyer from '../Group_Thumbnail.png';
 import GroupFlyerPDF from '../DBTMFGFlyer.pdf';
 import AdultSkills from '../adult_dbt_skills.png';
+import { colors } from '../utils/colors';
 
 const CardWrapper = styled.div`
   display: flex;
@@ -27,11 +28,32 @@ const CardWrapper = styled.div`
     margin-bottom: 0;
   }
 `;
+const SectionTitle = styled.h1`
+  font-size: 2.5em;
+  margin: 1em 0;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  background: linear-gradient(
+    to right,
+    ${colors.lightGreen},
+    ${colors.green},
+    ${colors.darkerGreen}
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+`;
+
+const SubTitle = styled.p`
+  font-size: 1.2em;
+  color: #666;
+  margin-bottom: 2em;
+`;
 
 const services = [
   {
     title: 'Individual Therapy',
-
+    link: '/individual-therapy',
     image: IndividualService,
     description:
       'Individual psychotherapy is a form of mental health treatment in which an individual meets with a trained clinician one-on-one to discuss their thoughts, feelings and behaviors. We do not believe that there is a one-sized-fits-all approach to individual work. Rather, each individual comes to therapy with a particular set of concerns or experiences that they would like to process and understand. We work collaboratively to formulate goals, informed by a theoretical framework that we will provide, to move towards meaningful change together.',
@@ -39,21 +61,21 @@ const services = [
 
   {
     title: 'Couples Therapy',
-
+    link: '/couples-therapy',
     image: CouplesService,
     description:
       'Couples therapy is a form of mental health treatment designed to help couples understand their relationship. Sometimes couples come to counseling to improve their relationship, other times couples come to counseling to end their relationship, and everything in-between. During couples therapy, we will help you understand the patterns and issues that are underlying the concerns or experiences in your relationship. We will work with you to better understand each other and to develop strategies to improve communication, resolve conflicts, and build a stronger and more satisfying relationship.',
   },
   {
     title: 'Mental Health Workshops',
-
+    link: '/mental-health-workshops',
     image: WorkShop,
     description:
       'Mental health workshops are training sessions that are designed to provide healthcare professionals and general populations with the knowledge, skills and tools they need to effectively address and manage mental health needs of themselves and the populations they serve. we have particular experience in providing training on social class, emotion regulation skills, healthy relationships, supervision of psychologists-in-training, conflict resolution and mindfulness training/technique.',
   },
   {
     title: 'Consultation/Supervision',
-
+    link: '/consultation-supervision',
     image: Consultation,
     description:
       'Consultation services and clinical supervision are also available. Please inquire for more information.',
@@ -61,7 +83,7 @@ const services = [
   {
     title: 'DBT Multifamily Skills Group',
     image: GroupFlyer,
-    link: '/group',
+    link: '/groupDBT',
     pdf: GroupFlyerPDF,
     description: 'Click for more information about our DBT family group!',
   },
@@ -79,7 +101,12 @@ export default function Home() {
     <div style={{ textAlign: 'center' }} id="home">
       <Hero />
       <AboutMeHome />
-      <CardWrapper id={'services'}>
+      <div id="services"></div>
+      <br />
+      <br />
+      <SectionTitle>Clinical Services Offered</SectionTitle>
+      <SubTitle>Click On An Image To Learn More</SubTitle>
+      <CardWrapper>
         {services.map((service) => (
           <ServiceBox service={service} />
         ))}

@@ -1,19 +1,19 @@
-import React from "react";
-import styled from "styled-components";
-import Map from "./Map";
-import { useState } from "react";
-import emailjs from "@emailjs/browser";
-import { colors } from "../utils/colors";
-import Logo from "../../src/simple_logo.png";
-import { Link } from "react-router-dom";
-
-const blue = "#3498db";
-const blueHover = "#2980b9";
+import React from 'react';
+import styled from 'styled-components';
+import Map from './Map';
+import { useState } from 'react';
+import emailjs from '@emailjs/browser';
+import { colors } from '../utils/colors';
+import Logo from '../../src/simple_logo.png';
+import { Link } from 'react-router-dom';
+import InstagramLink from './Instagram';
+const blue = '#3498db';
+const blueHover = '#2980b9';
 // $cloud: #ecf0f1;
 // $cloud--hover: #bdc3c7;
-const transition = "all 146ms ease";
-const shadow = "0 30px 60px -30px rgba(0, 0, 0, .5)";
-const radius = "3px";
+const transition = 'all 146ms ease';
+const shadow = '0 30px 60px -30px rgba(0, 0, 0, .5)';
+const radius = '3px';
 const InputContainer = styled.div`
   display: flex;
   gap: 2em;
@@ -99,22 +99,28 @@ const FormContainer = styled.div`
 const ContactTags = styled.a`
   color: ${colors.grey};
 `;
-const ContactText = styled.p`
+const ContactText = styled.div`
   text-align: center;
+  display: flex;
   font-size: 24px;
+  align-items: center;
+  justify-content: center;
 `;
 const LogoImage = styled.img`
   height: 300px;
   margin: -2em 0;
 `;
 export default function Footer() {
+  // eslint-disable-next-line no-undef
   const service = process.env.REACT_APP_SERVICE_EMAIL;
+  // eslint-disable-next-line no-undef
   const template = process.env.REACT_APP_TEMPLATE_EMAIL;
+  // eslint-disable-next-line no-undef
   const publicKey = process.env.REACT_APP_PUBLIC_EMAIL;
   const [toSend, setToSend] = React.useState({
-    from_name: "",
-    from_email: "",
-    message: "",
+    from_name: '',
+    from_email: '',
+    message: '',
   });
   const onSubmit = (e) => {
     e.preventDefault();
@@ -125,11 +131,12 @@ export default function Footer() {
       })
       .then(() => {
         setToSend({
-          from_name: "",
-          from_email: "",
-          message: "",
+          from_name: '',
+          from_email: '',
+          message: '',
         });
-        alert("Thank you for your message and we will be in contact soon. ");
+        // eslint-disable-next-line no-undef
+        alert('Thank you for your message and we will be in contact soon. ');
       });
   };
   const handleChange = (e) => {
@@ -140,7 +147,7 @@ export default function Footer() {
     <>
       <FormContainer>
         <h2>Please Contact Us Using the Form Below</h2>
-        <div style={{ padding: "2em" }}>
+        <div style={{ padding: '2em' }}>
           <form onSubmit={onSubmit}>
             <InputContainer>
               <InputBlock
@@ -161,7 +168,7 @@ export default function Footer() {
             </InputContainer>
             <MessageArea>
               <textarea
-                style={{ borderRadius: "16px", padding: "1em" }}
+                style={{ borderRadius: '16px', padding: '1em' }}
                 type="text"
                 name="message"
                 placeholder="Your message"
@@ -189,7 +196,10 @@ export default function Footer() {
               </ContactTags>
             </ContentText>
           </ContactCard>
-          <ContactText>Rachel Nitzarim PhD, Chicago IL</ContactText>
+          <ContactText>
+            <InstagramLink />
+            Check out our Instagram @rosewatterchicounseling
+          </ContactText>
         </Card>
       </Container>
       {/* <Link to="/admin">Admin</Link> */}

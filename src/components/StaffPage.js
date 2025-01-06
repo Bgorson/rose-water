@@ -67,6 +67,7 @@ export const staffMembers = [
     header: 'Rachel Nitzarim, Ph.D',
     blurb: `I'm Rachel Nitzarim, a licensed clinical psychologist and owner of Rosewatter Chicagoland Counseling. I have extensive clinical and training experience, and a passion for interpersonal psychotherapy, while also serving as the Director of Clinical Training, Clinical PsyD at The Chicago School, and offering a broad range of psychotherapy services, supervision, consultation, training and workshops.`,
     title: 'Owner, Licensed Clinical Psychologist',
+    email: 'rnitzarim@rosewatterchicounseling.com',
     image: Rachel,
     description1:
       'Welcome to my private practice. I am Rachel Nitzarim, a licensed clinical psychologist and the owner of Rosewatter Chicagoland Counseling.',
@@ -119,6 +120,7 @@ export const staffMembers = [
     routeName: 'sara',
     blurb: `I’m Sara Taxman, a Clinical Psychologist with a doctorate from The Chicago School, specialized in treating youth and families with emotion regulation, trauma, and behavioral issues at Rosewatter Chicagoland Counseling, while also teaching at The Chicago School and engaging in psychological assessment.`,
     header: 'Sara Taxman, PsyD',
+    email: 'staxman@rosewatterchicounseling.com',
     title: 'Licensed Clinical Psychologist',
     image: Sara,
     description1: `My name is Sara Taxman and I received my doctorate in Clinical
@@ -155,6 +157,7 @@ export const staffMembers = [
     routeName: 'sarah',
     blurb: `I’m Sarah Jeziorski, a Licensed Clinical Professional Counselor and Registered Art Therapist at Rosewatter Counseling, specializing in trauma-informed, relational therapy for emerging adults and adults. I integrate talk therapy, creative arts, and EMDR (somatic trauma re-processing) to support personal growth and healing.`,
     header: 'Sarah Jeziorski, LCPC',
+    email: 'sjeziorski@rosewatterchicounseling.com',
     title: 'Licensed Professional Counselor',
     image: Sarah,
     description1: `My name is Sarah Jeziorski. I am a Licensed Clinical Professional
@@ -179,6 +182,7 @@ export const staffMembers = [
     routeName: 'elisabeth',
     blurb: `I’m Dr. Elisabeth Pratt, a Licensed Clinical Psychologist with a doctorate from The Chicago School. I specialize in trauma-focused treatment, substance misuse/early recovery, and grief processing. I work through a relational-cultural lens, incorporating evidence-based techniques and an anti-oppressive approach to empower clients and foster personal growth.`,
     header: 'Elisabeth Pratt, PsyD',
+    email: 'epratt@rosewatterchicounseling.com',
     title: 'Licensed Clinical Psychologist',
     image: Elisabeth,
     description1: `My name is Elisabeth Pratt. I received my doctorate degree in clinical
@@ -235,6 +239,7 @@ export const staffMembers = [
     id: 5,
     routeName: 'sydnie',
     header: 'Sydnie Dobkin, MA',
+    email: 'sdobkin@rosewatterchicounseling.com',
     blurb: `I’m Sydnie Dobkin, a certified DBT clinician with a Master’s from the Family Institute at Northwestern University and extensive experience in evidence-based therapies, currently providing psychotherapy at Rosewatter Chicagoland Counseling to youth and families dealing with a range of issues, while also incorporating psychodynamic theory, reiki, and yoga-informed practices into my work.`,
     title: 'Licensed Clinical Professional Counselor',
     image: Sydnie,
@@ -273,6 +278,7 @@ export const staffMembers = [
     id: 6,
     routeName: 'reagan',
     header: 'Reagan Sword, MA',
+    email: 'rsword@rosewatterchicounseling.com',
     blurb: `I’m Reagan Sword, a pre-licensed art therapist with a B.A. in Fine Art and a Master’s in Counseling: Art Therapy from Columbia College Chicago, offering integrative therapy at Rosewatter Chicagoland Counseling using a blend of CBT and art therapy to support personal growth in individuals dealing with anxiety, depression, trauma, and grief, while also focusing on expanding work with adolescents.`,
     title: 'Trainee',
     image: Reagan,
@@ -302,6 +308,7 @@ export const staffMembers = [
   {
     id: 7,
     routeName: 'nikki',
+    email: 'nsharf@rosewatterchicounseling.com',
     header: 'Nicole (Nikki) Sharf, MA',
     title: 'Trainee',
     blurb: `I’m Nicole (Nikki) Sharf, an M.A. student in Clinical Psychology at The Chicago School,  currently working towards my Doctorate and providing integrative therapy at Rosewatter Chicagoland Counseling using CBT, DBT, ACT, and other approaches to support adults with issues such as mood dysregulation, anxiety, trauma, and life transitions.`,
@@ -338,6 +345,7 @@ export const staffMembers = [
   {
     id: 8,
     routeName: 'ashley',
+    email: 'alevenson@rosewatterchicounseling.com',
     blurb: `I’m Ashley Levenson, an M.A. student in Clinical Psychology at The Chicago School and PsyD candidate, with experience in individual and group therapy, and neuropsychological assessment across diverse settings, currently providing cognitive-behavioral therapy at Rosewatter Chicagoland Counseling with a focus on anxiety, OCD, disordered eating, and health-related concerns.`,
     header: 'Ashley Levenson, MA',
     title: 'Trainee',
@@ -373,6 +381,7 @@ export const staffMembers = [
     id: 9,
     routeName: 'brandon',
     header: 'Brandon Less, MA',
+    email: 'bless@rosewatterchicounseling.com',
     blurb: `I’m Brandon Less, a doctoral (PsyD) student The Chicago School currently providing individual therapy services at Rosewatter Chicagoland Counseling to college students and young adults dealing with mood, anxiety, self-esteem, trauma, and grief concerns. My approach is rooted in trauma-informed, relational, and humanistic psychotherapy.`,
     title: 'Trainee',
     image: Brandon,
@@ -420,6 +429,7 @@ export const staffMembers = [
     id: 10,
     routeName: 'jacob',
     header: 'Jacob Sweetow, MSW',
+    email: 'jsweetow@rosewatterchicounseling.com',
     blurb: `I’m Jacob Sweetow, a psychotherapist with an MSW from the University of Chicago, specializing in emotion dysregulation and mood disorders with expertise in DBT and mindfulness-based therapies, while also enjoying triathlons, reading, and a diverse range of music.`,
     title: 'MSW',
     image: Jacob,
@@ -433,6 +443,7 @@ export const staffMembers = [
   {
     id: 11,
     routeName: 'annie',
+    email: 'agleason@rosewatterchicounseling.com',
     header: 'Annie Gleason, Operations Manager',
     blurb: `Annie Gleason is the Operations Manager at Rosewatter Chicagoland Counseling, pursuing a PhD in Industrial and Organizational Psychology while also serving as the Clinical Training Coordinator at The Chicago School, and she is passionate about problem-solving and effective organizational management.`,
     title: 'Operations Manager',
@@ -443,6 +454,7 @@ export const staffMembers = [
   {
     id: 11,
     routeName: 'samantha',
+    email: 'sfitzwater@rosewatterchicounseling.com',
     header: 'Samantha Fitzwater, BA',
     blurb: `My name is Samantha Fitzwater, and I currently am a graduate student at University of Chicago pursuing my masters in social work to become a clinical therapist working with individuals and families. As a therapist in training, my approach emphasizes mindfulness, acceptance and behavior change, empowering individuals to build healthier coping strategies and create meaningful, values-driven lives.`,
     title: 'Trainee',
@@ -471,6 +483,7 @@ continuous growth is key to both life and therapy.`,
   {
     id: 12,
     routeName: 'talia',
+    email: 'taliafr@rosewatterchicounseling.com',
     header: 'Talia Farrell-Rosen, MSW',
     blurb: `I’m Talia Farrell-Rosen, a psychotherapist with my MSW from Boston College, specializing in DBT to support adolescents, families, and adults managing emotion dysregulation, mood disorders, ADHD, autism, and anxiety.`,
     title: 'Social Worker',
@@ -483,6 +496,7 @@ continuous growth is key to both life and therapy.`,
     id: 13,
     routeName: 'julia',
     header: 'Julia Friedland, LSW',
+    email: 'jfriedland@rosewatterchicounseling.com',
     blurb: `I’m Julia Friedland, a Licensed Social Worker with a Master’s from Columbia University’s School of Social Work. I specialize in supporting both adolescents and adults managing symptoms of depression, anxiety, emotion dysregulation, and mood disorders.`,
     title: 'Licensed Social Worker',
     image: Julia,
@@ -523,6 +537,7 @@ const StaffPage = () => {
       )}
 
       <h5>{selectedStaff.title}</h5>
+      <a href={`mailto:${selectedStaff.email}`}>{selectedStaff.email}</a>
       <AboutContainer>
         <AboutImage alt={selectedStaff.header} src={selectedStaff.image} />
 

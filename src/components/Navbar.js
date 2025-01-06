@@ -121,7 +121,7 @@ export default function NavbarComponent({ ishome }) {
                   Couples Therapy
                 </Dropdown.Item>
                 <Dropdown.Item href="/support-group" onClick={handleClose}>
-                  Support Group
+                  Skill Group
                 </Dropdown.Item>
                 <Dropdown.Item
                   href="/mental-health-workshops"

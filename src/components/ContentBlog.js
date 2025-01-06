@@ -135,12 +135,12 @@ const CONTENT = [
     image: Group,
     type: 'group',
     description:
-      'Rosewatter Chicagoland Counseling offers support groups to foster connection, build skills, and promote healing. Share your journey with others. Join our group sessions now.',
-    title: 'Support Groups | Rosewatter Chicagoland Counseling',
-    header: 'Support Groups',
+      'Rosewatter Chicagoland Counseling offers skill groups to foster connection, build skills, and promote healing. Share your journey with others. Join our group sessions now.',
+    title: 'Skill Groups | Rosewatter Chicagoland Counseling',
+    header: 'Skill Groups',
     mainContent:
-      'Support Groups are a powerful service where one or two therapists guide a small group of individuals through shared experiences and personal growth. At Rosewatter, support groups provides a supportive and confidential environment where participants can openly explore their feelings, share their stories, and learn from one another.',
-    faqHeader: 'Support Groups offers many unique benefits:',
+      'Skill Groups are a powerful service where one or two therapists guide a small group of individuals through shared experiences and personal growth. At Rosewatter, skill groups provides a supportive and confidential environment where participants can openly explore their feelings, share their stories, and learn from one another.',
+    faqHeader: 'Skill Groups offers many unique benefits:',
     subHeader: [
       {
         title: 'Support and Connection',
@@ -150,7 +150,7 @@ const CONTENT = [
       {
         title: 'Shared Experiences',
         content:
-          'In support groups, members can share their own experiences. Hearing others’ stories helps participants feel understood and validated, reducing isolation and enhancing empathy within the group.',
+          'In skill groups, members can share their own experiences. Hearing others’ stories helps participants feel understood and validated, reducing isolation and enhancing empathy within the group.',
       },
       {
         title: 'Skill Building',
@@ -169,7 +169,7 @@ const CONTENT = [
       },
     ],
     endingContent:
-      'Support Groups at Rosewatter can be an effective way to address a range of issues, including anxiety, depression, relationship problems, and trauma. It allows participants to gain insight from the collective wisdom of the group, while also contributing to the growth and healing of others. For many, this shared journey fosters deep emotional support and lasting change.',
+      'Skill Groups at Rosewatter can be an effective way to address a range of issues, including anxiety, depression, relationship problems, and trauma. It allows participants to gain insight from the collective wisdom of the group, while also contributing to the growth and healing of others. For many, this shared journey fosters deep emotional support and lasting change.',
   },
   {
     image: Workshop,

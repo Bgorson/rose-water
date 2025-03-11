@@ -17,6 +17,7 @@ import Annie from '../annie.jpg';
 import Samantha from '../Samantha.jpeg';
 import Talia from '../talia.jpg';
 import Julia from '../julia.jpg';
+import Dan from '../dan.jpg';
 
 const Badge = styled.img`
   max-width: 100px;
@@ -503,6 +504,18 @@ continuous growth is key to both life and therapy.`,
     description1: `Julia Friedland is a Licensed Social Worker who brings a compassionate, skill-building approach to therapy, specializing in treating mood disorders and emotion dysregulation in adolescents and adults. She earned her Master of Social Work from Columbia University in NYC, where she focused on Dialectical Behavior Therapy (DBT) and evidence-based approaches to help clients manage life’s most difficult moments. At Rosewatter, she provides therapy to adolescents, families, and adults under the supervision of Rachel Nitzarim, Ph.D., and Lauren Barris, LCSW, a DBT-Linehan Board-Certified Clinician.`,
     description2: `Julia’s approach emphasizes meeting clients where they are, combining practical tools with genuine validation and acceptance. Her experience includes hands-on DBT work with adolescents and adults at Metro NY DBT Center, as well as providing behavioral health and social support services to adults from diverse backgrounds at a primary care facility in Washington Heights, NYC through Columbia Doctors at NewYork-Presbyterian. Julia’s holistic and person-centered approach ensures that each individual's unique needs are met with warmth and understanding. Her passion for inclusivity has also been shaped by years of involvement in the disability community in Chicagoland, fostering a welcoming, supportive space for all her clients.`,
     description3: `Outside of work, Julia enjoys traveling, exploring new music, and unwinding with a great podcast. She can often be found relaxing with her dog, Henry, or satisfying her sweet tooth by baking up a new recipe!`,
+  },
+  {
+    id: 14,
+    routeName: 'dan',
+    header: 'Dan Greenstein, Psy.D',
+    email: 'dgreenstein@rosewatterchicounseling.com',
+    blurb: `I'm Dan Greenstein, a clinical psychologist with a Doctoral Degree in Clinical Psychology from Adler University, specializing in individual therapy for young adults through adulthood using Acceptance & Commitment Therapy (ACT) and Cognitive-Behavior Therapy (CBT). My client-centered, evidence-based approach is empathetic and non-judgmental, focusing on supporting clients through a broad range of mental health concerns.`,
+    title: 'Licensed Clinical Psychologist',
+    image: Dan,
+    description1: `Join me on your journey to well-being! With years of experience supporting individuals from diverse backgrounds, I specialize in treating a wide range of mental health concerns through in-person or teletherapy in a safe, nonjudgmental space.`,
+    description2: `My approach is client-centered, evidence-based, and empathetic, focused on building trust and exploring values to create a meaningful, vibrant life. I primarily use Acceptance and Commitment Therapy (ACT) to help you overcome unhelpful thoughts and behaviors while incorporating Cognitive-Behavioral Therapy (CBT) when appropriate to address negative thinking patterns. Together, we’ll develop strategies for responding effectively to life's challenges and aligning your actions with your core values.`,
+    description3: `Before joining Rosewatter Chicagoland Counseling, I worked as a Forensic Psychologist and Drug Abuse Program Coordinator in the federal prison system. I am proud to have supervised over 80 predoctoral students during my career. Outside of counseling, I enjoy spending time with my wife and sons, roasting coffee beans, cooking, exercising, listening to classical music, and watching collegiate sports.`,
   },
 ];
 

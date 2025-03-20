@@ -1,10 +1,11 @@
-import styled from "styled-components";
-import React from "react";
-import Card from "./gallery/card/Card";
-import { staffMembers } from "../components/StaffPage";
+import styled from 'styled-components';
+import React from 'react';
+import Card from './gallery/card/Card';
+import { staffMembers } from '../components/StaffPage';
 
 const Container = styled.div`
   margin-bottom: 10em;
+  margin-top: 2em;
 `;
 
 const CardContainer = styled.div`
@@ -17,19 +18,23 @@ const CardContainer = styled.div`
 `;
 
 export default function About() {
+  const currentDate = new Date();
+  const cutoffDate = new Date('2025-03-28');
   return (
     <Container>
       <CardContainer>
-        {staffMembers.map((staff) => (
-          <Card
-            key={staff.id}
-            image={staff.image}
-            routeName={staff.routeName}
-            title={staff.header}
-            description={staff.title}
-            blurb={staff.blurb}
-          />
-        ))}
+        {staffMembers
+          .filter((staff) => !(staff.id === 4 && currentDate > cutoffDate))
+          .map((staff) => (
+            <Card
+              key={staff.id}
+              image={staff.image}
+              routeName={staff.routeName}
+              title={staff.header}
+              description={staff.title}
+              blurb={staff.blurb}
+            />
+          ))}
       </CardContainer>
     </Container>
   );

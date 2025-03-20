@@ -18,6 +18,7 @@ import Samantha from '../Samantha.jpeg';
 import Talia from '../talia.jpg';
 import Julia from '../julia.jpg';
 import Dan from '../dan.jpg';
+import Revan from '../revan.jpg';
 
 const Badge = styled.img`
   max-width: 100px;
@@ -67,7 +68,7 @@ export const staffMembers = [
     routeName: 'rachel',
     header: 'Rachel Nitzarim, Ph.D',
     blurb: `I'm Rachel Nitzarim, a licensed clinical psychologist and owner of Rosewatter Chicagoland Counseling. I have extensive clinical and training experience, and a passion for interpersonal psychotherapy, while also serving as the Director of Clinical Training, Clinical PsyD at The Chicago School, and offering a broad range of psychotherapy services, supervision, consultation, training and workshops.`,
-    title: 'Owner, Licensed Clinical Psychologist',
+    title: 'Practice Owner',
     email: 'rnitzarim@rosewatterchicounseling.com',
     image: Rachel,
     description1:
@@ -115,14 +116,13 @@ export const staffMembers = [
           and tending to my mini zoo consisting of one turtle, one talkative
           parrot and three elderly doggies.`,
   },
-
   {
     id: 2,
     routeName: 'sara',
     blurb: `I’m Sara Taxman, a Clinical Psychologist with a doctorate from The Chicago School, specialized in treating youth and families with emotion regulation, trauma, and behavioral issues at Rosewatter Chicagoland Counseling, while also teaching at The Chicago School and engaging in psychological assessment.`,
     header: 'Sara Taxman, PsyD',
     email: 'staxman@rosewatterchicounseling.com',
-    title: 'Licensed Clinical Psychologist',
+    title: 'Clinical Director',
     image: Sara,
     description1: `My name is Sara Taxman and I received my doctorate in Clinical
           Psychology from The Chicago School and completed my American
@@ -152,6 +152,45 @@ export const staffMembers = [
           of the therapy room. In my free time, I love to play pickleball,
           practice yoga, and travel. I also love Taylor Swift and the Dave
           Matthews Band!`,
+  },
+  {
+    id: 5,
+    routeName: 'sydnie',
+    header: 'Sydnie Dobkin, MA',
+    email: 'sdobkin@rosewatterchicounseling.com',
+    blurb: `I’m Sydnie Dobkin, a certified DBT clinician with a Master’s from the Family Institute at Northwestern University and extensive experience in evidence-based therapies, currently providing psychotherapy at Rosewatter Chicagoland Counseling to youth and families dealing with a range of issues, while also incorporating psychodynamic theory, reiki, and yoga-informed practices into my work.`,
+    title: 'DBT Director',
+    image: Sydnie,
+    badge: DBT,
+    description1: `My name is Sydnie Dobkin and I received my Masters in Counseling from
+          the Family Institute at Northwestern University. I am a DBT-Linehan
+          Board of Certification, Certified Clinician™ and I have almost a
+          decade of experience providing comprehensive and adherent DBT. I then
+          completed my post-graduate fellowship at The Family Institute at
+          Northwestern University on the Mindfulness and Behavioral Therapies
+          Team. Following The Family Institute, I served as the Director of
+          Adolescent DBT at Great Lakes Therapy Center, a DBT-Linehan Certified
+          Program. Today, I continue to work with families and parents through a
+          behavioral lens.`,
+    description2: `Currently, I am working at Rosewatter Chicagoland Counseling providing
+          psychotherapy to youth, young adults, and families with emotion
+          regulation difficulties, eating disorders, trauma, addiction,
+          suicidality, and self-injurious behaviors. I have comprehensive
+          training and experience using numerous evidence-based therapies,
+          including Dialectical Behavioral Therapy (DBT), Radically Open
+          Dialectical Behavioral Therapy (RODBT), Dialectical Behavioral Therapy
+          Prolonged Exposure (DBT PE), Supportive Parenting for Anxious
+          Childhood Emotions (SPACE), Cognitive Behavioral Therapy (CBT), and
+          Trauma Focused Cognitive Behavioral Therapy (TF CBT). In addition to
+          evidence-based practices, I am also trained in psychodynamic theory,
+          reiki, and yoga-informed psychotherapy.`,
+    description3: `My primary goal is to provide behaviorally driven therapeutic care to
+          clinically and culturally diverse adolescents and young adults. I want
+          to support my clients and help them generalize their skills outside of
+          the therapy room. In my free time, I love to travel, snuggle with my
+          dog Harold, and scope out the best places to eat sushi. I also love
+          Taylor Swift, The 1975, and Harry Styles! You can find me reading YA
+          novels, watching (maybe too much) television, and collecting crystals.`,
   },
   {
     id: 3,
@@ -235,45 +274,6 @@ export const staffMembers = [
           restaurants, spending time with friends and family, reading (get ready
           for book recommendations!), live music, and exploring creative
           outlets.`,
-  },
-  {
-    id: 5,
-    routeName: 'sydnie',
-    header: 'Sydnie Dobkin, MA',
-    email: 'sdobkin@rosewatterchicounseling.com',
-    blurb: `I’m Sydnie Dobkin, a certified DBT clinician with a Master’s from the Family Institute at Northwestern University and extensive experience in evidence-based therapies, currently providing psychotherapy at Rosewatter Chicagoland Counseling to youth and families dealing with a range of issues, while also incorporating psychodynamic theory, reiki, and yoga-informed practices into my work.`,
-    title: 'Licensed Clinical Professional Counselor',
-    image: Sydnie,
-    badge: DBT,
-    description1: `My name is Sydnie Dobkin and I received my Masters in Counseling from
-          the Family Institute at Northwestern University. I am a DBT-Linehan
-          Board of Certification, Certified Clinician™ and I have almost a
-          decade of experience providing comprehensive and adherent DBT. I then
-          completed my post-graduate fellowship at The Family Institute at
-          Northwestern University on the Mindfulness and Behavioral Therapies
-          Team. Following The Family Institute, I served as the Director of
-          Adolescent DBT at Great Lakes Therapy Center, a DBT-Linehan Certified
-          Program. Today, I continue to work with families and parents through a
-          behavioral lens.`,
-    description2: `Currently, I am working at Rosewatter Chicagoland Counseling providing
-          psychotherapy to youth, young adults, and families with emotion
-          regulation difficulties, eating disorders, trauma, addiction,
-          suicidality, and self-injurious behaviors. I have comprehensive
-          training and experience using numerous evidence-based therapies,
-          including Dialectical Behavioral Therapy (DBT), Radically Open
-          Dialectical Behavioral Therapy (RODBT), Dialectical Behavioral Therapy
-          Prolonged Exposure (DBT PE), Supportive Parenting for Anxious
-          Childhood Emotions (SPACE), Cognitive Behavioral Therapy (CBT), and
-          Trauma Focused Cognitive Behavioral Therapy (TF CBT). In addition to
-          evidence-based practices, I am also trained in psychodynamic theory,
-          reiki, and yoga-informed psychotherapy.`,
-    description3: `My primary goal is to provide behaviorally driven therapeutic care to
-          clinically and culturally diverse adolescents and young adults. I want
-          to support my clients and help them generalize their skills outside of
-          the therapy room. In my free time, I love to travel, snuggle with my
-          dog Harold, and scope out the best places to eat sushi. I also love
-          Taylor Swift, The 1975, and Harry Styles! You can find me reading YA
-          novels, watching (maybe too much) television, and collecting crystals.`,
   },
   {
     id: 6,
@@ -517,6 +517,84 @@ continuous growth is key to both life and therapy.`,
     description2: `My approach is client-centered, evidence-based, and empathetic, focused on building trust and exploring values to create a meaningful, vibrant life. I primarily use Acceptance and Commitment Therapy (ACT) to help you overcome unhelpful thoughts and behaviors while incorporating Cognitive-Behavioral Therapy (CBT) when appropriate to address negative thinking patterns. Together, we’ll develop strategies for responding effectively to life's challenges and aligning your actions with your core values.`,
     description3: `Before joining Rosewatter Chicagoland Counseling, I worked as a Forensic Psychologist and Drug Abuse Program Coordinator in the federal prison system. I am proud to have supervised over 80 predoctoral students during my career. Outside of counseling, I enjoy spending time with my wife and sons, roasting coffee beans, cooking, exercising, listening to classical music, and watching collegiate sports.`,
   },
+  {
+    id: 15,
+    routeName: 'revan',
+    header: 'Révan Lowe-Watkins, LSW',
+    email: 'rlwatkins@rosewatterchicounseling.com',
+    blurb: `I’m Révan (pronounced Raven), a Licensed Social Worker with a specialization in mental health
+from Loyola University Chicago. I have experience working alongside individuals across the
+lifespan. At Rosewatter, I provide therapeutic support–with a focus on young adults and adults
+looking to cultivate self-trust, emotional balance, and relief from anxiety and life’s
+transitions–among other challenges.`,
+    title: 'Licensed Social Worker',
+    image: Revan,
+    description1: `My approach to therapy is holistic and integrative—blending evidence-based modalities like
+Internal Family Systems (Parts Work), and CBT with mindfulness, somatic awareness, and
+energy-based practices. My goal is to create a space where healing isn’t just about coping but
+about transformation—helping you break unhelpful patterns, reconnect with yourself, and move
+toward a more aligned, empowered life. At Rosewatter, I provide therapy to individuals across
+the lifespan with a focus on young adults and adults under the supervision of Rachel Nitzarim,
+Ph.D., and MC Chase, LCSW.`,
+    description2: `As a therapist, I create a space where you feel truly seen, heard, and supported. My passion
+lies in helping individuals live a life filled with self-acceptance, authenticity and well-being.`,
+    description3: `With a background as a medical social worker specializing in mental health, I bring a deep
+understanding of emotional well-being while balancing an approach that is action-oriented and
+empowering. My experience includes working one-on-one with clients in both clinical and
+coaching settings, as well as being a Reiki Healing Practitioner, blending traditional therapeutic
+methods with mindset work, self-exploration, and tools for lasting change.`,
+    description4: `My approach is warm yet direct, intuitive yet structured. I believe in collaboration—you are the
+expert in your life, and I’m here to guide, challenge (as appropriate), and champion you along
+the way. In our sessions, you can expect a mix of deep introspection, practical strategies, and a
+supportive space to unpack and process what’s coming up for you. I believe every person that I
+work with is inherently enough, that there is nothing to be “fixed,” and that you have all of the
+tools within to thrive. I also value and honor the impact mental health can have individually,
+interpersonally, and within our society as a whole. I do not take for granted my role in supporting
+you in navigating your internal and external world.`,
+    description5: `I am dedicated to helping individuals navigate anxiety, identity development, life transitions,
+emotional regulation, grief and loss, systemic and personal-trauma. I specialize in working with
+clients from diverse---intersectional backgrounds—who are looking to navigate patterns that
+may be holding them back and develop new ways of moving forward.`,
+    description6Custom: () => (
+      <b>Some of the areas I support clients with include:</b>
+    ),
+    description7Custom: () => (
+      <ul>
+        <li>Anxiety & stress management</li>
+        <li>Building self-trust & confidence</li>
+        <li>
+          Navigating life transitions (career, relationships, major changes)
+        </li>
+        <li>Perfectionism, people-pleasing & setting boundaries</li>
+        <li>Healing from past experiences &amp; breaking unhelpful patterns</li>
+        <li>Managing overwhelm &amp; finding balance in daily life</li>
+        <li>Processing emotions &amp; deepening self-awareness</li>
+      </ul>
+    ),
+    description8: `Therapy with me is not just about coping—it’s about transformation. If you're ready to gain tools,
+feel empowered, and move forward with clarity, I’d love to support you.`,
+    description9Custom: () => <b> Cool Things to know about me:</b>,
+    description10Custom: () => (
+      <ul>
+        <li>I love tarot and astrology</li>
+        <li>I think I’m funny and can be silly–A kid at heart!</li>
+        <li>I love the water and jogging near the beach/soaking up the sun</li>
+        <li>
+          I am part Jamaican and love listening to dancehall and afrobeats
+        </li>
+        <li>
+          I love animals–especially dogs (shoutout to my dog Gracie and cat
+          Romero!)
+        </li>
+        <li>My favorite flowers are fuschia roses and sunflowers</li>
+        <li>
+          I am a reiki practitioner–an ancient Japanese energy healing practice
+        </li>
+        <li>Big foodie</li>
+        <li>Avid luxury coffee shop goer</li>
+      </ul>
+    ),
+  },
 ];
 
 const StaffPage = () => {
@@ -574,10 +652,30 @@ const StaffPage = () => {
           {selectedStaff.description6Custom &&
             selectedStaff.description6Custom()}
         </Description>
-        <Description>{selectedStaff.description6}</Description>
-        <Description>{selectedStaff.description7}</Description>
-        <Description>{selectedStaff.description8}</Description>
-        <Description>{selectedStaff.description9}</Description>
+        <Description>
+          {selectedStaff.description7Custom &&
+            selectedStaff.description7Custom()}
+        </Description>
+        {selectedStaff.description6 && (
+          <Description>{selectedStaff.description6}</Description>
+        )}
+        {selectedStaff.description7 && (
+          <Description>{selectedStaff.description7}</Description>
+        )}
+        {selectedStaff.description8 && (
+          <Description>{selectedStaff.description8}</Description>
+        )}
+        {selectedStaff.description9 && (
+          <Description>{selectedStaff.description9}</Description>
+        )}
+        <Description>
+          {selectedStaff.description9Custom &&
+            selectedStaff.description9Custom()}
+        </Description>
+        <Description>
+          {selectedStaff.description10Custom &&
+            selectedStaff.description10Custom()}
+        </Description>
       </AboutContainer>
     </Container>
   );

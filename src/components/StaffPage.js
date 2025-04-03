@@ -156,7 +156,7 @@ export const staffMembers = [
   {
     id: 5,
     routeName: 'sydnie',
-    header: 'Sydnie Dobkin, MA',
+    header: 'Sydnie Dobkin, LCPC',
     email: 'sdobkin@rosewatterchicounseling.com',
     blurb: `I’m Sydnie Dobkin, a certified DBT clinician with a Master’s from the Family Institute at Northwestern University and extensive experience in evidence-based therapies, currently providing psychotherapy at Rosewatter Chicagoland Counseling to youth and families dealing with a range of issues, while also incorporating psychodynamic theory, reiki, and yoga-informed practices into my work.`,
     title: 'DBT Director',

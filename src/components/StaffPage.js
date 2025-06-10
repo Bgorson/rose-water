@@ -8,17 +8,15 @@ import Sarah from '../sarah.jpeg';
 import Elisabeth from '../elisabeth.jpeg';
 import Sydnie from '../Sydnie_Dobkin.jpg';
 import Reagan from '../r_sword.jpeg';
-import Nikki from '../nikki.jpg';
 import Ashley from '../ashley.jpg';
 import DBT from '../dbt_badge.png';
-import Brandon from '../Brandon1.jpg';
 import Jacob from '../jacob.jpg';
 import Annie from '../annie.jpg';
 import Samantha from '../Samantha.jpeg';
 import Talia from '../talia.jpg';
 import Julia from '../julia.jpg';
 import Dan from '../dan.jpg';
-import Revan from '../revan.jpg';
+import Isabel from '../Isabel.jpg';
 
 const Badge = styled.img`
   max-width: 100px;
@@ -307,43 +305,6 @@ export const staffMembers = [
           help me stay balanced and energized, so I can best support my clients!`,
   },
   {
-    id: 7,
-    routeName: 'nikki',
-    email: 'nsharf@rosewatterchicounseling.com',
-    header: 'Nicole (Nikki) Sharf, MA',
-    title: 'Trainee',
-    blurb: `I’m Nicole (Nikki) Sharf, an M.A. student in Clinical Psychology at The Chicago School,  currently working towards my Doctorate and providing integrative therapy at Rosewatter Chicagoland Counseling using CBT, DBT, ACT, and other approaches to support adults with issues such as mood dysregulation, anxiety, trauma, and life transitions.`,
-    image: Nikki,
-    description1: `My name is Nicole (Nikki) Sharf, M.A. I received my Bachelor of
-          Science in Psychology from the University of Florida and my Master’s
-          in Clinical Psychology from The Chicago School. I am currently working
-          towards my Doctorate in Clinical Psychology. Over the last few years,
-          I have had the opportunity to work with adults across a variety of
-          clinical settings, including private practice, outpatient hospitals,
-          integrated primary care, inpatient rehabilitation, and residential
-          care. I have training in individual and group therapy, and
-          psychological and neuropsychological assessments. While at Rosewatter
-          Chicagoland Counseling, I will be primarily supervised by Dr.
-          Elisabeth Pratt.`,
-    description2: `My therapeutic approach is integrative, drawing from evidence-based
-          approaches like CBT, DBT, and ACT, as well as psychodynamic,
-          humanistic, and positive psychology. I strive to incorporate warmth,
-          humor, curiosity, and creativity in the therapy room to help clients
-          understand the impact of past events and relationships on their
-          current thoughts, emotions, and behaviors, nurture self-compassion,
-          and find new perspectives to facilitate healing, growth, and
-          meaningful change. I especially enjoy working with adults across the
-          lifespan on issues related to mood and emotional dysregulation,
-          anxiety, depression, relationship concerns, major life transitions,
-          trauma, self-esteem and body image concerns, women’s issues, sexual
-          health concerns, adjustment to chronic illness and disability, and
-          medical conditions.`,
-    description3: `In my free time, I enjoy spending time with family and friends,
-          walking or biking by the lake, trying as many of the delicious
-          Chicagoland restaurants as I can, attending comedy shows or musicals,
-          and traveling.`,
-  },
-  {
     id: 8,
     routeName: 'ashley',
     email: 'alevenson@rosewatterchicounseling.com',
@@ -379,60 +340,12 @@ export const staffMembers = [
           and spending time with friends and family.`,
   },
   {
-    id: 9,
-    routeName: 'brandon',
-    header: 'Brandon Less, MA',
-    email: 'bless@rosewatterchicounseling.com',
-    blurb: `I’m Brandon Less, a doctoral (PsyD) student The Chicago School currently providing individual therapy services at Rosewatter Chicagoland Counseling to college students and young adults dealing with mood, anxiety, self-esteem, trauma, and grief concerns. My approach is rooted in trauma-informed, relational, and humanistic psychotherapy.`,
-    title: 'Trainee',
-    image: Brandon,
-    description1: `Hello! My name is Brandon Less. I hold a Masters in Clinical
-          Psychology from The Chicago School and am currently working towards my
-          Psy.D. During my three years of graduate training, I've provided
-          services to youth and young adults in community mental health, medical
-          clinic, and outpatient psychiatric settings. While at Rosewatter
-          Chicagoland Counseling, I will be supervised by Dr. Sara Taxman.`,
-    description2: `I'm training as a generalist, so I have experience serving people
-          holding diverse cultural identities and treating a wide range of
-          mental health issues. I enjoy working with college-aged young adults
-          experiencing mood and anxiety symptoms, self-esteem and identity
-          concerns, as well as difficulties adjusting to trauma and loss. I’ve
-          trained in trauma-informed, multicultural and feminist,
-          psychodynamic/interpersonal, and humanistic-existential models of
-          therapy. I am also passionate about mindfulness and meditation, and
-          have experience incorporating ACT, DBT, and MBCT-based skills into
-          group and individual services.`,
-    description3: `My therapy style is warm, curious, and relational. I take a humanistic
-          approach by trying to understand all the "parts" that make up who you
-          are. I often think of therapy in musical terms: together, we explore
-          the combinations of rhythm, melody, and lyrics that define your
-          authentic self. I believe we are born with an inherent sense of worth
-          and an instinctive tendency to follow our own tune and tempo. When our
-          needs and traits feel or have felt "out of sync" with caregivers,
-          friends, and society at large, we learn to judge, withhold, or alter
-          parts of ourselves, leading to suffering and disconnection. In
-          session, I focus on the relationship to support person-centered goals.
-          I affirm you as you are, join you in processing experiences, and
-          listen for opportunities to face concerns together in the moment.
-          While following your lead, I am curious about family history, cultural
-          identities, and life-goals, and can offer mindfulness-based strategies
-          to help manage stress. I'll always invite you to give feedback and
-          direct our process. My goal is to create a space that gives you what
-          you need to find more self-compassion, authenticity, meaning, and
-          stability in your life.`,
-    description4: `To do this work well means showing up as another human being ready to
-          listen. So here are some fun facts about me: I grew up in St. Paul,
-          MN; I now live in Chicago with my wife and two cats; I'm a big Chicago
-          sports fan; I like to do yoga and play tennis to decompress; and my
-          favorite flavor of ice cream is cookies and cream :)`,
-  },
-  {
     id: 10,
     routeName: 'jacob',
-    header: 'Jacob Sweetow, MSW',
+    header: 'Jacob Sweetow, LCSW',
     email: 'jsweetow@rosewatterchicounseling.com',
     blurb: `I’m Jacob Sweetow, a psychotherapist with an MSW from the University of Chicago, specializing in emotion dysregulation and mood disorders with expertise in DBT and mindfulness-based therapies, while also enjoying triathlons, reading, and a diverse range of music.`,
-    title: 'MSW',
+    title: 'LCSW',
     image: Jacob,
     description1: `Jacob Sweetow is a compassionate psychotherapist with a focus on emotion dysregulation and mood disorders. He holds a Master’s in Social Work (MSW) from the University of Chicago and is currently pursuing LCSW licensure under the supervision of Rachel Nitzarim, Ph.D.`,
     description2: `Specializing in Dialectical Behavior Therapy (DBT) and mindfulness-based DBT-informed therapy, Jacob has gained extensive experience through an internship at The Family Institute's DBT program and a DBT Fellowship at the Great Lakes Therapy Center. There, he also served as a Staff Therapist and Mindfulness Services Coordinator. His approach is deeply influenced by his personal journey with meditation, infusing his practice with mindfulness and empathy to help clients build resilience and emotional balance.`,
@@ -456,9 +369,9 @@ export const staffMembers = [
     id: 11,
     routeName: 'samantha',
     email: 'sfitzwater@rosewatterchicounseling.com',
-    header: 'Samantha Fitzwater, BA',
+    header: 'Samantha Fitzwater, DBT fellow',
     blurb: `My name is Samantha Fitzwater, and I currently am a graduate student at University of Chicago pursuing my masters in social work to become a clinical therapist working with individuals and families. As a therapist in training, my approach emphasizes mindfulness, acceptance and behavior change, empowering individuals to build healthier coping strategies and create meaningful, values-driven lives.`,
-    title: 'Trainee',
+    title: 'DBT fellow',
     image: Samantha,
     description1: `My name is Samantha Fitzwater, and I currently am a graduate student at University of Chicago
 pursuing my masters in social work to become a clinical therapist working with individuals and
@@ -516,6 +429,18 @@ continuous growth is key to both life and therapy.`,
     description1: `Join me on your journey to well-being! With years of experience supporting individuals from diverse backgrounds, I specialize in treating a wide range of mental health concerns through in-person or teletherapy in a safe, nonjudgmental space.`,
     description2: `My approach is client-centered, evidence-based, and empathetic, focused on building trust and exploring values to create a meaningful, vibrant life. I primarily use Acceptance and Commitment Therapy (ACT) to help you overcome unhelpful thoughts and behaviors while incorporating Cognitive-Behavioral Therapy (CBT) when appropriate to address negative thinking patterns. Together, we’ll develop strategies for responding effectively to life's challenges and aligning your actions with your core values.`,
     description3: `Before joining Rosewatter Chicagoland Counseling, I worked as a Forensic Psychologist and Drug Abuse Program Coordinator in the federal prison system. I am proud to have supervised over 80 predoctoral students during my career. Outside of counseling, I enjoy spending time with my wife and sons, roasting coffee beans, cooking, exercising, listening to classical music, and watching collegiate sports.`,
+  },
+  {
+    id: 15,
+    routeName: 'isabel',
+    header: 'Isabel Silverston, M.A.',
+    email: 'ISilverston@rosewatterchicounseling.com',
+    blurb: `With a warm, relational approach and a passion for supporting clients across all ages, Isabel helps individuals navigate life’s challenges with compassion, insight, and care.`,
+    title: 'Practicum Student',
+    image: Isabel,
+    description1: `My name is Isabel Silverston, M.A. I received my Bachelor of Arts in Sociology from Tufts University and my Master’s in Clinical Psychology from The Chicago School. I am currently working towards my Doctorate in Clinical Psychology. Over the last few years, I have worked with children, adolescents, and adults in a variety of clinical settings, including community mental health, private practice, and college counseling. I have experience working with clients who hold diverse cultural identities and treating a wide range of mental health issues, including anxiety, depression, emotional dysregulation, self-esteem and identity issues, challenges associated with trauma and loss, and relationship concerns. I also enjoy working with children and families, and have experience supporting them through developmental transitions, behavioral challenges, and parent-child relational difficulties. While at Rosewatter Chicagoland Counseling, I will be primarily supervised by Dr. Sara Taxman.`,
+    description2: `My therapeutic approach draws primarily from psychodynamic and relational-cultural theory while also incorporating client-centered and humanistic perspectives. I believe that relationships can be a mechanism for change, and that this starts with the therapeutic relationship. I strive to create a safe, trusting, and collaborative relationship with clients to support them in processing how their past experiences shape who they are and how they interact with others. My therapeutic style is warm, curious, and non-judgmental. I meet clients where they are in their process and tailor my work with each client to address their goals, needs, and unique identities.`,
+    description3: `In my free time, I love to cook, run by the lake, try new restaurants, travel, read, and spend time with family and friends.`,
   },
 ];
 

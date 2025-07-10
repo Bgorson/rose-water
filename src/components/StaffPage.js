@@ -12,7 +12,7 @@ import Ashley from '../ashley.jpg';
 import DBT from '../dbt_badge.png';
 import Jacob from '../jacob.jpg';
 import Annie from '../annie.jpg';
-import Samantha from '../Samantha.jpeg';
+import Samantha from '../Samantha.jpg';
 import Talia from '../talia.jpg';
 import Julia from '../julia.jpg';
 import Dan from '../dan.jpg';
@@ -369,30 +369,18 @@ export const staffMembers = [
     id: 11,
     routeName: 'samantha',
     email: 'sfitzwater@rosewatterchicounseling.com',
-    header: 'Samantha Fitzwater, DBT fellow',
-    blurb: `My name is Samantha Fitzwater, and I currently am a graduate student at University of Chicago pursuing my masters in social work to become a clinical therapist working with individuals and families. As a therapist in training, my approach emphasizes mindfulness, acceptance and behavior change, empowering individuals to build healthier coping strategies and create meaningful, values-driven lives.`,
-    title: 'DBT fellow',
+    header: 'Samantha Fitzwater, DBT Fellow LSW',
+    blurb: `I specialize in Dialectical Behavior Therapy (DBT) to help teens and adults navigate emotional struggles, self-harm, and daily stress. Using evidence-based therapies like DBT, CBT, Mindfulness, and ACT, I work with you to build coping skills, increase self-awareness, and create a more balanced life.
+
+Whether you're in crisis or seeking personal growth, therapy with me is practical, collaborative, and focused on meaningful change.
+
+Reach out today and together, we can create space for healing and growth.`,
+    title: 'DBT Fellow, LSW',
     image: Samantha,
-    description1: `My name is Samantha Fitzwater, and I currently am a graduate student at University of Chicago
-pursuing my masters in social work to become a clinical therapist working with individuals and
-families. Over the past few years, I have had the opportunity to work with children, adolescents,
-and adults across a variety of clinical settings, including outpatient psych hospitals, inpatient
-and outpatient recovery centers/rehabs, addiction treatment centers, and ABA residential
-homes.`,
-    description2: `As an intern with a strong foundation for mental health and social work, I love to specialize in
-Dialectical Behavioral Therapy (DBT) and Acceptance Commitment Therapy (ACT) to help
-clients navigate emotional and psychological challenges. My approach emphasizes
-mindfulness, acceptance, and behavior change, empowering individuals to build healthier
-coping strategies and create meaningful, values-driven lives. With experience in addictions,
-mental health, trauma, and a commitment to holistic well-being, I aim to foster resilience and
-emotional growth in every client I work with and provide a compassionate and nonjudgmental
-space for clients to explore their challenges and strengths, while learning to implement effective
-strategies for personal growth. My goal is to help individuals build resilience and improve their
-overall quality of life through collaborative, strengths-based approaches. While at Rosewatter I
-will be supervised by Sydnie Dobkin LCPC.`,
-    description3: `Outside of work I like to spend time with family and friends, be outdoors, travel, read books,
-watch movies, and learn new skills whether that’s professionally or personally, as I believe
-continuous growth is key to both life and therapy.`,
+    description1: `I’m Samantha Fitzwater, a Licensend Social Worker who specializes in Dialectical Behavior Therapy (DBT), working with teens and adults navigating intense emotions, self-harm, suicidal ideation, and the chronic stress of daily life. Many of my clients come to therapy feeling overwhelmed or stuck in patterns that no longer serve them. My goal is to help you build awareness, develop practical coping skills, and create a life that feels more balanced and fulfilling.`,
+    description2: `My approach is warm, direct, and collaborative. I use evidence-based therapies including DBT, Cognitive Behavioral Therapy (CBT), Mindfulness, and Acceptance and Commitment Therapy (ACT), tailoring each session to your unique needs and goals. Whether you're in crisis or pursuing deeper personal growth, I meet you where you are and help you take meaningful steps forward.`,
+    description3: `I focus on the balance between acceptance and change—helping you respond to emotional pain with compassion while also building new behaviors that align with your values. Therapy with me is practical, skill-based, and grounded in real connection.`,
+    description4: `If you're feeling stuck, struggling with self-harm or emotional overwhelm, or simply curious about whether therapy could help, I invite you to reach out. You don’t have to go through this alone—together, we can create space for healing, growth, and meaningful change.`,
   },
   {
     id: 12,

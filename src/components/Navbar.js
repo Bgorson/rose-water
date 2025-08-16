@@ -104,9 +104,9 @@ export default function NavbarComponent({ ishome }) {
               </Nav.Link>
             </NavItem>
             <NavItem>
-              <Nav.Link href="/career" onClick={handleClose}>
+              {/* <Nav.Link href="/career" onClick={handleClose}>
                 We're Hiring!
-              </Nav.Link>
+              </Nav.Link> */}
             </NavItem>
             <Dropdown as={NavItem}>
               <Dropdown.Toggle as={Nav.Link}>Services</Dropdown.Toggle>

@@ -81,7 +81,7 @@ function App() {
       </Helmet>
       <NavbarComponent className={'navbar'} />
       <Main>
-        {showPopup && <Popup onClose={handleClosePopup} />}
+        {/* {showPopup && <Popup onClose={handleClosePopup} />} */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about/:name" element={<StaffPage />} />

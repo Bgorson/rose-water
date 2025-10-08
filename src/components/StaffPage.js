@@ -273,37 +273,7 @@ export const staffMembers = [
           for book recommendations!), live music, and exploring creative
           outlets.`,
   },
-  {
-    id: 6,
-    routeName: 'reagan',
-    header: 'Reagan Sword, MA',
-    email: 'rsword@rosewatterchicounseling.com',
-    blurb: `I’m Reagan Sword, a pre-licensed art therapist with a B.A. in Fine Art and a Master’s in Counseling: Art Therapy from Columbia College Chicago, offering integrative therapy at Rosewatter Chicagoland Counseling using a blend of CBT and art therapy to support personal growth in individuals dealing with anxiety, depression, trauma, and grief, while also focusing on expanding work with adolescents.`,
-    title: 'Trainee',
-    image: Reagan,
-    description1: `My name is Reagan Sword, and I hold a B.A. in Fine Art from Columbia
-          College Chicago and a Master of Arts in Counseling: Art Therapy. As a
-          pre-licensed counselor and art therapist, my approach is integrative
-          and tailored to each client's unique needs. I draw from
-          strengths-based, person-centered, cognitive behavioral therapy (CBT),
-          and art therapy techniques to support individuals' personal growth.
-          While working towards my licensure at Rosewatter Chicagoland
-          Counseling, I will primarily be supervised by Sarah Jeziorski, LCPC.`,
-    description2: `My experience includes supporting clients dealing with anxiety,
-          depression, trauma, and grief. I have also worked considerably with
-          older adults who are managing a cancer diagnosis or medical condition.
-          I am particularly excited about expanding my work with adolescents, as
-          I am interested in helping young people navigate their unique
-          challenges and developmental stages.`,
-    description3: `I am passionate about assisting clients in discovering their strengths
-          and achieving their goals. My priority is to empower people to feel
-          more confident in managing life's challenges. I believe therapy is a
-          collaborative journey where you are the expert on your own life, and I
-          provide support, resources, and guidance to help you along the way.`,
-    description4: `Outside of work, I enjoy spending time with my cats, watching reality
-          TV, painting, reading, yoga, and exploring new foods. These activities
-          help me stay balanced and energized, so I can best support my clients!`,
-  },
+
   {
     id: 8,
     routeName: 'ashley',

@@ -17,6 +17,7 @@ import Talia from '../talia.jpg';
 import Julia from '../julia.jpg';
 import Dan from '../dan.jpg';
 import Isabel from '../Isabel.jpg';
+import Katherine from '../katherine.jpg';
 
 const Badge = styled.img`
   max-width: 100px;
@@ -399,6 +400,39 @@ Reach out today and together, we can create space for healing and growth.`,
     description1: `My name is Isabel Silverston, M.A. I received my Bachelor of Arts in Sociology from Tufts University and my Master’s in Clinical Psychology from The Chicago School. I am currently working towards my Doctorate in Clinical Psychology. Over the last few years, I have worked with children, adolescents, and adults in a variety of clinical settings, including community mental health, private practice, and college counseling. I have experience working with clients who hold diverse cultural identities and treating a wide range of mental health issues, including anxiety, depression, emotional dysregulation, self-esteem and identity issues, challenges associated with trauma and loss, and relationship concerns. I also enjoy working with children and families, and have experience supporting them through developmental transitions, behavioral challenges, and parent-child relational difficulties. While at Rosewatter Chicagoland Counseling, I will be primarily supervised by Dr. Sara Taxman.`,
     description2: `My therapeutic approach draws primarily from psychodynamic and relational-cultural theory while also incorporating client-centered and humanistic perspectives. I believe that relationships can be a mechanism for change, and that this starts with the therapeutic relationship. I strive to create a safe, trusting, and collaborative relationship with clients to support them in processing how their past experiences shape who they are and how they interact with others. My therapeutic style is warm, curious, and non-judgmental. I meet clients where they are in their process and tailor my work with each client to address their goals, needs, and unique identities.`,
     description3: `In my free time, I love to cook, run by the lake, try new restaurants, travel, read, and spend time with family and friends.`,
+  },
+  {
+    id: 16,
+    routeName: 'katherine',
+    header: 'Katherine Russeau, Pys.D',
+    email: 'KRusseau@rosewatterchicounseling.com',
+    blurb: `I’m Katherine Russeau, a licensed clinical psychologist dedicated to supporting people navigate
+trauma, relationship challenges, substance use, and major life transitions through humanistic,
+interpersonal, and somatic therapies. I’m also passionate about working with justice-involved
+individuals and providing comprehensive psychological evaluations.`,
+    title: 'Licensed Clinical Psychologist',
+    image: Katherine,
+    description1: `My name is Katherine Russeau, and I am a licensed clinical psychologist. I earned my Doctorate
+in Clinical Psychology from the Wisconsin School of Professional Psychology and completed my
+pre-doctoral internship and post-doctoral fellowship with the Wisconsin Department of
+Corrections, where I specialized in trauma treatment and substance misuse. Throughout my career,
+I have worked in outpatient clinics, inpatient hospitals, correctional facilities, and skilled nursing
+homes, which has shaped my passion for providing compassionate care across diverse populations
+and settings.`,
+    description2: `At Rosewatter Chicagoland Counseling, my goal is to create a collaborative and supportive space
+where clients feel safe exploring their experiences and finding meaningful paths toward change. I
+provide psychotherapy to youth and adults facing emotion regulation difficulties, trauma,
+
+addiction, suicidality, and relationship challenges. I have comprehensive training in evidence-
+based therapies, including Dialectical Behavior Therapy (DBT) and Acceptance and Commitment
+
+Therapy (ACT). In addition to therapy, I have expertise in conducting psychological and forensic
+evaluations.`,
+    description3: `I am licensed in Illinois, Wisconsin, and California, credentialed as a National Register Health
+Service Psychologist, and hold the PSYPACT credential, which allows me to provide telehealth
+services across participating states.`,
+    description4: `Outside of work, I enjoy spending time with family and friends, attending music festivals, cuddling
+with my cats, watching horror movies, and staying active outdoors.`,
   },
 ];
 

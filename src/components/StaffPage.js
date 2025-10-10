@@ -17,7 +17,7 @@ import Talia from '../talia.jpg';
 import Julia from '../julia.jpg';
 import Dan from '../dan.jpg';
 import Isabel from '../Isabel.jpg';
-import Katherine from '../katherine.jpg';
+import Katherine from '../Katherine.jpg';
 
 const Badge = styled.img`
   max-width: 100px;

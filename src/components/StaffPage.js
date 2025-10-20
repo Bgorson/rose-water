@@ -18,6 +18,7 @@ import Julia from '../julia.jpg';
 import Dan from '../dan.jpg';
 import Isabel from '../Isabel.jpg';
 import Katherine from '../Katherine.jpg';
+import Jake from '../Jake.jpeg';
 
 const Badge = styled.img`
   max-width: 100px;
@@ -36,6 +37,29 @@ const AboutImage = styled.img`
     margin: 2em auto;
   }
 `;
+
+export const ImagePlaceholder = styled.div`
+  max-width: 300px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin-bottom: 2em;
+  background: #f0f0f0;
+  border: 2px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  padding: 1em;
+  @media (max-width: 768px) {
+    max-width: 300px;
+    margin: 2em auto;
+  }
+`;
+
 const Description = styled.p``;
 const AboutContainer = styled.div`
   display: flex;
@@ -337,7 +361,7 @@ export const staffMembers = [
     description2: `I have earned my B.A. in Psychology from UW-Whitewater and an Ed.S. in Clinical Mental Health Counseling from Loyola University Chicago. I also own my own solo psychotherapy telehealth private practice in Chicago. In my free time, I am an avid consumer of the arts, awannabe yoga instructor, a Dog Mom to fur-baby Arugula, and a lover of any and all things Chicago!`,
   },
   {
-    id: 11,
+    id: 111,
     routeName: 'samantha',
     email: 'sfitzwater@rosewatterchicounseling.com',
     header: 'Samantha Fitzwater, DBT Fellow LSW',
@@ -434,6 +458,26 @@ services across participating states.`,
     description4: `Outside of work, I enjoy spending time with family and friends, attending music festivals, cuddling
 with my cats, watching horror movies, and staying active outdoors.`,
   },
+  {
+    id: 17,
+    routeName: 'jake',
+    header: "Jake O'Brien, M.A.",
+    email: 'JOBrien@rosewatterchicounseling.com',
+    blurb: `I'm Jake O'Brien, a psychotherapist with an M.A. in Clinical Psychology from Roosevelt University, experienced with individual and group therapy including trauma-informed care and emotional distress tolerance. I like to use a client-centered relational approach to provide support. I have experience working with a variety of ages and presentations, including justice-involved, unhoused, and substance use.`,
+    image: Jake,
+    description1: `I'm Jake O'Brien, a psychotherapist with an M.A. in Clinical Psychology from Roosevelt University, experienced with individual and group therapy including trauma-informed care and emotional distress tolerance. I like to use a client-centered relational approach to provide support. I have experience working with a variety of ages and presentations, including justice-involved, unhoused, and substance use.`,
+  },
+  {
+    id: 18,
+    routeName: 'alice',
+    image: null,
+    header: 'Alice Overland, M.S.W.',
+    email: 'AOverland@rosewatterchicounseling.com',
+    blurb: `My name is Alice Overland, and I am a clinical intern specializing in Dialectical Behavior Therapy (DBT) and supporting our Family Skills Group. I am currently pursuing my Master of Social Work (MSW) at the University of Chicago’s Crown Family School of Social Work, Policy, and Practice.`,
+    description1: `My clinical interests include helping individuals and families build emotional regulation skills, improve communication, and strengthen relationships. I am passionate about creating a safe, collaborative, and nonjudgmental space where clients feel supported in working toward meaningful change.`,
+    description2: `Following completion of my graduate degree, I plan to pursue licensure as a Licensed Clinical Social Worker (LCSW) and continue providing therapy to children, adolescents, and families.`,
+    description3: `In my free time, I enjoy trying out new restaurants and cafes in Chicago, running, yoga, and hanging out with friends. I also love reading, listening to Taylor Swift, and watching any reality TV show!`,
+  },
 ];
 
 const StaffPage = () => {
@@ -469,7 +513,11 @@ const StaffPage = () => {
       <h5>{selectedStaff.title}</h5>
       <a href={`mailto:${selectedStaff.email}`}>{selectedStaff.email}</a>
       <AboutContainer>
-        <AboutImage alt={selectedStaff.header} src={selectedStaff.image} />
+        {selectedStaff.image ? (
+          <AboutImage alt={selectedStaff.header} src={selectedStaff.image} />
+        ) : (
+          <ImagePlaceholder>Coming Soon</ImagePlaceholder>
+        )}
 
         <Description>{selectedStaff.description1}</Description>
         <Description>

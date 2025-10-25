@@ -19,6 +19,7 @@ import Dan from '../dan.jpg';
 import Isabel from '../Isabel.jpg';
 import Katherine from '../Katherine.jpg';
 import Jake from '../Jake.jpeg';
+import Melanie from '../Melanie.jpeg';
 
 const Badge = styled.img`
   max-width: 100px;
@@ -472,11 +473,20 @@ with my cats, watching horror movies, and staying active outdoors.`,
     routeName: 'alice',
     image: null,
     header: 'Alice Overland, M.S.W.',
-    email: 'AOverland@rosewatterchicounseling.com',
+    email: 'aoverland@rosewatterchicounseling.com',
     blurb: `My name is Alice Overland, and I am a clinical intern specializing in Dialectical Behavior Therapy (DBT) and supporting our Family Skills Group. I am currently pursuing my Master of Social Work (MSW) at the University of Chicago’s Crown Family School of Social Work, Policy, and Practice.`,
     description1: `My clinical interests include helping individuals and families build emotional regulation skills, improve communication, and strengthen relationships. I am passionate about creating a safe, collaborative, and nonjudgmental space where clients feel supported in working toward meaningful change.`,
     description2: `Following completion of my graduate degree, I plan to pursue licensure as a Licensed Clinical Social Worker (LCSW) and continue providing therapy to children, adolescents, and families.`,
     description3: `In my free time, I enjoy trying out new restaurants and cafes in Chicago, running, yoga, and hanging out with friends. I also love reading, listening to Taylor Swift, and watching any reality TV show!`,
+  },
+  {
+    id: 19,
+    routeName: 'melanie',
+    image: Melanie,
+    header: 'Melanie Umbdenstock, M.A.',
+    email: 'mumbdenstock@rosewatterchicounseling.com',
+    blurb: `I’m Melanie Umbdenstock, a Clinical Mental Health Counseling M.A. student at Northwestern University. I’m committed to providing a trauma-informed, client-centered space rooted in compassion, where individuals feel empowered and supported in working toward their mental health and wellness goals.`,
+    description1: `My name is Melanie Umbdenstock, and I am a Clinical Mental Health Counseling M.A. student at Northwestern University. I am committed to providing a trauma-informed, client-centered space rooted in compassion, where individuals feel empowered and supported in working toward their mental health and wellness goals.`,
   },
 ];
 

@@ -19,7 +19,7 @@ import Dan from '../dan.jpg';
 import Isabel from '../Isabel.jpg';
 import Katherine from '../Katherine.jpg';
 import Jake from '../Jake.jpeg';
-import Melanie from '../Melanie.jpeg';
+import Melanie from '../melanie.jpeg';
 
 const Badge = styled.img`
   max-width: 100px;

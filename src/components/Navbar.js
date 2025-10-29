@@ -143,11 +143,17 @@ export default function NavbarComponent({ ishome }) {
                 </Dropdown.Item>
               </DropdownMenu>
             </Dropdown>
-            <NavItem>
-              <Nav.Link href="/about" onClick={handleClose}>
-                About
-              </Nav.Link>
-            </NavItem>
+            <Dropdown as={NavItem}>
+              <Dropdown.Toggle as={Nav.Link}>About</Dropdown.Toggle>
+              <DropdownMenu>
+                <Dropdown.Item href="/about" onClick={handleClose}>
+                  Staff
+                </Dropdown.Item>
+                <Dropdown.Item href="/trainees" onClick={handleClose}>
+                  Trainees
+                </Dropdown.Item>
+              </DropdownMenu>
+            </Dropdown>
             <NavItem>
               <Nav.Link href="/locations" onClick={handleClose}>
                 Locations

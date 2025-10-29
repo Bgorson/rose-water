@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import styled from 'styled-components';
 import { Route, Routes, useLocation } from 'react-router-dom';
 import About from './components/About';
+import Trainees from './components/Trainees';
 import Footer from './components/Footer';
 import Career from './components/Career';
 import GroupFlyer from './components/GroupFlyer';
@@ -99,6 +100,14 @@ function App() {
             element={
               <Container className={'container'} maxWidth="lg">
                 <About />
+              </Container>
+            }
+          />
+          <Route
+            path="trainees"
+            element={
+              <Container className={'container'} maxWidth="lg">
+                <Trainees />
               </Container>
             }
           />

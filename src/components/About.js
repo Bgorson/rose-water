@@ -20,11 +20,12 @@ const CardContainer = styled.div`
 export default function About() {
   const currentDate = new Date();
   const cutoffDate = new Date('2025-03-28');
+  // Exclude staff with trainee: true from staff page
   return (
     <Container>
       <CardContainer>
         {staffMembers
-          .filter((staff) => !(staff.id === 4 && currentDate > cutoffDate))
+          .filter((staff) => !staff.trainee)
           .map((staff) => (
             <Card
               key={staff.id}

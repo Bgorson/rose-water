@@ -7,7 +7,6 @@ import Sara from '../SGT_headshot.jpg';
 import Sarah from '../sarah.jpeg';
 import Elisabeth from '../elisabeth.jpeg';
 import Sydnie from '../Sydnie_Dobkin.jpg';
-import Reagan from '../r_sword.jpeg';
 import Ashley from '../ashley.jpg';
 import DBT from '../dbt_badge.png';
 import Jacob from '../jacob.jpg';
@@ -18,6 +17,7 @@ import Julia from '../julia.jpg';
 import Dan from '../dan.jpg';
 import Isabel from '../Isabel.jpg';
 import Katherine from '../Katherine.jpg';
+import Katie from '../katie.jpeg'
 
 const Badge = styled.img`
   max-width: 100px;
@@ -217,66 +217,8 @@ export const staffMembers = [
           with Rosewatter Counseling. I look forward to working with you.`,
   },
   {
-    id: 4,
-    routeName: 'elisabeth',
-    blurb: `I’m Dr. Elisabeth Pratt, a Licensed Clinical Psychologist with a doctorate from The Chicago School. I specialize in trauma-focused treatment, substance misuse/early recovery, and grief processing. I work through a relational-cultural lens, incorporating evidence-based techniques and an anti-oppressive approach to empower clients and foster personal growth.`,
-    header: 'Elisabeth Pratt, PsyD',
-    email: 'epratt@rosewatterchicounseling.com',
-    title: 'Licensed Clinical Psychologist',
-    image: Elisabeth,
-    description1: `My name is Elisabeth Pratt. I received my doctorate degree in clinical
-          psychology from The Chicago School of Professional Psychology. I have
-          received training in a variety of settings, including a trauma-focused
-          clinic at a local Department of Veteran Affairs hospital, in private
-          practice settings with a variety of presentations, and within the
-          criminal justice system on both state and federal levels. I completed
-          my APA-accredited predoctoral internship with the Wisconsin Department
-          of Corrections, and completed my post-doctoral training here in
-          Chicago at a local private practice.`,
-    description2Custom: () => (
-      <b>
-        It takes two to speak the truth - one to speak, the other to hear.
-        -Henry David Thoreau
-      </b>
-    ),
-    description3: `Therapy requires bravery and a willingness to explore the complexities
-          of who you are. Through a warm and caring therapeutic alliance, we can
-          work together to highlight your best qualities and work toward
-          changing areas of your life that you have identified as
-          unsatisfactory. I practice through a relational-cultural lens, meaning
-          not only am I a human in the room with you, but I pay special
-          attention to the past and current relationships (on all levels of
-          society) that have had a significant influence on the development of
-          the current self. I have strong roots in anti-oppressive approaches
-          and highly value empowering my clients.`,
-    description4: `While most of our work will be unstructured, I do incorporate
-          techniques from evidence-based interventions (DBT, CPT, CBT, positive
-          psychology) to give you real skills to use outside of our sessions.
-          Our work together will not only focus on what is going wrong but will
-          also focus on what is going right. We will continue to foster and
-          develop your personal strengths that will help see you through the
-          challenges life brings your way. Together we will navigate the path
-          toward healthy relationships, self-compassion, and learn to find the
-          brightest of light in the darkest of places.`,
-    description5: `I enjoy working with adults ages 18+ and have experience with diverse
-          clientele from all walks of life. While I am open to working on a wide
-          variety of concerns, I am especially interested in trauma-focused
-          treatment, relationship concerns, mood disorders, grief and loss,
-          substance misuse, and emotional regulation.`,
-    description6Custom: () => (
-      <b>
-        “What are the words you do not yet have? What do you need to say? …
-        There are so many silences to be broken.” – Audre Lorde
-      </b>
-    ),
-    description7: `When not working, I enjoy rock climbing, hiking, trying new
-          restaurants, spending time with friends and family, reading (get ready
-          for book recommendations!), live music, and exploring creative
-          outlets.`,
-  },
-
-  {
     id: 8,
+    trainee: true,
     routeName: 'ashley',
     email: 'alevenson@rosewatterchicounseling.com',
     blurb: `I’m Ashley Levenson, an M.A. student in Clinical Psychology at The Chicago School and PsyD candidate, with experience in individual and group therapy, and neuropsychological assessment across diverse settings, currently providing cognitive-behavioral therapy at Rosewatter Chicagoland Counseling with a focus on anxiety, OCD, disordered eating, and health-related concerns.`,
@@ -391,6 +333,7 @@ Reach out today and together, we can create space for healing and growth.`,
   },
   {
     id: 15,
+    trainee: true,
     routeName: 'isabel',
     header: 'Isabel Silverston, M.A.',
     email: 'ISilverston@rosewatterchicounseling.com',
@@ -434,6 +377,21 @@ services across participating states.`,
     description4: `Outside of work, I enjoy spending time with family and friends, attending music festivals, cuddling
 with my cats, watching horror movies, and staying active outdoors.`,
   },
+  {
+
+    id: 17,
+    trainee: true,
+    routeName: 'Katie',
+    header: 'Katie Gallo, MA',
+    email: 'KGallo@rosewatterchicounseling.com',
+    blurb: `I help adults navigating anxiety, depression, and life transitions feel more grounded, connected, and whole. My approach is warm, collaborative, and relational—rooted in authenticity, empathy, and trust—to help you reconnect with your inner wisdom and move toward lasting healing.`,
+    title: 'Counseling Intern',
+    image: Katie,
+    description1: `My name is Katie Gallo, and I am a counselor-in-training at Northwestern University, working toward licensure as a professional counselor (LCPC) in Illinois. I work with adults navigating anxiety, depression, relationship challenges, and life transitions who want to feel more balanced, connected, and at home within themselves and the world around them.`,
+    description2: `I view counseling as a deeply human and relational process—one grounded in safety, authenticity, and connection. I believe that healing happens within supportive relationships where we can feel truly seen, accepted, and understood. My therapeutic style is warm, reflective, and exploratory, rooted in person-centered and psychodynamic principles. I strive to create a space where clients can bring their full, authentic selves without fear of judgment and begin to recognize their inherent worth and capacity for wholeness.`,
+    description3: `Our work together will be collaborative and flexible, moving at a pace that feels right for you. Together, we’ll explore recurring patterns, deepen emotional insight, and reconnect to your inner wisdom—supporting your growth toward greater self-understanding, alignment, and authenticity.`,
+    description4: `Outside the therapy room, I find joy in painting and exploring creative outlets, walking around the city with a good deep-dive podcast, and browsing thrift stores and farmers’ markets. My favorite way to recharge is through meaningful conversation and laughter shared with family and friends over a warm, home-cooked meal.`,
+  }
 ];
 
 const StaffPage = () => {

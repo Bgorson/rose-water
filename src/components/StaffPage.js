@@ -18,6 +18,8 @@ import Dan from '../dan.jpg';
 import Isabel from '../Isabel.jpg';
 import Katherine from '../Katherine.jpg';
 import Katie from '../katie.jpeg'
+import Jake from '../Jake.jpeg';
+import Melanie from '../melanie.jpeg';
 
 const Badge = styled.img`
   max-width: 100px;
@@ -36,6 +38,29 @@ const AboutImage = styled.img`
     margin: 2em auto;
   }
 `;
+
+export const ImagePlaceholder = styled.div`
+  max-width: 300px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin-bottom: 2em;
+  background: #f0f0f0;
+  border: 2px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  padding: 1em;
+  @media (max-width: 768px) {
+    max-width: 300px;
+    margin: 2em auto;
+  }
+`;
+
 const Description = styled.p``;
 const AboutContainer = styled.div`
   display: flex;
@@ -279,7 +304,7 @@ export const staffMembers = [
     description2: `I have earned my B.A. in Psychology from UW-Whitewater and an Ed.S. in Clinical Mental Health Counseling from Loyola University Chicago. I also own my own solo psychotherapy telehealth private practice in Chicago. In my free time, I am an avid consumer of the arts, awannabe yoga instructor, a Dog Mom to fur-baby Arugula, and a lover of any and all things Chicago!`,
   },
   {
-    id: 11,
+    id: 111,
     routeName: 'samantha',
     email: 'sfitzwater@rosewatterchicounseling.com',
     header: 'Samantha Fitzwater, DBT Fellow LSW',
@@ -379,7 +404,7 @@ with my cats, watching horror movies, and staying active outdoors.`,
   },
   {
 
-    id: 17,
+    id: 20,
     trainee: true,
     routeName: 'Katie',
     header: 'Katie Gallo, MA',
@@ -391,7 +416,38 @@ with my cats, watching horror movies, and staying active outdoors.`,
     description2: `I view counseling as a deeply human and relational process—one grounded in safety, authenticity, and connection. I believe that healing happens within supportive relationships where we can feel truly seen, accepted, and understood. My therapeutic style is warm, reflective, and exploratory, rooted in person-centered and psychodynamic principles. I strive to create a space where clients can bring their full, authentic selves without fear of judgment and begin to recognize their inherent worth and capacity for wholeness.`,
     description3: `Our work together will be collaborative and flexible, moving at a pace that feels right for you. Together, we’ll explore recurring patterns, deepen emotional insight, and reconnect to your inner wisdom—supporting your growth toward greater self-understanding, alignment, and authenticity.`,
     description4: `Outside the therapy room, I find joy in painting and exploring creative outlets, walking around the city with a good deep-dive podcast, and browsing thrift stores and farmers’ markets. My favorite way to recharge is through meaningful conversation and laughter shared with family and friends over a warm, home-cooked meal.`,
-  }
+  },
+  {
+    id: 17,
+    routeName: 'jake',
+    header: "Jake O'Brien, M.A.",
+    email: 'JOBrien@rosewatterchicounseling.com',
+    blurb: `I'm Jake O'Brien, a psychotherapist with an M.A. in Clinical Psychology from Roosevelt University, experienced with individual and group therapy including trauma-informed care and emotional distress tolerance. I like to use a client-centered relational approach to provide support. I have experience working with a variety of ages and presentations, including justice-involved, unhoused, and substance use.`,
+    image: Jake,
+    description1: `I'm Jake O'Brien, a psychotherapist with an M.A. in Clinical Psychology from Roosevelt University, experienced with individual and group therapy including trauma-informed care and emotional distress tolerance. I like to use a client-centered relational approach to provide support. I have experience working with a variety of ages and presentations, including justice-involved, unhoused, and substance use.`,
+  },
+  {
+    id: 18,
+    routeName: 'alice',
+    trainee: true,
+    image: null,
+    header: 'Alice Overland, M.S.W.',
+    email: 'aoverland@rosewatterchicounseling.com',
+    blurb: `My name is Alice Overland, and I am a clinical intern specializing in Dialectical Behavior Therapy (DBT) and supporting our Family Skills Group. I am currently pursuing my Master of Social Work (MSW) at the University of Chicago’s Crown Family School of Social Work, Policy, and Practice.`,
+    description1: `My clinical interests include helping individuals and families build emotional regulation skills, improve communication, and strengthen relationships. I am passionate about creating a safe, collaborative, and nonjudgmental space where clients feel supported in working toward meaningful change.`,
+    description2: `Following completion of my graduate degree, I plan to pursue licensure as a Licensed Clinical Social Worker (LCSW) and continue providing therapy to children, adolescents, and families.`,
+    description3: `In my free time, I enjoy trying out new restaurants and cafes in Chicago, running, yoga, and hanging out with friends. I also love reading, listening to Taylor Swift, and watching any reality TV show!`,
+  },
+  {
+    id: 19,
+    trainee: true,
+    routeName: 'melanie',
+    image: Melanie,
+    header: 'Melanie Umbdenstock, M.A.',
+    email: 'mumbdenstock@rosewatterchicounseling.com',
+    blurb: `I’m Melanie Umbdenstock, a Clinical Mental Health Counseling M.A. student at Northwestern University. I’m committed to providing a trauma-informed, client-centered space rooted in compassion, where individuals feel empowered and supported in working toward their mental health and wellness goals.`,
+    description1: `My name is Melanie Umbdenstock, and I am a Clinical Mental Health Counseling M.A. student at Northwestern University. I am committed to providing a trauma-informed, client-centered space rooted in compassion, where individuals feel empowered and supported in working toward their mental health and wellness goals.`,
+  },
 ];
 
 const StaffPage = () => {
@@ -427,7 +483,11 @@ const StaffPage = () => {
       <h5>{selectedStaff.title}</h5>
       <a href={`mailto:${selectedStaff.email}`}>{selectedStaff.email}</a>
       <AboutContainer>
-        <AboutImage alt={selectedStaff.header} src={selectedStaff.image} />
+        {selectedStaff.image ? (
+          <AboutImage alt={selectedStaff.header} src={selectedStaff.image} />
+        ) : (
+          <ImagePlaceholder>Coming Soon</ImagePlaceholder>
+        )}
 
         <Description>{selectedStaff.description1}</Description>
         <Description>

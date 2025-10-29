@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import ReactCardFlip from 'react-card-flip';
 import { Link } from 'react-router-dom';
 
+import { ImagePlaceholder } from '../../StaffPage';
+
 const CardContainer = styled.div`
   width: 300px;
   height: 500px;
@@ -83,12 +85,16 @@ const Card = ({ image, title, description, routeName, blurb }) => {
     <ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
       <CardContainer onClick={handleClick}>
         <Header>{title}</Header>
-        <Image
-          src={image}
-          srcSet={`${image}?w=300 300w, ${image}?w=600 600w, ${image}?w=900 900w`}
-          sizes="(max-width: 768px) 100vw, 300px"
-          alt={title}
-        />
+        {image ? (
+          <Image
+            src={image}
+            srcSet={`${image}?w=300 300w, ${image}?w=600 600w, ${image}?w=900 900w`}
+            sizes="(max-width: 768px) 100vw, 300px"
+            alt={title}
+          />
+        ) : (
+          <ImagePlaceholder>Coming Soon</ImagePlaceholder>
+        )}
         <TapToFlipOverlay>Tap for Bio</TapToFlipOverlay>
       </CardContainer>
 

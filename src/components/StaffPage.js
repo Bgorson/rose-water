@@ -20,6 +20,7 @@ import Katherine from '../Katherine.jpg';
 import Katie from '../katie.jpeg'
 import Jake from '../Jake.jpeg';
 import Melanie from '../melanie.jpeg';
+import Matthew from '../matt.jpg';
 
 const Badge = styled.img`
   max-width: 100px;
@@ -407,7 +408,7 @@ with my cats, watching horror movies, and staying active outdoors.`,
     id: 20,
     trainee: true,
     routeName: 'Katie',
-    header: 'Katie Gallo, MA',
+    header: 'Katie Gallo, M.A. Candidate',
     email: 'KGallo@rosewatterchicounseling.com',
     blurb: `I help adults navigating anxiety, depression, and life transitions feel more grounded, connected, and whole. My approach is warm, collaborative, and relational—rooted in authenticity, empathy, and trust—to help you reconnect with your inner wisdom and move toward lasting healing.`,
     title: 'Counseling Intern',
@@ -431,7 +432,7 @@ with my cats, watching horror movies, and staying active outdoors.`,
     routeName: 'alice',
     trainee: true,
     image: null,
-    header: 'Alice Overland, M.S.W.',
+    header: 'Alice Overland',
     email: 'aoverland@rosewatterchicounseling.com',
     blurb: `My name is Alice Overland, and I am a clinical intern specializing in Dialectical Behavior Therapy (DBT) and supporting our Family Skills Group. I am currently pursuing my Master of Social Work (MSW) at the University of Chicago’s Crown Family School of Social Work, Policy, and Practice.`,
     description1: `My clinical interests include helping individuals and families build emotional regulation skills, improve communication, and strengthen relationships. I am passionate about creating a safe, collaborative, and nonjudgmental space where clients feel supported in working toward meaningful change.`,
@@ -443,11 +444,25 @@ with my cats, watching horror movies, and staying active outdoors.`,
     trainee: true,
     routeName: 'melanie',
     image: Melanie,
-    header: 'Melanie Umbdenstock, M.A.',
+    header: 'Melanie Umbdenstock',
     email: 'mumbdenstock@rosewatterchicounseling.com',
     blurb: `I’m Melanie Umbdenstock, a Clinical Mental Health Counseling M.A. student at Northwestern University. I’m committed to providing a trauma-informed, client-centered space rooted in compassion, where individuals feel empowered and supported in working toward their mental health and wellness goals.`,
     description1: `My name is Melanie Umbdenstock, and I am a Clinical Mental Health Counseling M.A. student at Northwestern University. I am committed to providing a trauma-informed, client-centered space rooted in compassion, where individuals feel empowered and supported in working toward their mental health and wellness goals.`,
   },
+  {
+    id: 20,
+    trainee: true,
+    routeName: 'matthew',
+    image: Matthew,
+    header: 'Matthew Berg',
+    email: 'MBerg@rosewatterchicounseling.com',
+    blurb: `Hi, I’m Matthew Berg, a Master of Social Work intern at the University of Chicago. I’m interested in applying what I’m learning to psychotherapy with clinically and culturally diverse populations. I approach each client with curiosity, respect, and a deep belief in their capacity for growth and change.`,
+    header: `Matthew Berg`,
+    description1: `Hi, I’m Matthew Berg, and I’m currently a Master of Social Work student at the University of Chicago, working as an intern here at Rosewatter Chicagoland Counseling. With an academic focus on evidence-based therapies such as Dialectical Behavior Therapy (DBT) and Acceptance and Commitment Therapy (ACT), I’m interested in applying what I’m learning to psychotherapy with clinically and culturally diverse populations. DBT recognizes clients as complex individuals with layered identities and strengths, shaped by their unique social and historical contexts. In honoring that perspective, I approach each client with curiosity, respect, and a deep belief in their capacity for growth and change.`,
+    description2: `Previously, I interned at Lift-Chicago, where I worked closely with parents to collaboratively problem-solve, connect them with resources, and provide long-term, compassionate support. A central part of that work involved building relationships grounded in mutual respect and trust, something I bring with me to Rosewatter, where I hope to continue helping clients build lives that feel meaningful and aligned with their values.`,
+    description3: `In my free time, I enjoy watching movies, going on walks to clear my head, and slowly working through my list of free and low-cost things to do in the city. Let me know if there’s anything I should add to my Chicago bucket list!`,
+  }
+
 ];
 
 const StaffPage = () => {

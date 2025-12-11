@@ -50,6 +50,10 @@ function App() {
   return (
     <div>
       <Helmet>
+        <meta
+          name="google-site-verification"
+          content="BPqPfpBjzyOdMBaCa9YnxrTeYgLgQBcOQkhX3Ccwq1U"
+        />
         <html lang="en" />
         <link rel="manifest" href="/manifest.json" />
         <link rel="icon" href="/favicon.ico" />
@@ -117,10 +121,6 @@ function App() {
           content="https://www.rosewatterchicounseling.com"
         />
 
-        <meta
-          name="google-site-verification"
-          content="BPqPfpBjzyOdMBaCa9YnxrTeYgLgQBcOQkhX3Ccwq1U"
-        />
         <title>
           Rosewatter Chicagoland Counseling | Therapy & Mental Health Services
           in Chicago

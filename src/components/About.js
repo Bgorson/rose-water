@@ -177,18 +177,22 @@ export default function About() {
     setIsVisible(true);
   }, []);
 
-  const getRoleCategory = (title) => {
-    if (
-      title?.toLowerCase().includes('owner') ||
-      title?.toLowerCase().includes('director')
-    )
+  const getRoleCategory = (staff) => {
+    // Use explicit category if defined
+    if (staff.category) return staff.category;
+
+    const title = staff.title?.toLowerCase() || '';
+    if (title.includes('owner') || title.includes('director')) {
       return 'leadership';
+    }
     if (
-      title?.toLowerCase().includes('trainee') ||
-      title?.toLowerCase().includes('practicum') ||
-      title?.toLowerCase().includes('fellow')
-    )
+      title.includes('trainee') ||
+      title.includes('practicum') ||
+      title.includes('fellow') ||
+      title.includes('intern')
+    ) {
       return 'trainees';
+    }
     return 'clinicians';
   };
 
@@ -196,7 +200,10 @@ export default function About() {
     .filter((staff) => !(staff.id === 4 && currentDate > cutoffDate))
     .filter((staff) => {
       if (filter === 'all') return true;
-      return getRoleCategory(staff.title) === filter;
+      const category = getRoleCategory(staff);
+      // 'staff' category only shows in "All Staff"
+      if (category === 'staff') return false;
+      return category === filter;
     });
 
   return (

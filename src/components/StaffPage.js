@@ -21,6 +21,8 @@ import Isabel from '../Isabel.jpg';
 import Katherine from '../Katherine.jpg';
 import Jake from '../Jake.jpeg';
 import Melanie from '../melanie.jpeg';
+import Katie from '../katie.jpeg';
+import Matthew from '../matt.jpg';
 
 const fadeInUp = keyframes`
   from {
@@ -626,6 +628,7 @@ export const staffMembers = [
     header: 'Annie Gleason, Operations Manager',
     blurb: `Annie Gleason is the Operations Manager at Rosewatter Chicagoland Counseling, pursuing a PhD in Industrial and Organizational Psychology while also serving as the Clinical Training Coordinator at The Chicago School, and she is passionate about problem-solving and effective organizational management.`,
     title: 'Operations Manager',
+    category: 'staff', // Only shows in "All Staff"
     image: Annie,
     description1: `My name is Annie Gleason and I am the Operations Manager at Rosewatter Chicagoland Counseling. I have a background in clinical mental health counseling and am currently obtaining my PhD in Industrial and Organizational Psychology (Business Psychology). I also currently serve as the Clinical Training Coordinator for training at The Chicago School, Chicago Campus PsyD Clinical PsyD program. Simply put, I am a self proclaimed "operations and infrastructure nerd." I am energized by problem solving and thinking creatively about how to make effective lasting organizational change, create practical solutions for personnel, and establish organizational capacity for the unknown. My professional experiences to date have provided me with a unique perspective that allows me to ensure that the intricacies of clinical work, people management, and system oriented challenges are addressed proactively and pragmatically.`,
     description2: `I have earned my B.A. in Psychology from UW-Whitewater and an Ed.S. in Clinical Mental Health Counseling from Loyola University Chicago. I also own my own solo psychotherapy telehealth private practice in Chicago. In my free time, I am an avid consumer of the arts, awannabe yoga instructor, a Dog Mom to fur-baby Arugula, and a lover of any and all things Chicago!`,
@@ -641,6 +644,7 @@ Whether you're in crisis or seeking personal growth, therapy with me is practica
 
 Reach out today and together, we can create space for healing and growth.`,
     title: 'DBT Fellow, LSW',
+    category: 'clinicians',
     image: Samantha,
     specialties: ['DBT', 'Self-Harm', 'Adolescents', 'CBT', 'Mindfulness'],
     description1: `I'm Samantha Fitzwater, a Licensend Social Worker who specializes in Dialectical Behavior Therapy (DBT), working with teens and adults navigating intense emotions, self-harm, suicidal ideation, and the chronic stress of daily life. Many of my clients come to therapy feeling overwhelmed or stuck in patterns that no longer serve them. My goal is to help you build awareness, develop practical coping skills, and create a life that feels more balanced and fulfilling.`,
@@ -771,10 +775,11 @@ with my cats, watching horror movies, and staying active outdoors.`,
     id: 18,
     routeName: 'alice',
     image: null,
-    header: 'Alice Overland, M.S.W.',
+    header: 'Alice Overland',
     email: 'aoverland@rosewatterchicounseling.com',
     blurb: `My name is Alice Overland, and I am a clinical intern specializing in Dialectical Behavior Therapy (DBT) and supporting our Family Skills Group. I am currently pursuing my Master of Social Work (MSW) at the University of Chicago's Crown Family School of Social Work, Policy, and Practice.`,
     title: 'Clinical Intern',
+    category: 'trainees',
     specialties: ['DBT', 'Family Skills', 'Adolescents'],
     description1: `My clinical interests include helping individuals and families build emotional regulation skills, improve communication, and strengthen relationships. I am passionate about creating a safe, collaborative, and nonjudgmental space where clients feel supported in working toward meaningful change.`,
     description2: `Following completion of my graduate degree, I plan to pursue licensure as a Licensed Clinical Social Worker (LCSW) and continue providing therapy to children, adolescents, and families.`,
@@ -784,12 +789,42 @@ with my cats, watching horror movies, and staying active outdoors.`,
     id: 19,
     routeName: 'melanie',
     image: Melanie,
-    header: 'Melanie Umbdenstock, M.A.',
+    header: 'Melanie Umbdenstock',
     email: 'mumbdenstock@rosewatterchicounseling.com',
     blurb: `I'm Melanie Umbdenstock, a Clinical Mental Health Counseling M.A. student at Northwestern University. I'm committed to providing a trauma-informed, client-centered space rooted in compassion, where individuals feel empowered and supported in working toward their mental health and wellness goals.`,
     title: 'Trainee',
+    category: 'trainees',
     specialties: ['Trauma-Informed', 'Client-Centered'],
     description1: `My name is Melanie Umbdenstock, and I am a Clinical Mental Health Counseling M.A. student at Northwestern University. I am committed to providing a trauma-informed, client-centered space rooted in compassion, where individuals feel empowered and supported in working toward their mental health and wellness goals.`,
+  },
+  {
+    id: 20,
+    routeName: 'katie',
+    header: 'Katie Gallo, M.A. Candidate',
+    email: 'KGallo@rosewatterchicounseling.com',
+    blurb: `I help adults navigating anxiety, depression, and life transitions feel more grounded, connected, and whole. My approach is warm, collaborative, and relational—rooted in authenticity, empathy, and trust—to help you reconnect with your inner wisdom and move toward lasting healing.`,
+    title: 'Counseling Intern',
+    category: 'trainees',
+    image: Katie,
+    specialties: ['Anxiety', 'Depression', 'Life Transitions', 'Relational'],
+    description1: `My name is Katie Gallo, and I am a counselor-in-training at Northwestern University, working toward licensure as a professional counselor (LCPC) in Illinois. I work with adults navigating anxiety, depression, relationship challenges, and life transitions who want to feel more balanced, connected, and at home within themselves and the world around them.`,
+    description2: `I view counseling as a deeply human and relational process—one grounded in safety, authenticity, and connection. I believe that healing happens within supportive relationships where we can feel truly seen, accepted, and understood. My therapeutic style is warm, reflective, and exploratory, rooted in person-centered and psychodynamic principles. I strive to create a space where clients can bring their full, authentic selves without fear of judgment and begin to recognize their inherent worth and capacity for wholeness.`,
+    description3: `Our work together will be collaborative and flexible, moving at a pace that feels right for you. Together, we'll explore recurring patterns, deepen emotional insight, and reconnect to your inner wisdom—supporting your growth toward greater self-understanding, alignment, and authenticity.`,
+    description4: `Outside the therapy room, I find joy in painting and exploring creative outlets, walking around the city with a good deep-dive podcast, and browsing thrift stores and farmers' markets. My favorite way to recharge is through meaningful conversation and laughter shared with family and friends over a warm, home-cooked meal.`,
+  },
+  {
+    id: 21,
+    routeName: 'matthew',
+    image: Matthew,
+    header: 'Matthew Berg',
+    email: 'MBerg@rosewatterchicounseling.com',
+    blurb: `Hi, I'm Matthew Berg, a Master of Social Work intern at the University of Chicago. I'm interested in applying what I'm learning to psychotherapy with clinically and culturally diverse populations. I approach each client with curiosity, respect, and a deep belief in their capacity for growth and change.`,
+    title: 'Social Work Intern',
+    category: 'trainees',
+    specialties: ['DBT', 'ACT', 'Culturally Diverse Populations'],
+    description1: `Hi, I'm Matthew Berg, and I'm currently a Master of Social Work student at the University of Chicago, working as an intern here at Rosewatter Chicagoland Counseling. With an academic focus on evidence-based therapies such as Dialectical Behavior Therapy (DBT) and Acceptance and Commitment Therapy (ACT), I'm interested in applying what I'm learning to psychotherapy with clinically and culturally diverse populations. DBT recognizes clients as complex individuals with layered identities and strengths, shaped by their unique social and historical contexts. In honoring that perspective, I approach each client with curiosity, respect, and a deep belief in their capacity for growth and change.`,
+    description2: `Previously, I interned at Lift-Chicago, where I worked closely with parents to collaboratively problem-solve, connect them with resources, and provide long-term, compassionate support. A central part of that work involved building relationships grounded in mutual respect and trust, something I bring with me to Rosewatter, where I hope to continue helping clients build lives that feel meaningful and aligned with their values.`,
+    description3: `In my free time, I enjoy watching movies, going on walks to clear my head, and slowly working through my list of free and low-cost things to do in the city. Let me know if there's anything I should add to my Chicago bucket list!`,
   },
 ];
 

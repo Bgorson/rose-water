@@ -18,8 +18,8 @@ const fadeInUp = keyframes`
 const CardContainer = styled.div`
   position: relative;
   width: 100%;
-  max-width: 340px;
-  height: 480px;
+  max-width: 360px;
+  height: 560px;
   perspective: 1000px;
   cursor: pointer;
   opacity: ${(props) => (props.$isVisible ? 1 : 0)};
@@ -30,6 +30,7 @@ const CardContainer = styled.div`
 
   @media (max-width: 768px) {
     max-width: 100%;
+    height: 520px;
     margin: 0 auto;
   }
 `;
@@ -74,12 +75,16 @@ const CardBack = styled(CardFace)`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 2rem;
+  padding: 1.5rem;
+
+  @media (max-width: 768px) {
+    padding: 1.25rem;
+  }
 `;
 
 const ImageWrapper = styled.div`
   position: relative;
-  height: 320px;
+  height: 400px;
   overflow: hidden;
 
   &::after {
@@ -95,6 +100,10 @@ const ImageWrapper = styled.div`
       rgba(255, 254, 250, 0.8) 100%
     );
     pointer-events: none;
+  }
+
+  @media (max-width: 768px) {
+    height: 360px;
   }
 `;
 
@@ -180,23 +189,27 @@ const BackContent = styled.div`
 
 const BackName = styled.h4`
   font-family: 'Cormorant Garamond', 'Playfair', serif;
-  font-size: 1.5rem;
+  font-size: 1.35rem;
   font-weight: 600;
   color: ${colors.charcoal};
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
 `;
 
 const Bio = styled.p`
   font-family: 'DM Sans', sans-serif;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   color: ${colors.slate};
-  line-height: 1.7;
+  line-height: 1.6;
   margin-bottom: 1.5rem;
 
   display: -webkit-box;
-  -webkit-line-clamp: 6;
+  -webkit-line-clamp: 10;
   -webkit-box-orient: vertical;
   overflow: hidden;
+
+  @media (max-width: 768px) {
+    -webkit-line-clamp: 8;
+  }
 `;
 
 const LearnMoreLink = styled(Link)`
@@ -229,12 +242,12 @@ const LearnMoreLink = styled(Link)`
 const DecorativeDots = styled.div`
   display: flex;
   justify-content: center;
-  gap: 0.5rem;
-  margin-bottom: 1.5rem;
+  gap: 0.4rem;
+  margin-bottom: 0.75rem;
 
   span {
-    width: 6px;
-    height: 6px;
+    width: 5px;
+    height: 5px;
     border-radius: 50%;
     background: ${colors.rose};
 

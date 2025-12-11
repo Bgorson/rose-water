@@ -21,6 +21,7 @@ const CardContainer = styled.div`
   max-width: 360px;
   height: 560px;
   perspective: 1000px;
+  -webkit-perspective: 1000px;
   cursor: pointer;
   opacity: ${(props) => (props.$isVisible ? 1 : 0)};
   transform: translateY(${(props) => (props.$isVisible ? '0' : '30px')});
@@ -40,6 +41,7 @@ const CardInner = styled.div`
   width: 100%;
   height: 100%;
   transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
   transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
   transform: ${(props) =>
     props.$isFlipped ? 'rotateY(180deg)' : 'rotateY(0)'};
@@ -50,6 +52,9 @@ const CardFace = styled.div`
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
   border-radius: 24px;
   overflow: hidden;
   box-shadow: 0 4px 20px rgba(61, 61, 61, 0.08);
@@ -71,7 +76,8 @@ const CardBack = styled(CardFace)`
     ${colors.warmWhite} 0%,
     ${colors.roseLight} 100%
   );
-  transform: rotateY(180deg);
+  transform: rotateY(180deg) translateZ(1px);
+  -webkit-transform: rotateY(180deg) translateZ(1px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -111,6 +117,7 @@ const Image = styled.img`
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center top;
   transition: transform 0.6s ease;
 
   ${CardContainer}:hover & {
@@ -166,12 +173,17 @@ const TapHint = styled.div`
   padding: 0.4rem 0.8rem;
   background: rgba(168, 181, 160, 0.9);
   backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
   border-radius: 20px;
   font-family: 'DM Sans', sans-serif;
   font-size: 0.75rem;
   color: white;
   opacity: 0.9;
   transition: opacity 0.3s ease;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
 
   svg {
     width: 12px;

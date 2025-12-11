@@ -187,6 +187,10 @@ const StyledImage = styled.img`
   object-fit: cover;
   border-radius: 20px;
   display: block;
+
+  @media (max-width: 768px) {
+    object-position: left center;
+  }
 `;
 
 const ParallaxSection = styled.div`
@@ -214,8 +218,8 @@ const ParallaxImage = styled.div`
     background-attachment: scroll;
   }
 
-  @media (max-width: 912px) {
-    background-position: center;
+  @media (max-width: 768px) {
+    background-position: left center;
   }
 `;
 
@@ -261,6 +265,7 @@ const StaticSkyline = styled.img`
 
   @media (max-width: 768px) {
     height: 250px;
+    object-position: left center;
   }
 `;
 

@@ -1,8 +1,7 @@
-import React from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import Hero from '../components/Hero';
 import ServiceBox from '../components/ServiceBox';
-import styled from 'styled-components';
-import About from '../components/About';
+import styled, { keyframes } from 'styled-components';
 import AboutMeHome from './AboutMeHome.js';
 import Footer from '../components/Footer';
 import IndividualService from '../individual.jpg';
@@ -14,40 +13,184 @@ import GroupFlyerPDF from '../DBTMFGFlyer.pdf';
 import AdultSkills from '../adult_dbt_skills.png';
 import { colors } from '../utils/colors';
 
-const CardWrapper = styled.div`
-  display: flex;
-  gap: 2em;
-  // column-gap: 15em;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 2em;
-  @media (max-width: 768px) {
-    flex-direction: column;
-    column-gap: 0;
-    gap: 1em;
-    margin-bottom: 0;
+const fadeInUp = keyframes`
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 `;
-const SectionTitle = styled.h1`
-  font-size: 2.5em;
-  margin: 1em 0;
-  color: #333;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
+
+const PageWrapper = styled.div`
+  background: ${colors.cream};
+  min-height: 100vh;
+`;
+
+const ServicesSection = styled.section`
+  padding: 5rem 2rem;
   background: linear-gradient(
-    to right,
-    ${colors.lightGreen},
-    ${colors.green},
-    ${colors.darkerGreen}
+    180deg,
+    ${colors.cream} 0%,
+    rgba(168, 181, 160, 0.05) 50%,
+    ${colors.cream} 100%
   );
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 2px;
+    background: linear-gradient(90deg, ${colors.rose}, ${colors.sage});
+    border-radius: 2px;
+  }
+`;
+
+const ServicesContainer = styled.div`
+  max-width: 1200px;
+  margin: 0 auto;
+`;
+
+const SectionHeader = styled.div`
+  text-align: center;
+  margin-bottom: 4rem;
+  opacity: ${(props) => (props.$isVisible ? 1 : 0)};
+  transform: translateY(${(props) => (props.$isVisible ? '0' : '30px')});
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+`;
+
+const Eyebrow = styled.span`
+  display: inline-block;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: ${colors.sage};
+  margin-bottom: 1rem;
+`;
+
+const SectionTitle = styled.h2`
+  font-family: 'Cormorant Garamond', 'Playfair', serif;
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 500;
+  color: ${colors.charcoal};
+  margin-bottom: 1rem;
+  line-height: 1.2;
+`;
+
+const TitleAccent = styled.span`
+  display: inline-block;
+  background: linear-gradient(
+    135deg,
+    ${colors.sage} 0%,
+    ${colors.sageDark} 50%,
+    ${colors.sage} 100%
+  );
+  background-size: 200% auto;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-clip: text;
 `;
 
 const SubTitle = styled.p`
-  font-size: 1.2em;
-  color: #666;
-  margin-bottom: 2em;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.1rem;
+  color: ${colors.slate};
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.7;
+`;
+
+const CardWrapper = styled.div`
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+`;
+
+const CTASection = styled.section`
+  padding: 5rem 2rem;
+  background: linear-gradient(
+    135deg,
+    ${colors.sage} 0%,
+    ${colors.sageDark} 100%
+  );
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(
+      circle,
+      rgba(255, 255, 255, 0.1) 0%,
+      transparent 60%
+    );
+    pointer-events: none;
+  }
+`;
+
+const CTAContent = styled.div`
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+  margin: 0 auto;
+`;
+
+const CTATitle = styled.h2`
+  font-family: 'Cormorant Garamond', 'Playfair', serif;
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 500;
+  color: white;
+  margin-bottom: 1rem;
+`;
+
+const CTAText = styled.p`
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 2rem;
+  line-height: 1.7;
+`;
+
+const CTAButton = styled.a`
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2.5rem;
+  background: white;
+  color: ${colors.sageDark};
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    color: ${colors.sageDark};
+  }
 `;
 
 const services = [
@@ -56,70 +199,106 @@ const services = [
     link: '/individual-therapy',
     image: IndividualService,
     description:
-      'Individual psychotherapy is a form of mental health treatment in which an individual meets with a trained clinician one-on-one to discuss their thoughts, feelings and behaviors. We do not believe that there is a one-sized-fits-all approach to individual work. Rather, each individual comes to therapy with a particular set of concerns or experiences that they would like to process and understand. We work collaboratively to formulate goals, informed by a theoretical framework that we will provide, to move towards meaningful change together.',
+      'One-on-one sessions tailored to your unique needs. We work collaboratively to understand your experiences and create meaningful change through evidence-based approaches.',
   },
-
   {
     title: 'Couples Therapy',
     link: '/couples-therapy',
     image: CouplesService,
     description:
-      'Couples therapy is a form of mental health treatment designed to help couples understand their relationship. Sometimes couples come to counseling to improve their relationship, other times couples come to counseling to end their relationship, and everything in-between. During couples therapy, we will help you understand the patterns and issues that are underlying the concerns or experiences in your relationship. We will work with you to better understand each other and to develop strategies to improve communication, resolve conflicts, and build a stronger and more satisfying relationship.',
+      'In couples therapy, the relationship is the client. We help you understand patterns, improve communication, and build a stronger, more satisfying connection.',
   },
   {
     title: 'Mental Health Workshops',
     link: '/mental-health-workshops',
     image: WorkShop,
     description:
-      'Mental health workshops are training sessions that are designed to provide healthcare professionals and general populations with the knowledge, skills and tools they need to effectively address and manage mental health needs of themselves and the populations they serve. we have particular experience in providing training on social class, emotion regulation skills, healthy relationships, supervision of psychologists-in-training, conflict resolution and mindfulness training/technique.',
+      'Training sessions designed to provide professionals and communities with essential knowledge in emotion regulation, mindfulness, and mental health management.',
   },
   {
-    title: 'Consultation/Supervision',
+    title: 'Consultation & Supervision',
     link: '/consultation-supervision',
     image: Consultation,
     description:
-      'Consultation services and clinical supervision are also available. Please inquire for more information.',
+      'Clinical consultation and supervision services for mental health professionals seeking guidance, support, and professional development.',
   },
   {
     title: 'DBT Multifamily Skills Group',
     image: GroupFlyer,
     link: '/groupDBT',
     pdf: GroupFlyerPDF,
-    description: 'Click for more information about our DBT family group!',
+    description:
+      'A supportive group environment for families to learn and practice DBT skills together. Building stronger connections through shared learning.',
   },
   {
-    title: 'DBT Skills ',
+    title: 'DBT Skills Training',
     image: AdultSkills,
     link: '/adult-dbt',
     description:
-      'Click for more information about our DBT Adult Skills group starting in January!',
+      'Comprehensive DBT skills training for adults. Learn practical tools for emotional regulation, distress tolerance, and interpersonal effectiveness.',
   },
 ];
 
 export default function Home() {
+  const [isServicesVisible, setIsServicesVisible] = useState(false);
+  const servicesRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsServicesVisible(true);
+        }
+      },
+      { threshold: 0.1 }
+    );
+
+    if (servicesRef.current) {
+      observer.observe(servicesRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <div style={{ textAlign: 'center' }} id="home">
+    <PageWrapper id="home">
       <Hero />
       <AboutMeHome />
-      <div id="services"></div>
-      <br />
-      <br />
-      <SectionTitle>Clinical Services Offered</SectionTitle>
-      <SubTitle>Click On An Image To Learn More</SubTitle>
-      <CardWrapper>
-        {services.map((service) => (
-          <ServiceBox service={service} />
-        ))}
-      </CardWrapper>
-      {/* <About /> */}
+
+      <ServicesSection ref={servicesRef} id="services">
+        <ServicesContainer>
+          <SectionHeader $isVisible={isServicesVisible}>
+            <Eyebrow>What We Offer</Eyebrow>
+            <SectionTitle>
+              Clinical Services <TitleAccent>Tailored to You</TitleAccent>
+            </SectionTitle>
+            <SubTitle>
+              We offer a range of evidence-based services designed to support
+              your mental health journey at every stage.
+            </SubTitle>
+          </SectionHeader>
+
+          <CardWrapper>
+            {services.map((service, index) => (
+              <ServiceBox key={service.title} service={service} index={index} />
+            ))}
+          </CardWrapper>
+        </ServicesContainer>
+      </ServicesSection>
+
+      <CTASection>
+        <CTAContent>
+          <CTATitle>Ready to Take the First Step?</CTATitle>
+          <CTAText>
+            Finding the right therapist is an important decision. We're here to
+            answer your questions and help you determine if we're a good fit for
+            your needs.
+          </CTAText>
+          <CTAButton href="/appointment">Schedule a Consultation</CTAButton>
+        </CTAContent>
+      </CTASection>
+
       <Footer />
-      <p>
-        Chicago Skyline Image{' '}
-        <a href="https://www.freepik.com/free-photo/chicago-skyline-lake-michigan_26743083.htm#query=chicago%20skyline&position=0&from_view=keyword">
-          Image by TravelScape
-        </a>{' '}
-        on Freepik
-      </p>
-    </div>
+    </PageWrapper>
   );
 }

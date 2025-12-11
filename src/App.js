@@ -78,7 +78,10 @@ function App() {
           content="BPqPfpBjzyOdMBaCa9YnxrTeYgLgQBcOQkhX3Ccwq1U"
         />
         <title>Rosewatter Chicago Counseling</title>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17632796266"></script>
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=AW-17632796266"
+        ></script>
         <script>
           {`
       window.dataLayer = window.dataLayer || [];

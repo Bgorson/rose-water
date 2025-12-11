@@ -315,20 +315,6 @@ export default function AboutMeHome() {
             we approach our work. Knowing a little bit more about our team will
             help you decide if we could be a good fit for you.
           </Description>
-          <StatsGrid>
-            <StatItem>
-              <StatNumber>15+</StatNumber>
-              <StatLabel>Clinicians</StatLabel>
-            </StatItem>
-            <StatItem>
-              <StatNumber>6</StatNumber>
-              <StatLabel>Specialties</StatLabel>
-            </StatItem>
-            <StatItem>
-              <StatNumber>2</StatNumber>
-              <StatLabel>Locations</StatLabel>
-            </StatItem>
-          </StatsGrid>
         </TextContent>
 
         <ImageWrapper $isVisible={isVisible}>

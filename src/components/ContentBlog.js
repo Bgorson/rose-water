@@ -460,6 +460,13 @@ const ContentBlog = ({ type }) => {
       <Helmet>
         <title>{title}</title>
         <meta name="description" content={description} />
+        <link
+          rel="canonical"
+          href={`https://www.rosewatterchicounseling.com/${type === 'individual' ? 'individual-therapy' : type === 'couples' ? 'couples-therapy' : type === 'workshop' ? 'mental-health-workshops' : type === 'consultation' ? 'consultation-supervision' : type === 'group' ? 'support-group' : type}-therapy`}
+        />
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
+        <meta property="og:type" content="website" />
       </Helmet>
 
       <HeroSection>

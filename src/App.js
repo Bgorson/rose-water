@@ -50,45 +50,138 @@ function App() {
   return (
     <div>
       <Helmet>
+        <html lang="en" />
         <link rel="manifest" href="/manifest.json" />
         <link rel="icon" href="/favicon.ico" />
+        <link rel="canonical" href="https://www.rosewatterchicounseling.com" />
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="theme-color" content="#000000" />
+        <meta name="theme-color" content="#A8B5A0" />
+        <meta name="robots" content="index, follow" />
         <meta
           name="description"
-          content="Rachel Nitzarim PhD Chicago Mental Health Therapy"
+          content="Rosewatter Chicagoland Counseling offers individual therapy, couples therapy, DBT, and mental health workshops in Chicago. Our experienced team of psychologists and therapists provide compassionate, evidence-based care."
         />
-        <meta property="og:site_name" content="Rosewatter Chicago Counseling" />
-        <meta property="og:title" content="Rosewatter" />
-        <meta
-          property="og:url"
-          content="http://www.rosewatterchicounseling.com"
-        />
-        <meta property="og:type" content="website" />
         <meta
           name="keywords"
-          content="Rachel Nitzarim, mental health, therapy, rosewatter counseling, chicago, DBT-Linehan
-  Board of Certification"
+          content="Chicago therapist, Chicago psychologist, DBT therapy Chicago, couples therapy Chicago, individual therapy, mental health counseling, anxiety therapy, depression treatment, trauma therapy, Rosewatter Counseling, Rachel Nitzarim, DBT-Linehan Board Certified, Illinois therapy, Glenview therapist, Bucktown therapist"
         />
-        <meta itemprop="name" content="Rosewatter Chicago Counseling" />
-        <meta itemprop="url" content="http://www.rosewatterchicounseling.com" />
+
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:site_name"
+          content="Rosewatter Chicagoland Counseling"
+        />
+        <meta
+          property="og:title"
+          content="Rosewatter Chicagoland Counseling | Therapy & Mental Health Services in Chicago"
+        />
+        <meta
+          property="og:description"
+          content="Compassionate, evidence-based therapy for individuals and couples in Chicago. Specializing in DBT, anxiety, depression, trauma, and relationship issues."
+        />
+        <meta
+          property="og:url"
+          content="https://www.rosewatterchicounseling.com"
+        />
+        <meta
+          property="og:image"
+          content="https://www.rosewatterchicounseling.com/og-image.jpg"
+        />
+        <meta property="og:locale" content="en_US" />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Rosewatter Chicagoland Counseling | Chicago Therapy Services"
+        />
+        <meta
+          name="twitter:description"
+          content="Compassionate, evidence-based therapy for individuals and couples in Chicago. Specializing in DBT, anxiety, depression, and trauma."
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.rosewatterchicounseling.com/og-image.jpg"
+        />
+
+        {/* Schema.org structured data */}
+        <meta itemprop="name" content="Rosewatter Chicagoland Counseling" />
+        <meta
+          itemprop="description"
+          content="Mental health therapy and counseling services in Chicago"
+        />
+        <meta
+          itemprop="url"
+          content="https://www.rosewatterchicounseling.com"
+        />
+
         <meta
           name="google-site-verification"
           content="BPqPfpBjzyOdMBaCa9YnxrTeYgLgQBcOQkhX3Ccwq1U"
         />
-        <title>Rosewatter Chicago Counseling</title>
+        <title>
+          Rosewatter Chicagoland Counseling | Therapy & Mental Health Services
+          in Chicago
+        </title>
+
+        {/* Structured Data - LocalBusiness */}
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "MedicalBusiness",
+              "name": "Rosewatter Chicagoland Counseling",
+              "description": "Mental health therapy and counseling services specializing in individual therapy, couples therapy, DBT, and mental health workshops.",
+              "url": "https://www.rosewatterchicounseling.com",
+              "telephone": "",
+              "email": "inquiry@rosewatterchicounseling.com",
+              "address": [
+                {
+                  "@type": "PostalAddress",
+                  "addressLocality": "Chicago",
+                  "addressRegion": "IL",
+                  "addressCountry": "US"
+                }
+              ],
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": "41.8781",
+                "longitude": "-87.6298"
+              },
+              "openingHours": "Mo-Fr 09:00-18:00",
+              "priceRange": "$$",
+              "medicalSpecialty": [
+                "Psychiatry",
+                "Psychology"
+              ],
+              "availableService": [
+                "Individual Therapy",
+                "Couples Therapy",
+                "DBT",
+                "Mental Health Workshops",
+                "Clinical Supervision"
+              ],
+              "sameAs": [
+                "https://www.instagram.com/rosewatterchicounseling"
+              ]
+            }
+          `}
+        </script>
+
+        {/* Google Analytics */}
         <script
           async
           src="https://www.googletagmanager.com/gtag/js?id=AW-17632796266"
         ></script>
         <script>
           {`
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'AW-17632796266');
-    `}
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-17632796266');
+          `}
         </script>
       </Helmet>
       <NavbarComponent className={'navbar'} />

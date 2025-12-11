@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 import styled, { keyframes } from 'styled-components';
 import { colors } from '../utils/colors';
 import aboutImage from '../grandparents.jpg';
@@ -852,6 +853,28 @@ const StaffPage = () => {
 
   return (
     <PageWrapper>
+      <Helmet>
+        <title>
+          {selectedStaff.header} | Rosewatter Chicagoland Counseling
+        </title>
+        <meta
+          name="description"
+          content={`${selectedStaff.header} - ${selectedStaff.title} at Rosewatter Chicagoland Counseling. ${selectedStaff.blurb?.substring(0, 150)}...`}
+        />
+        <link
+          rel="canonical"
+          href={`https://www.rosewatterchicounseling.com/about/${selectedStaff.routeName}`}
+        />
+        <meta
+          property="og:title"
+          content={`${selectedStaff.header} | Rosewatter Chicagoland Counseling`}
+        />
+        <meta
+          property="og:description"
+          content={selectedStaff.blurb?.substring(0, 200)}
+        />
+        <meta property="og:type" content="profile" />
+      </Helmet>
       <HeroSection>
         <BreadcrumbNav>
           <Link to="/about">Our Team</Link>

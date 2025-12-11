@@ -1,5 +1,6 @@
 import styled, { keyframes } from 'styled-components';
 import React, { useRef, useEffect, useState } from 'react';
+import { Helmet } from 'react-helmet';
 import Card from './gallery/card/Card';
 import { staffMembers } from '../components/StaffPage';
 import { colors } from '../utils/colors';
@@ -208,6 +209,29 @@ export default function About() {
 
   return (
     <PageWrapper>
+      <Helmet>
+        <title>
+          Our Team | Rosewatter Chicagoland Counseling - Chicago Therapists &
+          Psychologists
+        </title>
+        <meta
+          name="description"
+          content="Meet our team of licensed psychologists, therapists, and counselors at Rosewatter Chicagoland Counseling. Experienced clinicians specializing in DBT, CBT, trauma, anxiety, depression, and couples therapy."
+        />
+        <link
+          rel="canonical"
+          href="https://www.rosewatterchicounseling.com/about"
+        />
+        <meta
+          property="og:title"
+          content="Our Team | Rosewatter Chicagoland Counseling"
+        />
+        <meta
+          property="og:description"
+          content="Meet our team of licensed psychologists and therapists in Chicago."
+        />
+        <meta property="og:type" content="website" />
+      </Helmet>
       <HeroSection ref={sectionRef}>
         <SectionHeader $isVisible={isVisible}>
           <Eyebrow>Our Team</Eyebrow>

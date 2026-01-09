@@ -548,6 +548,16 @@ export default function Footer() {
             TravelScape on Freepik
           </a>
         </ImageCredit>
+        <ImageCredit>
+          Want a website like this?{' '}
+          <a
+            href="https://bgorson.github.io/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Visit here
+          </a>
+        </ImageCredit>
       </BottomBar>
     </FooterSection>
   );

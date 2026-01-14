@@ -103,6 +103,23 @@ const CategoryBadge = styled.span`
   color: ${colors.sageDark};
 `;
 
+const TagBadge = styled.span`
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.4rem 0.75rem;
+  background: ${(props) =>
+    props.$variant === 'updated' ? '#2A9D8F' : '#E07A5F'};
+  border-radius: 50px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+`;
+
 const Content = styled.div`
   padding: 1.75rem;
   flex: 1;
@@ -247,6 +264,11 @@ export default function ServiceBox({ service, index = 0 }) {
             </>
           )}
           <CategoryBadge>{getCategoryLabel(service.title)}</CategoryBadge>
+          {service.tag && (
+            <TagBadge $variant={service.tag.toLowerCase()}>
+              {service.tag}
+            </TagBadge>
+          )}
         </ImageWrapper>
 
         <Content>

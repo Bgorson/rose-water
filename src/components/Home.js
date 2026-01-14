@@ -235,15 +235,17 @@ const services = [
     title: 'DBT Skills Training',
     image: AdultSkills,
     link: '/adult-dbt',
+    tag: 'Updated',
     description:
       'Comprehensive DBT skills training for adults. Learn practical tools for emotional regulation, distress tolerance, and interpersonal effectiveness.',
   },
   {
-    title: 'ADHD & Neuropsychological Assessment',
+    title: 'ADHD & Psychological Testing',
     image: ADHDAssessment,
     link: '/adhd-assessment',
+    tag: 'New',
     description:
-      'Comprehensive assessments for adults seeking clarity on ADHD, executive functioning, memory, and emotional regulation with personalized recommendations.',
+      'Comprehensive psychological testing and ADHD assessment for adults seeking clarity, insight, and practical recommendations.',
   },
 ];
 

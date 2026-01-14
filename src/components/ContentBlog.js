@@ -193,18 +193,21 @@ const CONTENT = [
     image: ADHDAssessment,
     type: 'adhd-assessment',
     description:
-      'Comprehensive neuropsychological and ADHD assessment services for adults at Rosewatter Chicagoland Counseling. Get clarity, insight, and practical recommendations.',
-    title: 'ADHD & Neuropsychological Assessment | Rosewatter Chicagoland Counseling',
-    header: 'ADHD and Neuropsychological Assessment',
+      'Comprehensive psychological testing and ADHD assessment services for adults at Rosewatter Chicagoland Counseling. Get clarity, insight, and practical recommendations.',
+    title: 'ADHD and Psychological Testing | Rosewatter Chicagoland Counseling',
+    header: 'ADHD and Psychological Testing at Rosewatter',
     mainContent:
-      'Rosewatter is excited to offer comprehensive neuropsychological and ADHD assessment services for adults. These evaluations are designed to provide clarity, insight, and practical recommendations for individuals seeking answers for long standing concerns, academic or workplace accommodations, or support with focus, memory, executive functioning, or emotional regulation.',
+      'Rosewatter is excited to offer comprehensive psychological testing and ADHD assessment services for adults. These evaluations are designed to provide clarity, insight, and practical recommendations for individuals seeking answers for long standing concerns, academic or workplace accommodations, or support with focus, memory, executive functioning, or emotional regulation.',
     noFaqContent: () => (
       <ContentText>
         <p>
-          Our assessment process is collaborative and thoughtful, combining clinical interviews, standardized testing, and individualized feedback. We take care to understand the whole person, not just test scores, so results are meaningful, affirming, and actionable.
-        </p>
-        <p>
-          Each evaluation concludes with a detailed written report and personalized feedback to help guide next steps for treatment, self understanding, and support.
+          Our assessment process is collaborative and thoughtful, combining
+          clinical interviews, standardized testing, and individualized
+          feedback. We take care to understand the whole person, not just test
+          scores, so results are meaningful, affirming, and actionable. Each
+          evaluation concludes with a detailed written report and personalized
+          feedback to help guide next steps for treatment, self understanding,
+          and support.
         </p>
       </ContentText>
     ),

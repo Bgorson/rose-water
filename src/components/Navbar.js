@@ -120,6 +120,21 @@ const DropdownMenu = styled(Dropdown.Menu)`
   }
 `;
 
+const MenuTag = styled.span`
+  display: inline-block;
+  margin-left: 0.5rem;
+  padding: 0.15rem 0.4rem;
+  background: ${(props) =>
+    props.$variant === 'updated' ? '#2A9D8F' : '#E07A5F'};
+  border-radius: 4px;
+  font-size: 0.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: white;
+  vertical-align: middle;
+`;
+
 const NavItem = styled(Nav.Item)`
   font-family: 'DM Sans', sans-serif;
   font-size: 0.95rem;
@@ -362,9 +377,11 @@ export default function NavbarComponent({ ishome }) {
                 </Dropdown.Item>
                 <Dropdown.Item href="/adult-dbt" onClick={handleClose}>
                   DBT Skills
+                  <MenuTag $variant="updated">Updated</MenuTag>
                 </Dropdown.Item>
                 <Dropdown.Item href="/adhd-assessment" onClick={handleClose}>
-                  ADHD & Neuropsych Assessment
+                  ADHD & Psychological Testing
+                  <MenuTag $variant="new">New</MenuTag>
                 </Dropdown.Item>
               </DropdownMenu>
             </Dropdown>

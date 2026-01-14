@@ -217,6 +217,7 @@ export default function ServiceBox({ service, index = 0 }) {
   }, []);
 
   const getCategoryLabel = (title) => {
+    if (title.toLowerCase().includes('adhd') || title.toLowerCase().includes('assessment')) return 'Assessment';
     if (title.toLowerCase().includes('dbt')) return 'DBT';
     if (title.toLowerCase().includes('couples')) return 'Relationships';
     if (title.toLowerCase().includes('individual')) return 'Personal Growth';

@@ -209,6 +209,13 @@ const CONTENT = [
           feedback to help guide next steps for treatment, self understanding,
           and support.
         </p>
+        <p>
+          <strong>Interested in scheduling an assessment?</strong> Contact our
+          Director of Neuropsychological Assessment, Dr. Katherine Russeau, at{' '}
+          <a href="mailto:krusseau@rosewatterchicounseling.com">
+            krusseau@rosewatterchicounseling.com
+          </a>
+        </p>
       </ContentText>
     ),
   },

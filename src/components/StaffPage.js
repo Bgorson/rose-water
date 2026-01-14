@@ -716,13 +716,14 @@ export const staffMembers = [
   {
     id: 16,
     routeName: 'katherine',
-    header: 'Katherine Russeau, Pys.D',
+    header: 'Katherine Russeau, PsyD',
     email: 'KRusseau@rosewatterchicounseling.com',
     blurb: `I'm Katherine Russeau, a licensed clinical psychologist dedicated to supporting people navigate
 trauma, relationship challenges, substance use, and major life transitions through humanistic,
 interpersonal, and somatic therapies. I'm also passionate about working with justice-involved
 individuals and providing comprehensive psychological evaluations.`,
-    title: 'Licensed Clinical Psychologist',
+    title: 'Director of Neuropsychological Assessment',
+    category: 'leadership',
     image: Katherine,
     specialties: [
       'Trauma',

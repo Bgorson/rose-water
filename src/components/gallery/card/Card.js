@@ -296,7 +296,7 @@ const Card = ({ image, title, description, routeName, blurb }) => {
           setIsVisible(true);
         }
       },
-      { threshold: 0.1 }
+      { threshold: 0, rootMargin: '100px 0px 100px 0px' }
     );
 
     if (cardRef.current) {

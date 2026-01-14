@@ -286,7 +286,7 @@ export default function AboutMeHome() {
           setIsVisible(true);
         }
       },
-      { threshold: 0.2 }
+      { threshold: 0, rootMargin: '100px 0px 100px 0px' }
     );
 
     if (sectionRef.current) {

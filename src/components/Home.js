@@ -11,6 +11,7 @@ import Consultation from '../consultation.jpg';
 import GroupFlyer from '../Group_Thumbnail.png';
 import GroupFlyerPDF from '../DBTMFGFlyer.pdf';
 import AdultSkills from '../adult_dbt_skills.png';
+import ADHDAssessment from '../Adhd_psych_assessment.jpeg';
 import { colors } from '../utils/colors';
 
 const fadeInUp = keyframes`
@@ -236,6 +237,13 @@ const services = [
     link: '/adult-dbt',
     description:
       'Comprehensive DBT skills training for adults. Learn practical tools for emotional regulation, distress tolerance, and interpersonal effectiveness.',
+  },
+  {
+    title: 'ADHD & Neuropsychological Assessment',
+    image: ADHDAssessment,
+    link: '/adhd-assessment',
+    description:
+      'Comprehensive assessments for adults seeking clarity on ADHD, executive functioning, memory, and emotional regulation with personalized recommendations.',
   },
 ];
 

@@ -161,7 +161,9 @@ function App() {
                 "Couples Therapy",
                 "DBT",
                 "Mental Health Workshops",
-                "Clinical Supervision"
+                "Clinical Supervision",
+                "ADHD Assessment",
+                "Neuropsychological Assessment"
               ],
               "sameAs": [
                 "https://www.instagram.com/rosewatterchicounseling"
@@ -304,6 +306,18 @@ function App() {
                 style={{ height: '100vh' }}
               >
                 <ContentBlog type="workshop" />
+              </Container>
+            }
+          />
+          <Route
+            path="adhd-assessment"
+            element={
+              <Container
+                className={'container'}
+                maxWidth="lg"
+                style={{ height: '100vh' }}
+              >
+                <ContentBlog type="adhd-assessment" />
               </Container>
             }
           />

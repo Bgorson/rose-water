@@ -363,6 +363,9 @@ export default function NavbarComponent({ ishome }) {
                 <Dropdown.Item href="/adult-dbt" onClick={handleClose}>
                   DBT Skills
                 </Dropdown.Item>
+                <Dropdown.Item href="/adhd-assessment" onClick={handleClose}>
+                  ADHD & Neuropsych Assessment
+                </Dropdown.Item>
               </DropdownMenu>
             </Dropdown>
             <NavItem>

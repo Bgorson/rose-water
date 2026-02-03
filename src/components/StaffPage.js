@@ -569,43 +569,6 @@ export const staffMembers = [
           for book recommendations!), live music, and exploring creative
           outlets.`,
   },
-
-  {
-    id: 8,
-    routeName: 'ashley',
-    email: 'alevenson@rosewatterchicounseling.com',
-    blurb: `I'm Ashley Levenson, a PsyD candidate at The Chicago School. I specialize in cognitive-behavioral therapy for anxiety, OCD, disordered eating, body image, and health-related concerns.`,
-    header: 'Ashley Levenson, MA',
-    title: 'Doctoral Practicum Student',
-    image: Ashley,
-    specialties: ['CBT', 'Anxiety', 'OCD', 'Body Image', "Women's Issues"],
-    description1: `My name is Ashley Levenson, M.A. I completed my Bachelor of Science in
-          Biopsychology, Cognition, and Neuroscience at the University of
-          Michigan and my Master's in Clinical Psychology at The Chicago School.
-          Currently, I am a PsyD student at working towards obtaining my
-          Doctorate in Clinical Psychology from The Chicago School. I have
-          worked with individuals across the lifespan, with an emphasis on
-          adults. Throughout my training, I have gained experience in individual
-          therapy, group therapy, and neuropsychological assessment while
-          working in settings including private practice, outpatient clinics,
-          integrated primary care, and medical centers. At Rosewatter
-          Chicagoland Counseling, I am primarily supervised by Dr. Sara Taxman.`,
-    description2: `My approach to therapy is primarily cognitive-behavioral while
-          incorporating components from other theoretical orientations based on
-          individual client needs. I utilize evidence-based interventions such
-          as ACT, DBT, and cognitive restructuring in order to help clients
-          reach their therapeutic goals and minimize the impact of symptoms on
-          daily life. I strive to create a collaborative and comfortable
-          environment, where clients feel open to expressing themselves as well
-          as empowered to participate in shared decision-making for their
-          treatment. While I am trained in a wide variety of clinical concerns
-          and populations, I especially enjoy working with adults on issues
-          related to anxiety, OCD, disordered eating, body image, women's
-          issues, and health- and illness- related concerns.`,
-    description3: `Outside of psychology, I enjoy spending my time doing yoga, going on
-          walks and hikes, singing, trying new restaurants, playing board games,
-          and spending time with friends and family.`,
-  },
   {
     id: 10,
     routeName: 'jacob',
@@ -693,25 +656,6 @@ export const staffMembers = [
     description1: `Join me on your journey to well-being! With years of experience supporting individuals from diverse backgrounds, I specialize in treating a wide range of mental health concerns through in-person or teletherapy in a safe, nonjudgmental space.`,
     description2: `My approach is client-centered, evidence-based, and empathetic, focused on building trust and exploring values to create a meaningful, vibrant life. I primarily use Acceptance and Commitment Therapy (ACT) to help you overcome unhelpful thoughts and behaviors while incorporating Cognitive-Behavioral Therapy (CBT) when appropriate to address negative thinking patterns. Together, we'll develop strategies for responding effectively to life's challenges and aligning your actions with your core values.`,
     description3: `Before joining Rosewatter Chicagoland Counseling, I worked as a Forensic Psychologist and Drug Abuse Program Coordinator in the federal prison system. I am proud to have supervised over 80 predoctoral students during my career. Outside of counseling, I enjoy spending time with my wife and sons, roasting coffee beans, cooking, exercising, listening to classical music, and watching collegiate sports.`,
-  },
-  {
-    id: 15,
-    routeName: 'isabel',
-    header: 'Isabel Silverston, M.A.',
-    email: 'ISilverston@rosewatterchicounseling.com',
-    blurb: `With a warm, relational approach and a passion for supporting clients across all ages, Isabel helps individuals navigate life's challenges with compassion, insight, and care.`,
-    title: 'Doctoral Practicum Student',
-    image: Isabel,
-    specialties: [
-      'Psychodynamic',
-      'All Ages',
-      'Relationships',
-      'Anxiety',
-      'Depression',
-    ],
-    description1: `My name is Isabel Silverston, M.A. I received my Bachelor of Arts in Sociology from Tufts University and my Master's in Clinical Psychology from The Chicago School. I am currently working towards my Doctorate in Clinical Psychology. Over the last few years, I have worked with children, adolescents, and adults in a variety of clinical settings, including community mental health, private practice, and college counseling. I have experience working with clients who hold diverse cultural identities and treating a wide range of mental health issues, including anxiety, depression, emotional dysregulation, self-esteem and identity issues, challenges associated with trauma and loss, and relationship concerns. I also enjoy working with children and families, and have experience supporting them through developmental transitions, behavioral challenges, and parent-child relational difficulties. While at Rosewatter Chicagoland Counseling, I will be primarily supervised by Dr. Sara Taxman.`,
-    description2: `My therapeutic approach draws primarily from psychodynamic and relational-cultural theory while also incorporating client-centered and humanistic perspectives. I believe that relationships can be a mechanism for change, and that this starts with the therapeutic relationship. I strive to create a safe, trusting, and collaborative relationship with clients to support them in processing how their past experiences shape who they are and how they interact with others. My therapeutic style is warm, curious, and non-judgmental. I meet clients where they are in their process and tailor my work with each client to address their goals, needs, and unique identities.`,
-    description3: `In my free time, I love to cook, run by the lake, try new restaurants, travel, read, and spend time with family and friends.`,
   },
   {
     id: 16,

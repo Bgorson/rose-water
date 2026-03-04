@@ -24,6 +24,7 @@ import Jake from '../Jake.jpeg';
 import Melanie from '../melanie.jpeg';
 import Katie from '../katie.jpeg';
 import Matthew from '../matt.jpg';
+import Kate from '../kate.jpg';
 
 const fadeInUp = keyframes`
   from {
@@ -768,6 +769,28 @@ with my cats, watching horror movies, and staying active outdoors.`,
     description1: `Hi, I'm Matthew Berg, and I'm currently a Master of Social Work student at the University of Chicago, working as an intern here at Rosewatter Chicagoland Counseling. With an academic focus on evidence-based therapies such as Dialectical Behavior Therapy (DBT) and Acceptance and Commitment Therapy (ACT), I'm interested in applying what I'm learning to psychotherapy with clinically and culturally diverse populations. DBT recognizes clients as complex individuals with layered identities and strengths, shaped by their unique social and historical contexts. In honoring that perspective, I approach each client with curiosity, respect, and a deep belief in their capacity for growth and change.`,
     description2: `Previously, I interned at Lift-Chicago, where I worked closely with parents to collaboratively problem-solve, connect them with resources, and provide long-term, compassionate support. A central part of that work involved building relationships grounded in mutual respect and trust, something I bring with me to Rosewatter, where I hope to continue helping clients build lives that feel meaningful and aligned with their values.`,
     description3: `In my free time, I enjoy watching movies, going on walks to clear my head, and slowly working through my list of free and low-cost things to do in the city. Let me know if there's anything I should add to my Chicago bucket list!`,
+  },
+  {
+    id: 22,
+    routeName: 'kate',
+    image: Kate,
+    header: 'Katheryn Kiser, M.A.',
+    email: 'KKiser@rosewatterchicounseling.com',
+    blurb: `I'm Katheryn Kiser, M.A., a psychology doctoral extern specializing in trauma-informed, client-centered care and helping individuals across the lifespan from diverse populations manage anxiety, depression, life transitions, interpersonal challenges, phobias, race-based stress, and disorders of the mind-body connection. I am currently pursuing my doctorate in clinical psychology (PsyD) from The Chicago School.`,
+    title: 'Doctoral Student, Clinical Psychology',
+    category: 'trainees',
+    specialties: [
+      'Trauma-Informed Care',
+      'Anxiety',
+      'Depression',
+      'Life Transitions',
+      'Mind-Body Connection',
+    ],
+    description1: `My name is Katheryn Kiser, M.A., and I am a clinical psychology doctoral student at The Chicago School, working toward completion of my PsyD and licensure as a clinical psychologist. I provide therapy to individuals across the lifespan and from diverse backgrounds, supporting clients navigating anxiety, depression, life transitions, interpersonal challenges, phobias, race-based stress, and concerns at the intersection of mental and physical health, including sleep difficulties, oncology-related experiences, and gastrointestinal conditions.`,
+    description2: `I view therapy as a collaborative, compassionate partnership. Seeking support can feel vulnerable, and I strive to create a space where clients feel respected, genuinely understood, and empowered to move at a pace that feels comfortable for them. Each person's story is unique, and I tailor our work to align with each individual's goals and needs.`,
+    description3: `My current dissertation research examines adverse childhood experiences and their psychological and somatic manifestations across the lifespan, as well as intergenerational trauma communication patterns in East Asians in Western countries. This work has deepened my commitment to trauma-informed care and strengthened my passion for working with individuals whose identities and lived experiences may be similar to or different from my own.`,
+    description4: `Grounded in a biopsychosocial framework and informed by multicultural perspectives, I take a holistic approach to understanding each client's lived experience. I approach my work with curiosity, cultural humility, and ongoing reflection. My therapeutic style is rooted in cognitive-behavioral, systems, and relational principles to thoughtfully support each client's growth and well-being.`,
+    description5: `Outside of the therapy room, I enjoy walking along Lake Michigan, playing indoor and beach volleyball, running, exploring new food spots around the city, and spending meaningful time with my family and friends.`,
   },
 ];
 

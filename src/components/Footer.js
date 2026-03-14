@@ -551,7 +551,7 @@ export default function Footer() {
         <ImageCredit>
           Want a website like this?{' '}
           <a
-            href="https://bgorson.github.io/"
+            href="https://www.scout312.com/"
             target="_blank"
             rel="noopener noreferrer"
           >

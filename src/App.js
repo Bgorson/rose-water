@@ -17,6 +17,21 @@ import AdultDbt from './components/AdultDbt';
 import Popup from './components/Popup'; // Import the Popup component
 import ContentBlog from './components/ContentBlog';
 import { Helmet } from 'react-helmet';
+import { Navigate } from 'react-router-dom';
+
+function NotFound() {
+  return (
+    <div style={{ textAlign: 'center', padding: '5rem 2rem', minHeight: '60vh' }}>
+      <Helmet>
+        <meta name="robots" content="noindex, nofollow" />
+        <title>Page Not Found | Rosewatter Chicagoland Counseling</title>
+      </Helmet>
+      <h1>Page Not Found</h1>
+      <p>The page you're looking for doesn't exist or has been moved.</p>
+      <a href="/" style={{ color: '#A8B5A0', textDecoration: 'underline' }}>Return to Home</a>
+    </div>
+  );
+}
 
 const Main = styled.div`
   // background-color: #fbede6;
@@ -333,6 +348,7 @@ function App() {
               </Container>
             }
           /> */}
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </Main>
     </div>

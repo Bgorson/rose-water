@@ -1,7 +1,21 @@
 [build]
   command = "npm run build"
   publish = "dist" # or "build" depending on your output directory
-  
+
+# Redirect removed pages before the SPA catch-all
+[[redirects]]
+  from = "/admin"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/group"
+  to = "/groupDBT"
+  status = 301
+  force = true
+
+# SPA catch-all (must be last)
 [[redirects]]
   from = "/*"
   to = "/index.html"

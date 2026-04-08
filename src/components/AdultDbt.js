@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import emailjs from '@emailjs/browser';
+import { Helmet } from 'react-helmet';
 import AdultSkills from '../adult_dbt_skills.png';
 
 const FlyerImage = styled.img`
@@ -130,11 +131,16 @@ export default function Group() {
 
   return (
     <Container>
+      <Helmet>
+        <title>Adult DBT Skills Group | Rosewatter Chicagoland Counseling</title>
+        <link rel="canonical" href="https://www.rosewatterchicounseling.com/adult-dbt" />
+        <meta name="description" content="Adult DBT Skills Group at Rosewatter Chicagoland Counseling. Learn dialectical behavior therapy skills for emotional regulation, distress tolerance, and interpersonal effectiveness." />
+      </Helmet>
       <FlyerImage
         src={AdultSkills}
         srcSet={`${AdultSkills} 1x, ${AdultSkills} 2x`}
         sizes="(max-width: 600px) 100vw, 800px"
-        alt="Group Flyer"
+        alt="Adult DBT Skills Group Flyer"
         onClick={openModal}
       />
 

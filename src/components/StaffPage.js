@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link, Navigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import styled, { keyframes } from 'styled-components';
 import { colors } from '../utils/colors';
@@ -811,13 +811,7 @@ const StaffPage = () => {
   }, [name]);
 
   if (!selectedStaff) {
-    return (
-      <PageWrapper>
-        <ContentSection style={{ paddingTop: '5rem', textAlign: 'center' }}>
-          <p>Loading...</p>
-        </ContentSection>
-      </PageWrapper>
-    );
+    return <Navigate to="/about" replace />;
   }
 
   return (

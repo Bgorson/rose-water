@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { useParams, Link, Navigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import styled, { keyframes } from 'styled-components';
@@ -796,18 +796,16 @@ with my cats, watching horror movies, and staying active outdoors.`,
 
 const StaffPage = () => {
   const { name } = useParams();
-  const [selectedStaff, setSelectedStaff] = useState(null);
-
-  useEffect(() => {
-    if (name) {
-      const staff = staffMembers.find(
+  const selectedStaff = name
+    ? staffMembers.find(
         (member) =>
           member.routeName.toLowerCase().replace(' ', '-') ===
           name.toLowerCase()
-      );
-      setSelectedStaff(staff);
-      window.scrollTo(0, 0);
-    }
+      )
+    : null;
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
   }, [name]);
 
   if (!selectedStaff) {

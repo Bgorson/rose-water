@@ -25,6 +25,7 @@ import Melanie from '../melanie.jpeg';
 import Katie from '../katie.jpeg';
 import Matthew from '../matt.jpg';
 import Kate from '../kate.jpg';
+import Jimmy from '../jimmy.jpg';
 
 const fadeInUp = keyframes`
   from {
@@ -791,6 +792,32 @@ with my cats, watching horror movies, and staying active outdoors.`,
     description3: `My current dissertation research examines adverse childhood experiences and their psychological and somatic manifestations across the lifespan, as well as intergenerational trauma communication patterns in East Asians in Western countries. This work has deepened my commitment to trauma-informed care and strengthened my passion for working with individuals whose identities and lived experiences may be similar to or different from my own.`,
     description4: `Grounded in a biopsychosocial framework and informed by multicultural perspectives, I take a holistic approach to understanding each client's lived experience. I approach my work with curiosity, cultural humility, and ongoing reflection. My therapeutic style is rooted in cognitive-behavioral, systems, and relational principles to thoughtfully support each client's growth and well-being.`,
     description5: `Outside of the therapy room, I enjoy walking along Lake Michigan, playing indoor and beach volleyball, running, exploring new food spots around the city, and spending meaningful time with my family and friends.`,
+  },
+  {
+    id: 23,
+    routeName: 'jimmy',
+    image: Jimmy,
+    header: 'Jimmy Martin, LCSW',
+    email: 'jmartin@rosewatterchicounseling.com',
+    blurb: `I'm Jimmy Martin, a Licensed Clinical Social Worker with an MSW from UIC. I provide psychotherapy to adults experiencing depression, anxiety, ADHD, and mood disorders, drawing on extensive training in both DBT and ACT to support collaborative, values-driven work.`,
+    title: 'Licensed Clinical Social Worker',
+    specialties: ['DBT', 'ACT', 'Depression', 'Anxiety', 'ADHD'],
+    description1: `I'm Jimmy Martin, a Licensed Clinical Social Worker with a Master's of Social Work from UIC. I provide psychotherapy to adults experiencing depression, anxiety, ADHD, and mood disorders. I have extensive training in both DBT and ACT and draw upon both in my work.`,
+    description2: `During my undergraduate career, I earned a B.S. in Neuroscience at UCLA before working as an EMT and then as an academic and test-prep tutor. After reflecting on my values and life experiences, I pursued a career in mental health and earned my MSW.`,
+    description3: `My approach centers around providing a safe, nonjudgmental space where you feel accepted as you work hard to change. My aim is to help people live by their own values and provide them with practical skills to achieve their goals. I firmly believe in the idea of client and therapist as equals in a collaborative relationship. I love getting to know my clients and learning about their likes and interests. I deeply value mindfulness, and I emphasize kindness, compassion, and authenticity in my work and in life.`,
+    description4: `In my free time, I like exercising and reading all sorts of books, from sci-fi and fantasy novels to philosophy, history, and biology. I also love seeing live music with friends and going on trips with my wife. Much of the time, I can be found either walking our dog Zelda or lounging on the couch with our three cats, Kevin, Lloyd, and Hildy.`,
+  },
+  {
+    id: 24,
+    routeName: 'angelina',
+    image: null,
+    header: 'Angelina DeRosa',
+    email: 'aderosa@rosewatterchicounseling.com',
+    blurb: `Hi, I'm Angelina DeRosa, a Master's-level Clinical Mental Health Counseling intern at Adler University. I have a strong interest in DBT and focus on client strengths, meeting people where they are while bringing warmth and occasional humor into our work together.`,
+    title: 'Counseling Intern',
+    category: 'trainees',
+    specialties: ['DBT', 'Strengths-Based', 'Client-Centered'],
+    description1: `Hi, I'm Angelina DeRosa, a Master's-level Clinical Mental Health Counseling intern at Adler University. I have a strong interest in DBT and tailor treatment to what feels most helpful for each client. I focus on client strengths and strive to meet people where they are. While therapy can be a serious space, I also value bringing in humor and lighthearted conversation when it feels appropriate.`,
   },
 ];
 

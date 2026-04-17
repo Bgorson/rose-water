@@ -26,6 +26,7 @@ import Katie from '../katie.jpeg';
 import Matthew from '../matt.jpg';
 import Kate from '../kate.jpg';
 import Jimmy from '../jimmy.jpg';
+import Angelina from '../angelina.jpg';
 
 const fadeInUp = keyframes`
   from {
@@ -810,7 +811,7 @@ with my cats, watching horror movies, and staying active outdoors.`,
   {
     id: 24,
     routeName: 'angelina',
-    image: null,
+    image: Angelina,
     header: 'Angelina DeRosa',
     email: 'aderosa@rosewatterchicounseling.com',
     blurb: `Hi, I'm Angelina DeRosa, a Master's-level Clinical Mental Health Counseling intern at Adler University. I have a strong interest in DBT and focus on client strengths, meeting people where they are while bringing warmth and occasional humor into our work together.`,

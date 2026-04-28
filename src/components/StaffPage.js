@@ -432,7 +432,7 @@ export const staffMembers = [
     routeName: 'sydnie',
     header: 'Sydnie Dobkin, LCPC',
     email: 'sdobkin@rosewatterchicounseling.com',
-    blurb: `I'm Sydnie Dobkin, a certified DBT clinician with a Master's from the Family Institute at Northwestern University and extensive experience in evidence-based therapies, currently providing psychotherapy at Rosewatter Chicagoland Counseling to youth and families dealing with a range of issues, while also incorporating psychodynamic theory, reiki, and yoga-informed practices into my work.`,
+    blurb: `Hi, I'm Sydnie Dobkin! I'm a therapist, a DBT enthusiast, and someone who genuinely loves helping people build meaningful lives. I'm a DBT-Linehan Board of Certification, Certified Clinician™ with over a decade of experience providing comprehensive, adherent DBT to adolescents, young adults, and families.`,
     title: 'DBT Director',
     image: Sydnie,
     badge: DBT,
@@ -443,35 +443,13 @@ export const staffMembers = [
       'Self-Harm',
       'Family Therapy',
     ],
-    description1: `My name is Sydnie Dobkin and I received my Masters in Counseling from
-          the Family Institute at Northwestern University. I am a DBT-Linehan
-          Board of Certification, Certified Clinician™ and I have almost a
-          decade of experience providing comprehensive and adherent DBT. I then
-          completed my post-graduate fellowship at The Family Institute at
-          Northwestern University on the Mindfulness and Behavioral Therapies
-          Team. Following The Family Institute, I served as the Director of
-          Adolescent DBT at Great Lakes Therapy Center, a DBT-Linehan Certified
-          Program. Today, I continue to work with families and parents through a
-          behavioral lens.`,
-    description2: `Currently, I am working at Rosewatter Chicagoland Counseling providing
-          psychotherapy to youth, young adults, and families with emotion
-          regulation difficulties, eating disorders, trauma, addiction,
-          suicidality, and self-injurious behaviors. I have comprehensive
-          training and experience using numerous evidence-based therapies,
-          including Dialectical Behavioral Therapy (DBT), Radically Open
-          Dialectical Behavioral Therapy (RODBT), Dialectical Behavioral Therapy
-          Prolonged Exposure (DBT PE), Supportive Parenting for Anxious
-          Childhood Emotions (SPACE), Cognitive Behavioral Therapy (CBT), and
-          Trauma Focused Cognitive Behavioral Therapy (TF CBT). In addition to
-          evidence-based practices, I am also trained in psychodynamic theory,
-          reiki, and yoga-informed psychotherapy.`,
-    description3: `My primary goal is to provide behaviorally driven therapeutic care to
-          clinically and culturally diverse adolescents and young adults. I want
-          to support my clients and help them generalize their skills outside of
-          the therapy room. In my free time, I love to travel, snuggle with my
-          dog Harold, and scope out the best places to eat sushi. I also love
-          Taylor Swift, The 1975, and Harry Styles! You can find me reading YA
-          novels, watching (maybe too much) television, and collecting crystals.`,
+    description1: `Hi, I'm Sydnie Dobkin! I'm a therapist, a DBT enthusiast, and someone who genuinely loves helping people build meaningful lives. I earned my Master's in Counseling from The Family Institute at Northwestern University, where I later completed a post-graduate fellowship on the Mindfulness and Behavioral Therapies Team. I'm also a DBT-Linehan Board of Certification, Certified Clinician™, and I have spent over a decade providing comprehensive, adherent DBT.
+
+Over the years, I've had the opportunity to work across different levels of care, including serving as the Director of Adolescent DBT at a DBT-Linehan Certified Program. My experiences have deepened my passion for working with teens and families, especially when emotions are intense, relationships feel strained, or progress seems stalled. Today, I continue to support families and parents through a behavioral, skills-based lens.`,
+    description2: `I currently provide psychotherapy to adolescents, young adults, and families navigating emotion dysregulation, impulsivity, eating disorders, trauma, suicidality, and self-injurious behaviors. My approach is grounded in evidence-based treatments like DBT, RO-DBT, DBT Prolonged Exposure, SPACE, and ACT. I also integrate psychodynamic thinking, along with yoga-informed therapy and Reiki to treat each person as a whole human.
+
+At the core of my work is a simple goal: to help clients not just feel better, but build skills they can actually use in their real lives, in the moments that matter most. I care deeply about providing thoughtful, culturally responsive care and creating a space where people feel both supported and challenged to grow.`,
+    description3: `Outside of work, you can usually find me traveling, snuggling with my dog Harold, or on a mission to find the best sushi in the city. I'm also a big fan of Taylor Swift, The 1975, and Harry Styles. When I'm off the clock, I'm probably reading a YA novel, watching a little too much TV, or adding to my ever-growing crystal collection.`,
   },
   {
     id: 3,

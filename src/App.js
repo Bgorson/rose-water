@@ -277,18 +277,6 @@ function App() {
             }
           />
           <Route
-            path="couples-therapy"
-            element={
-              <Container
-                className={'container'}
-                maxWidth="lg"
-                style={{ height: '100vh' }}
-              >
-                <ContentBlog type="couples" />
-              </Container>
-            }
-          />
-          <Route
             path="consultation-supervision"
             element={
               <Container

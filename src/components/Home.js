@@ -203,13 +203,6 @@ const services = [
       'One-on-one sessions tailored to your unique needs. We work collaboratively to understand your experiences and create meaningful change through evidence-based approaches.',
   },
   {
-    title: 'Couples Therapy',
-    link: '/couples-therapy',
-    image: CouplesService,
-    description:
-      'In couples therapy, the relationship is the client. We help you understand patterns, improve communication, and build a stronger, more satisfying connection.',
-  },
-  {
     title: 'Mental Health Workshops',
     link: '/mental-health-workshops',
     image: WorkShop,

@@ -22,7 +22,6 @@ import Katherine from '../Katherine.jpg';
 import Jake from '../Jake.jpeg';
 import Melanie from '../melanie.jpeg';
 import Katie from '../katie.jpeg';
-import Matthew from '../matt.jpg';
 import Kate from '../kate.jpg';
 import Jimmy from '../jimmy.jpg';
 import Angelina from '../angelina.jpg';
@@ -682,20 +681,6 @@ with my cats, watching horror movies, and staying active outdoors.`,
     description1: `I'm Jake O'Brien, a psychotherapist with an M.A. in Clinical Psychology from Roosevelt University, experienced with individual and group therapy including trauma-informed care and emotional distress tolerance. I like to use a client-centered relational approach to provide support. I have experience working with a variety of ages and presentations, including justice-involved, unhoused, and substance use.`,
   },
   {
-    id: 18,
-    routeName: 'alice',
-    image: null,
-    header: 'Alice Overland',
-    email: 'aoverland@rosewatterchicounseling.com',
-    blurb: `My name is Alice Overland, and I am a clinical intern specializing in Dialectical Behavior Therapy (DBT) and supporting our Family Skills Group. I am currently pursuing my Master of Social Work (MSW) at the University of Chicago's Crown Family School of Social Work, Policy, and Practice.`,
-    title: 'Counseling Intern',
-    category: 'trainees',
-    specialties: ['DBT', 'Family Skills', 'Adolescents'],
-    description1: `My clinical interests include helping individuals and families build emotional regulation skills, improve communication, and strengthen relationships. I am passionate about creating a safe, collaborative, and nonjudgmental space where clients feel supported in working toward meaningful change.`,
-    description2: `Following completion of my graduate degree, I plan to pursue licensure as a Licensed Clinical Social Worker (LCSW) and continue providing therapy to children, adolescents, and families.`,
-    description3: `In my free time, I enjoy trying out new restaurants and cafes in Chicago, running, yoga, and hanging out with friends. I also love reading, listening to Taylor Swift, and watching any reality TV show!`,
-  },
-  {
     id: 19,
     routeName: 'melanie',
     image: Melanie,
@@ -721,20 +706,6 @@ with my cats, watching horror movies, and staying active outdoors.`,
     description2: `I view counseling as a deeply human and relational process—one grounded in safety, authenticity, and connection. I believe that healing happens within supportive relationships where we can feel truly seen, accepted, and understood. My therapeutic style is warm, reflective, and exploratory, rooted in person-centered and psychodynamic principles. I strive to create a space where clients can bring their full, authentic selves without fear of judgment and begin to recognize their inherent worth and capacity for wholeness.`,
     description3: `Our work together will be collaborative and flexible, moving at a pace that feels right for you. Together, we'll explore recurring patterns, deepen emotional insight, and reconnect to your inner wisdom—supporting your growth toward greater self-understanding, alignment, and authenticity.`,
     description4: `Outside the therapy room, I find joy in painting and exploring creative outlets, walking around the city with a good deep-dive podcast, and browsing thrift stores and farmers' markets. My favorite way to recharge is through meaningful conversation and laughter shared with family and friends over a warm, home-cooked meal.`,
-  },
-  {
-    id: 21,
-    routeName: 'matthew',
-    image: Matthew,
-    header: 'Matthew Berg',
-    email: 'MBerg@rosewatterchicounseling.com',
-    blurb: `Hi, I'm Matthew Berg, a Master of Social Work intern at the University of Chicago. I'm interested in applying what I'm learning to psychotherapy with clinically and culturally diverse populations. I approach each client with curiosity, respect, and a deep belief in their capacity for growth and change.`,
-    title: 'Counseling Intern',
-    category: 'trainees',
-    specialties: ['DBT', 'ACT', 'Culturally Diverse Populations'],
-    description1: `Hi, I'm Matthew Berg, and I'm currently a Master of Social Work student at the University of Chicago, working as an intern here at Rosewatter Chicagoland Counseling. With an academic focus on evidence-based therapies such as Dialectical Behavior Therapy (DBT) and Acceptance and Commitment Therapy (ACT), I'm interested in applying what I'm learning to psychotherapy with clinically and culturally diverse populations. DBT recognizes clients as complex individuals with layered identities and strengths, shaped by their unique social and historical contexts. In honoring that perspective, I approach each client with curiosity, respect, and a deep belief in their capacity for growth and change.`,
-    description2: `Previously, I interned at Lift-Chicago, where I worked closely with parents to collaboratively problem-solve, connect them with resources, and provide long-term, compassionate support. A central part of that work involved building relationships grounded in mutual respect and trust, something I bring with me to Rosewatter, where I hope to continue helping clients build lives that feel meaningful and aligned with their values.`,
-    description3: `In my free time, I enjoy watching movies, going on walks to clear my head, and slowly working through my list of free and low-cost things to do in the city. Let me know if there's anything I should add to my Chicago bucket list!`,
   },
   {
     id: 22,

@@ -18,7 +18,7 @@ import Samantha from '../Samantha.jpg';
 import Talia from '../talia.jpg';
 import Julia from '../julia.jpg';
 import Isabel from '../Isabel.jpg';
-import Katherine from '../Katherine.jpg';
+import Katherine from '../katherine.png';
 import Jake from '../Jake.jpeg';
 import Melanie from '../melanie.jpeg';
 import Katie from '../katie.jpeg';
@@ -628,41 +628,16 @@ At the core of my work is a simple goal: to help clients not just feel better, b
     routeName: 'katherine',
     header: 'Katherine Russeau, PsyD',
     email: 'KRusseau@rosewatterchicounseling.com',
-    blurb: `I'm Katherine Russeau, a licensed clinical psychologist dedicated to supporting people navigate
-trauma, relationship challenges, substance use, and major life transitions through humanistic,
-interpersonal, and somatic therapies. I'm also passionate about working with justice-involved
-individuals and providing comprehensive psychological evaluations.`,
+    blurb: `I'm Dr. Katherine Russeau, a licensed clinical psychologist leading Rosewatter's comprehensive psychological evaluation services, including assessments for ADHD, autism, OCD, trauma-related concerns, and more. I also provide individual therapy for adults using evidence-based treatments like DBT and CPT, with a collaborative and compassionate approach.`,
     title: 'Director of Neuropsychological Assessment',
     category: 'leadership',
     image: Katherine,
-    specialties: [
-      'Trauma',
-      'DBT',
-      'ACT',
-      'Substance Use',
-      'Forensic Evaluations',
-    ],
-    description1: `My name is Katherine Russeau, and I am a licensed clinical psychologist. I earned my Doctorate
-in Clinical Psychology from the Wisconsin School of Professional Psychology and completed my
-pre-doctoral internship and post-doctoral fellowship with the Wisconsin Department of
-Corrections, where I specialized in trauma treatment and substance misuse. Throughout my career,
-I have worked in outpatient clinics, inpatient hospitals, correctional facilities, and skilled nursing
-homes, which has shaped my passion for providing compassionate care across diverse populations
-and settings.`,
-    description2: `At Rosewatter Chicagoland Counseling, my goal is to create a collaborative and supportive space
-where clients feel safe exploring their experiences and finding meaningful paths toward change. I
-provide psychotherapy to youth and adults facing emotion regulation difficulties, trauma,
-
-addiction, suicidality, and relationship challenges. I have comprehensive training in evidence-
-based therapies, including Dialectical Behavior Therapy (DBT) and Acceptance and Commitment
-
-Therapy (ACT). In addition to therapy, I have expertise in conducting psychological and forensic
-evaluations.`,
-    description3: `I am licensed in Illinois, Wisconsin, and California, credentialed as a National Register Health
-Service Psychologist, and hold the PSYPACT credential, which allows me to provide telehealth
-services across participating states.`,
-    description4: `Outside of work, I enjoy spending time with family and friends, attending music festivals, cuddling
-with my cats, watching horror movies, and staying active outdoors.`,
+    specialties: ['Psychological Testing', 'ADHD & Autism', 'Trauma', 'DBT'],
+    description1: `My name is Dr. Katherine Russeau, and I am a licensed clinical psychologist. I earned my Doctorate in Clinical Psychology from the Wisconsin School of Professional Psychology and completed my predoctoral internship with the Wisconsin Department of Corrections, specializing in trauma treatment and substance use. I went on to complete postdoctoral training in forensic psychology, conducting psychological evaluations for the courts. Throughout my career, I have worked with clients across outpatient clinics, state psychiatric hospitals, correctional facilities, and skilled nursing settings.`,
+    description2: `At Rosewatter, I lead our comprehensive psychological evaluation services, providing assessments for ADHD, autism, OCD, personality functioning, trauma-related concerns, intellectual and cognitive functioning, disability and accommodation needs, and gender-affirming care. Many individuals seek an evaluation after years of unanswered questions. My goal is to provide clinical clarity, practical recommendations, and an individualized path forward.`,
+    description3: `In addition to assessment, I provide individual psychotherapy for adults experiencing traumatic stress, emotion dysregulation, substance misuse, relationship challenges, and personality-related concerns. My therapeutic approach is collaborative, compassionate, and grounded in evidence-based treatments, including Dialectical Behavior Therapy (DBT), Cognitive Processing Therapy (CPT), Positive Psychology, and interpersonal and humanistic approaches.`,
+    description4: `I am licensed in Illinois, Wisconsin, and California, and am credentialed as a National Register Health Service Psychologist. I also hold a PSYPACT authorization, which allows me to provide telehealth services to clients across participating states.`,
+    description5: `Outside of work, I enjoy spending time with family and friends, staying active, attending music festivals, watching horror movies, and cuddling with my cats.`,
   },
   {
     id: 17,

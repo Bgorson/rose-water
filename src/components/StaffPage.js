@@ -25,6 +25,7 @@ import Katie from '../katie.jpeg';
 import Kate from '../kate.jpg';
 import Jimmy from '../jimmy.jpg';
 import Angelina from '../angelina.jpg';
+import Elle from '../Elle.jpg';
 
 const fadeInUp = keyframes`
   from {
@@ -104,6 +105,7 @@ const ProfileImage = styled.img`
   height: 280px;
   border-radius: 20px;
   object-fit: cover;
+  object-position: ${(props) => props.$position || 'center'};
   box-shadow: 0 10px 40px rgba(61, 61, 61, 0.12);
 
   @media (max-width: 768px) {
@@ -730,6 +732,21 @@ At the core of my work is a simple goal: to help clients not just feel better, b
     specialties: ['DBT', 'Strengths-Based', 'Client-Centered'],
     description1: `Hi, I'm Angelina DeRosa, a Master's-level Clinical Mental Health Counseling intern at Adler University. I have a strong interest in DBT and tailor treatment to what feels most helpful for each client. I focus on client strengths and strive to meet people where they are. While therapy can be a serious space, I also value bringing in humor and lighthearted conversation when it feels appropriate.`,
   },
+  {
+    id: 25,
+    routeName: 'elle',
+    image: Elle,
+    imagePosition: 'top',
+    header: 'Elle Mravunac',
+    email: 'emravunac@rosewatterchicounseling.com',
+    blurb: `Hi! I'm Elle, a counseling intern pursuing my M.A. in Clinical Mental Health Counseling at Bradley University. I believe therapy is most meaningful when people feel genuinely seen, heard, and accepted.`,
+    title: 'Counseling Intern',
+    category: 'trainees',
+    specialties: ['Person-Centered', 'DBT', 'Mindfulness'],
+    description1: `Hi! I'm Elle, a counseling intern pursuing my M.A. in Clinical Mental Health Counseling at Bradley University. I believe therapy is most meaningful when people feel genuinely seen, heard, and accepted.`,
+    description2: `My approach is rooted in person-centered therapy and incorporates mindfulness-based practices and Dialectical Behavior Therapy (DBT). I enjoy helping my clients deepen their self-awareness, develop self-compassion, and connect to the present moment. I'll work with you to build practical skills to navigate life's challenges with greater confidence and resilience. I believe meaningful change happens when we learn to respond to ourselves with both curiosity and kindness.`,
+    description3: `I am especially drawn to DBT because it emphasizes the balance between acceptance and change. I believe that healing doesn't require choosing between the two- it often comes from embracing both. Together, we will work to understand your experiences, strengthen your coping skills, and take meaningful steps toward the life you want to create. Above all, my goal is to create a warm, collaborative space where every part of you is welcome without fear of judgment- including the messy, difficult, uncertain, and even humorous moments that make us human.`,
+  },
 ];
 
 const StaffPage = () => {
@@ -787,6 +804,7 @@ const StaffPage = () => {
               <ProfileImage
                 src={selectedStaff.image}
                 alt={selectedStaff.header}
+                $position={selectedStaff.imagePosition}
               />
             ) : (
               <ImagePlaceholder>Photo Coming Soon</ImagePlaceholder>

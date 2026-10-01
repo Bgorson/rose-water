@@ -4,6 +4,7 @@ import emailjs from '@emailjs/browser';
 import { colors } from '../utils/colors';
 import Logo from '../../src/simple_logo.png';
 import InstagramLink from './Instagram';
+import TikTokLink from './TikTok';
 
 const fadeInUp = keyframes`
   from {
@@ -526,6 +527,7 @@ export default function Footer() {
             <ContactLabel>Follow Us</ContactLabel>
             <SocialWrapper>
               <InstagramLink />
+              <TikTokLink />
               <span>@rosewatterchicounseling</span>
             </SocialWrapper>
           </ContactCard>

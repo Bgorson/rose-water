@@ -181,7 +181,8 @@ function App() {
                 "Neuropsychological Assessment"
               ],
               "sameAs": [
-                "https://www.instagram.com/rosewatterchicounseling"
+                "https://www.instagram.com/rosewatterchicounseling",
+                "https://www.tiktok.com/@rosewatterchicounseling"
               ]
             }
           `}

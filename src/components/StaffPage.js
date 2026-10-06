@@ -20,12 +20,14 @@ import Julia from '../julia.jpg';
 import Isabel from '../Isabel.jpg';
 import Katherine from '../katherine.png';
 import Jake from '../Jake.jpeg';
-import Melanie from '../melanie.jpeg';
 import Katie from '../katie.jpeg';
 import Kate from '../kate.jpg';
 import Jimmy from '../jimmy.jpg';
 import Angelina from '../angelina.jpg';
 import Elle from '../Elle.jpg';
+import Grace from '../grace.png';
+import Tamryn from '../taryn.jpeg';
+import Katelyn from '../katelyn.jpeg';
 
 const fadeInUp = keyframes`
   from {
@@ -106,11 +108,12 @@ const ProfileImage = styled.img`
   border-radius: 20px;
   object-fit: cover;
   object-position: ${(props) => props.$position || 'center'};
+  ${(props) => props.$portrait && 'height: auto; aspect-ratio: 4 / 5;'}
   box-shadow: 0 10px 40px rgba(61, 61, 61, 0.12);
 
   @media (max-width: 768px) {
     width: 220px;
-    height: 220px;
+    ${(props) => (props.$portrait ? 'height: auto;' : 'height: 220px;')}
   }
 `;
 
@@ -659,15 +662,26 @@ At the core of my work is a simple goal: to help clients not just feel better, b
   },
   {
     id: 19,
-    routeName: 'melanie',
-    image: Melanie,
-    header: 'Melanie Umbdenstock',
-    email: 'mumbdenstock@rosewatterchicounseling.com',
-    blurb: `I'm Melanie Umbdenstock, a Clinical Mental Health Counseling M.A. student at Northwestern University. I'm committed to providing a trauma-informed, client-centered space rooted in compassion, where individuals feel empowered and supported in working toward their mental health and wellness goals.`,
-    title: 'Counseling Intern',
+    routeName: 'grace',
+    image: Grace,
+    imagePosition: 'top',
+    portrait: true,
+    header: 'Grace Gallagher',
+    email: 'ggallagher@rosewatterchicounseling.com',
+    blurb: `I'm Grace Gallagher, a clinical psychology doctoral student at The Chicago School working toward my PsyD. I bring experience conducting clinical assessments with adults and take a collaborative, holistic approach to care, with a special interest in supporting young adults through life transitions.`,
+    title: 'Doctoral Student, Clinical Psychology',
     category: 'trainees',
-    specialties: ['Trauma-Informed', 'Client-Centered'],
-    description1: `My name is Melanie Umbdenstock, and I am a Clinical Mental Health Counseling M.A. student at Northwestern University. I am committed to providing a trauma-informed, client-centered space rooted in compassion, where individuals feel empowered and supported in working toward their mental health and wellness goals.`,
+    specialties: [
+      'ADHD',
+      'Anxiety',
+      'Depression',
+      'Young Adults',
+      'Life Transitions',
+    ],
+    description1: `My name is Grace Gallagher, and I am a clinical psychology doctoral student at The Chicago School, working towards the completion of my PsyD. I have previous clinical experience conducting assessments for adults aged 18 and older. This experience has equipped me with the skills necessary to conduct comprehensive clinical assessments and work with individuals presenting with a range of psychological concerns, including ADHD, anxiety, and depression. Through this work, I developed the ability to provide empathetic and responsive care while effectively creating a comfortable environment for the client.`,
+    description2: `I believe that a holistic and flexible approach to care can provide the most appropriate treatment for each client's unique needs. I utilize a collaborative approach to therapy, working alongside clients to empower them to make meaningful progress at a pace that is comfortable for them. I am committed to providing compassionate care to clients and equipping them with the tools and confidence needed to navigate life's situations and foster personal growth.`,
+    description3: `My current dissertation research will explore the lived experiences of collegiate athletes who report tendencies of obsessive and compulsive disorder. This research has strengthened my clinical interest in working with young adults as they navigate various life transitions and the challenges of emerging adulthood.`,
+    description4: `Outside of work, I enjoy spending time outside by Lake Michigan, trying new restaurants in the city, and spending time with friends and family!`,
   },
   {
     id: 20,
@@ -747,6 +761,42 @@ At the core of my work is a simple goal: to help clients not just feel better, b
     description2: `My approach is rooted in person-centered therapy and incorporates mindfulness-based practices and Dialectical Behavior Therapy (DBT). I enjoy helping my clients deepen their self-awareness, develop self-compassion, and connect to the present moment. I'll work with you to build practical skills to navigate life's challenges with greater confidence and resilience. I believe meaningful change happens when we learn to respond to ourselves with both curiosity and kindness.`,
     description3: `I am especially drawn to DBT because it emphasizes the balance between acceptance and change. I believe that healing doesn't require choosing between the two- it often comes from embracing both. Together, we will work to understand your experiences, strengthen your coping skills, and take meaningful steps toward the life you want to create. Above all, my goal is to create a warm, collaborative space where every part of you is welcome without fear of judgment- including the messy, difficult, uncertain, and even humorous moments that make us human.`,
   },
+  {
+    id: 26,
+    routeName: 'tamryn',
+    image: Tamryn,
+    imagePosition: 'top',
+    portrait: true,
+    header: 'Tamryn Smart',
+    email: 'tsmart@rosewatterchicounseling.com',
+    blurb: `I'm Tamryn Smart, a practicum Clinical Mental Health Counseling student at Northwestern University. With experience working with children and adolescents, I'm dedicated to providing a safe, welcoming, nonjudgmental space where clients have room to be curious and explore themselves.`,
+    title: 'Counseling Intern',
+    category: 'trainees',
+    specialties: ['Children & Adolescents', 'Client-Centered', 'Nonjudgmental'],
+    description1: `My name is Tamryn Smart and I am a practicum Clinical Mental Health Counseling student at Northwestern University. I have experience working with children and adolescents which taught me patience and understanding. I am dedicated to providing a safe space that is welcoming for my clients.`,
+    description2: `My goal is to show up in a nonjudgmental and empathetic manner to give my clients room to be curious and explore themselves in a therapeutic environment. Using skills I've developed in school will allow me to be both genuine and knowledgeable in treating mental health concerns. I will provide guidance throughout the process and show up in a way that best fits my client's needs.`,
+  },
+  {
+    id: 27,
+    routeName: 'katelyn',
+    image: Katelyn,
+    imagePosition: 'top',
+    portrait: true,
+    header: 'Katelyn Holstein',
+    email: 'kholstein@rosewatterchicounseling.com',
+    blurb: `I'm Katelyn Holstein, a Master's-level Clinical Mental Health Counseling student at Northwestern University with a background in psychology, neuroscience, and trauma-informed care. I enjoy incorporating art and activity into sessions and strive to create a space without judgement or expectation.`,
+    title: 'Counseling Intern',
+    category: 'trainees',
+    specialties: [
+      'Trauma-Informed',
+      'Neuroscience-Informed',
+      'Art & Activity',
+      'Self-Regulation',
+    ],
+    description1: `My name is Katelyn B. Holstein and I am a Master's-level Clinical Mental Health Counseling student at Northwestern University. I hail from Oklahoma and have been living between Chicago and Wisconsin since undergrad. My background is in psychology and neuroscience, as well as gender, sexuality, and women's studies. The ways that psychology and neurobiology connect and help make sense of our internal states is a fascinating part of treatment and life as a whole! Whether you are interested in the neuroscience behind our thoughts, feelings, and behaviors, or just need a space that is focused on your needs and perspective, I am here at Rosewatter to learn and to support you, including any reservations or questions that you may have around counseling.`,
+    description2: `I enjoy incorporating art and activities into the therapy space. Your interests and building of self-regulation skills are important to me. I believe that every individual shows up to session with different needs and goals depending on the day, and my only expectation is that we each come to the session with sincerity. Some days you may feel chatty, others overwhelmed, curious, or anything in between. We will navigate each instance with increased hopefulness, openness, and a lack of judgement.`,
+    description3: `I am a hobby-collector, enjoying all things arts-and-crafts (especially painting and sewing) as well as listening to music, reading, watching movies, and doing fun makeup looks and nail sets. I would love to learn about your hobbies, background, and the strengths that carry you throughout life's rollercoaster.`,
+  },
 ];
 
 const StaffPage = () => {
@@ -805,6 +855,7 @@ const StaffPage = () => {
                 src={selectedStaff.image}
                 alt={selectedStaff.header}
                 $position={selectedStaff.imagePosition}
+                $portrait={selectedStaff.portrait}
               />
             ) : (
               <ImagePlaceholder>Photo Coming Soon</ImagePlaceholder>

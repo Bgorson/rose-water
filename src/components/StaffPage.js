@@ -352,9 +352,9 @@ export const staffMembers = [
           focused work. Currently, I am the Director of Clinical Training at The
           Chicago School, Clinical PsyD Doctoral Program. I have been with The
           Chicago School since 2017 and moved into the DCT role in 2019.`,
-    description4: `Simultaneously, I grew my private practice work at Smith Psychotherapy
-          Associates, S.C., (owned by my wonderful Uncle, shoutout to Robert
-          Smith!) and was on staff there since 2015.`,
+    description4: `Simultaneously, I entered the world of private practice work at Smith
+          Psychotherapy Associates, S.C., (owned by my wonderful Uncle,
+          shoutout to Robert Smith!) upon graduation in 2015.`,
     description5: `Rosewatter was created in 2022 and also pays homage to my family
           origins as it is named after my grandmother "Rose" and my mother's
           maiden name "Goldwasser". My grandparents were Holocaust survivors and
@@ -376,17 +376,17 @@ export const staffMembers = [
           consultation services. I am a generalist which means I see a little
           bit of everything. I especially enjoy working on issues related to:
           mood/emotion dysregulation, dating and relationships, marriage and
-          divorce, adjustment, life transition, transition to parenthood,
-          couples counseling, LGBTQ+, family dynamics, depression, anxiety,
-          Bipolar Disorder, Borderline Personality Disorder, grief/loss, trauma,
-          body image concerns, medical conditions as well as therapist
+          divorce, adjustment, life transition, fertility treatment/ IVF,
+          transition to parenthood, couples counseling, LGBTQ+, family
+          dynamics, depression, anxiety, Bipolar Disorder, Borderline
+          Personality Disorder, grief/loss, trauma, as well as therapist
           development and supervision.`,
     description9: `Outside of work, I enjoy being a self-proclaimed foodie at the
           delicious Chicagoland restaurants, consuming as many true crime
           documentaries, reality television series, fiction and nonfiction books
           as possible, spending time with friends and family, yoga/meditation,
-          and tending to my mini zoo consisting of one turtle, one talkative
-          parrot and three elderly doggies.`,
+          and tending to my mini zoo which you can be sure to ask me about
+          when we meet!`,
   },
   {
     id: 2,

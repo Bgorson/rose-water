@@ -28,6 +28,7 @@ import Elle from '../Elle.jpg';
 import Grace from '../grace.png';
 import Tamryn from '../taryn.jpeg';
 import Katelyn from '../katelyn.jpeg';
+import Brooke from '../Brooke.jpeg';
 
 const fadeInUp = keyframes`
   from {
@@ -796,6 +797,22 @@ At the core of my work is a simple goal: to help clients not just feel better, b
     description1: `My name is Katelyn B. Holstein and I am a Master's-level Clinical Mental Health Counseling student at Northwestern University. I hail from Oklahoma and have been living between Chicago and Wisconsin since undergrad. My background is in psychology and neuroscience, as well as gender, sexuality, and women's studies. The ways that psychology and neurobiology connect and help make sense of our internal states is a fascinating part of treatment and life as a whole! Whether you are interested in the neuroscience behind our thoughts, feelings, and behaviors, or just need a space that is focused on your needs and perspective, I am here at Rosewatter to learn and to support you, including any reservations or questions that you may have around counseling.`,
     description2: `I enjoy incorporating art and activities into the therapy space. Your interests and building of self-regulation skills are important to me. I believe that every individual shows up to session with different needs and goals depending on the day, and my only expectation is that we each come to the session with sincerity. Some days you may feel chatty, others overwhelmed, curious, or anything in between. We will navigate each instance with increased hopefulness, openness, and a lack of judgement.`,
     description3: `I am a hobby-collector, enjoying all things arts-and-crafts (especially painting and sewing) as well as listening to music, reading, watching movies, and doing fun makeup looks and nail sets. I would love to learn about your hobbies, background, and the strengths that carry you throughout life's rollercoaster.`,
+  },
+  {
+    id: 28,
+    routeName: 'brooke',
+    image: Brooke,
+    imagePosition: 'top',
+    portrait: true,
+    header: 'Brooke Husby',
+    email: 'bhusby@rosewatterchicounseling.com',
+    blurb: `I'm Brooke Husby, a practicum Clinical Mental Health Counseling M.A. student at Northwestern University. I'm interested in DBT and ACT, which promote mindfulness skills while supporting individuals' strengths as they navigate life's obstacles.`,
+    title: 'Counseling Intern',
+    category: 'trainees',
+    specialties: ['DBT', 'ACT', 'Mindfulness', 'Stress', 'Trauma'],
+    description1: `Hello! I'm Brooke Husby, a practicum and Clinical Mental Health Counseling M.A. student at Northwestern University. I am interested in DBT (Dialectical Behavior Therapy) and ACT (Acceptance and Commitment Therapy) as these theories promote mindfulness skills in addition to supporting individuals' strengths while simultaneously navigating the obstacles that life throws at us.`,
+    description2: `I hope to work with adults in the Chicagoland area to support individuals addressing stress, trauma, and interpersonal adversities through evidence-based counseling. After graduation and when I am eligible to become a Licensed Clinical Professional Counselor in Illinois, I hope to work in a private practice setting providing care to adults experiencing a range of mental health challenges.`,
+    description3: `My master's program is accredited by CACREP, and I am a student member of the American Mental Health Counselors Association. I have worked as a Research Assistant with military families and as a Program Coordinator in residential and partial hospitalization programs, where I support individuals receiving treatment for mood disorders, anxiety disorders, and eating disorders.`,
   },
 ];
 

@@ -29,6 +29,8 @@ import Grace from '../grace.png';
 import Tamryn from '../taryn.jpeg';
 import Katelyn from '../katelyn.jpeg';
 import Brooke from '../Brooke.jpeg';
+import Froozan from '../Semi.jpg';
+import Loren from '../Loren.png';
 
 const fadeInUp = keyframes`
   from {
@@ -813,6 +815,44 @@ At the core of my work is a simple goal: to help clients not just feel better, b
     description1: `Hello! I'm Brooke Husby, a practicum and Clinical Mental Health Counseling M.A. student at Northwestern University. I am interested in DBT (Dialectical Behavior Therapy) and ACT (Acceptance and Commitment Therapy) as these theories promote mindfulness skills in addition to supporting individuals' strengths while simultaneously navigating the obstacles that life throws at us.`,
     description2: `I hope to work with adults in the Chicagoland area to support individuals addressing stress, trauma, and interpersonal adversities through evidence-based counseling. After graduation and when I am eligible to become a Licensed Clinical Professional Counselor in Illinois, I hope to work in a private practice setting providing care to adults experiencing a range of mental health challenges.`,
     description3: `My master's program is accredited by CACREP, and I am a student member of the American Mental Health Counselors Association. I have worked as a Research Assistant with military families and as a Program Coordinator in residential and partial hospitalization programs, where I support individuals receiving treatment for mood disorders, anxiety disorders, and eating disorders.`,
+  },
+  {
+    id: 29,
+    routeName: 'kate-froozan',
+    image: Froozan,
+    imagePosition: 'top',
+    portrait: true,
+    header: 'Kate Froozan',
+    email: 'kfroozan@rosewatterchicounseling.com',
+    blurb: `I'm Kate, though I also go by Sahar, my middle name. I'm a Master's student in Social Work at the University of Chicago with interests in global and mental health, drawn to DBT for its grounding in evidence and its flexibility to fit the life you're living.`,
+    title: 'Counseling Intern',
+    category: 'trainees',
+    specialties: [
+      'DBT',
+      'Culturally Responsive',
+      'Crisis Support',
+      'Global Mental Health',
+    ],
+    description1: `Hi, everyone! I'm Kate, though I also go by Sahar, my middle name, so feel free to call me whichever you're most comfortable with.`,
+    description2: `I'm a Master's student in Social Work at the University of Chicago, with interests in global and mental health. That interest has taken shape over the years through experience across different levels of care, including supporting research on evidence-based practices, assisting in residential inpatient settings, and serving as a crisis counselor. Working alongside diverse communities, including during my internship in Paris supporting refugees and immigrants, showed me how much a person's background and experiences matter in the care they receive.`,
+    description3: `That perspective, along with my background in psychology and research, is a big reason I'm drawn to DBT. I believe in practicing what the evidence supports, and I also know that no two people come in with the same story. So I prioritize learning about who you are, so we can apply DBT skills to the life you're living.`,
+    description4: `Outside of Rosewatter, I enjoy making art, especially oil pastels and clay, and taking nature walks. I also love binge-watching shows and am always open to recommendations.`,
+  },
+  {
+    id: 30,
+    routeName: 'loren',
+    image: Loren,
+    imagePosition: 'top',
+    portrait: true,
+    header: 'Loren Pope',
+    email: 'pope@rosewatterchicounseling.com',
+    blurb: `I'm Loren, a second-year social work student at the University of Chicago working toward clinical licensure. I provide therapy in Rosewatter's comprehensive DBT program, with an honest, collaborative approach built on the idea that you're doing the best you can and things still need to change.`,
+    title: 'Counseling Intern',
+    category: 'trainees',
+    specialties: ['DBT', 'Collaborative', 'Honest & Direct'],
+    description1: `Hi, my name is Loren. I'm a second-year social work student at the University of Chicago, working toward clinical licensure. I provide therapy at Rosewatter, in our comprehensive Dialectical Behavior Therapy (DBT) program.`,
+    description2: `However you ended up here, I am glad you did. DBT has a central idea that you are doing the best you can, and things still need to change. Because of that, I will take how you are feeling and what you are going through seriously, and I will be honest with you. Together we will figure out what actually works for you.`,
+    description3: `I enjoy playing disc golf, basketball, board games, watching more YouTube than I would like to admit, and trying to cook something a little too ambitious for a weeknight. I also love my cat, Lily. She is the best.`,
   },
 ];
 

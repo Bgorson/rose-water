@@ -88,45 +88,6 @@ function App() {
           content="Chicago therapist, Chicago psychologist, DBT therapy Chicago, couples therapy Chicago, individual therapy, mental health counseling, anxiety therapy, depression treatment, trauma therapy, Rosewatter Counseling, Rachel Nitzarim, DBT-Linehan Board Certified, Illinois therapy, Glenview therapist, Bucktown therapist"
         />
 
-        {/* Open Graph / Facebook */}
-        <meta property="og:type" content="website" />
-        <meta
-          property="og:site_name"
-          content="Rosewatter Chicagoland Counseling"
-        />
-        <meta
-          property="og:title"
-          content="Rosewatter Chicagoland Counseling | Therapy & Mental Health Services in Chicago"
-        />
-        <meta
-          property="og:description"
-          content="Compassionate, evidence-based therapy for individuals and couples in Chicago. Specializing in DBT, anxiety, depression, trauma, and relationship issues."
-        />
-        <meta
-          property="og:url"
-          content="https://www.rosewatterchicounseling.com"
-        />
-        <meta
-          property="og:image"
-          content="https://www.rosewatterchicounseling.com/og-image.jpg"
-        />
-        <meta property="og:locale" content="en_US" />
-
-        {/* Twitter Card */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Rosewatter Chicagoland Counseling | Chicago Therapy Services"
-        />
-        <meta
-          name="twitter:description"
-          content="Compassionate, evidence-based therapy for individuals and couples in Chicago. Specializing in DBT, anxiety, depression, and trauma."
-        />
-        <meta
-          name="twitter:image"
-          content="https://www.rosewatterchicounseling.com/og-image.jpg"
-        />
-
         {/* Schema.org structured data */}
         <meta itemprop="name" content="Rosewatter Chicagoland Counseling" />
         <meta

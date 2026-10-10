@@ -297,7 +297,7 @@ const BottomBar = styled.div`
 `;
 
 const LogoImage = styled.img`
-  height: 80px;
+  height: 140px;
   opacity: 0.8;
   transition: opacity 0.3s ease;
 

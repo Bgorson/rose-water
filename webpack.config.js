@@ -95,6 +95,7 @@ module.exports = {
         { from: 'public/_redirects', to: 'redirects' },
         { from: 'public/favicon.ico', to: 'favicon.ico' },
         { from: 'public/icons', to: 'icons' },
+        { from: 'public/og-image.jpg', to: 'og-image.jpg' },
       ],
     }),
   ],

@@ -81,7 +81,7 @@ function App() {
         <meta name="robots" content="index, follow" />
         <meta
           name="description"
-          content="Rosewatter Chicagoland Counseling offers individual therapy, couples therapy, DBT, and mental health workshops in Chicago. Our experienced team of psychologists and therapists provide compassionate, evidence-based care."
+          content="Therapy, DBT, couples counseling, and psychological and ADHD assessment in Chicago. Compassionate, evidence-based care for adults and families."
         />
         <meta
           name="keywords"

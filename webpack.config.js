@@ -94,6 +94,7 @@ module.exports = {
         { from: 'public/sitemap.xml', to: 'sitemap.xml' },
         { from: 'public/_redirects', to: 'redirects' },
         { from: 'public/favicon.ico', to: 'favicon.ico' },
+        { from: 'public/icons', to: 'icons' },
       ],
     }),
   ],

@@ -71,7 +71,9 @@ function App() {
         />
         <html lang="en" />
         <link rel="manifest" href="/manifest.json" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.ico" sizes="32x32" />
+        <link rel="icon" type="image/png" href="/icons/icon-512.png" sizes="512x512" />
+        <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
         <link rel="canonical" href="https://www.rosewatterchicounseling.com" />
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />

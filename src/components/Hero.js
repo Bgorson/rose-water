@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { colors, gradients } from '../utils/colors';
 import styled, { keyframes } from 'styled-components';
-import Logo from '../logo_transparent5.png';
+import Logo from '../logo_landscape_web.png';
 import Skyline from '../chicago-skyline-lake-michigan.webp';
 
 const fadeInUp = keyframes`
@@ -149,17 +149,16 @@ const ContentWrapper = styled.div`
 `;
 
 const LogoImage = styled.img`
-  width: 55%;
-  max-width: 500px;
-  margin-bottom: 2rem;
+  width: 80%;
+  max-width: 640px;
+  margin-bottom: 1rem;
   opacity: 0;
   animation: ${fadeIn} 1s ease forwards;
   animation-delay: 0.3s;
-  filter: drop-shadow(0 10px 30px rgba(61, 61, 61, 0.1));
-
+  
   @media (max-width: 768px) {
-    width: 85%;
-    margin-bottom: 1.5rem;
+    width: 95%;
+    margin-bottom: 1rem;
   }
 `;
 

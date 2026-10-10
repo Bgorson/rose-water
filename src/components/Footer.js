@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import styled, { keyframes } from 'styled-components';
 import emailjs from '@emailjs/browser';
 import { colors } from '../utils/colors';
-import Logo from '../../src/simple_logo.png';
+import Logo from '../logo_big_web.png';
 import InstagramLink from './Instagram';
 import TikTokLink from './TikTok';
 

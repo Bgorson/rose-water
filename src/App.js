@@ -10,7 +10,7 @@ import Career from './components/Career';
 import GroupFlyer from './components/GroupFlyer';
 import Locations from './components/Locations';
 import StaffPage from './components/StaffPage';
-import Admin from './components/Admin';
+import AdminPortal from './components/portal/AdminPortal';
 import { Container } from '@mui/material';
 import Home from './components/Home';
 import AdultDbt from './components/AdultDbt';
@@ -21,14 +21,18 @@ import { Navigate } from 'react-router-dom';
 
 function NotFound() {
   return (
-    <div style={{ textAlign: 'center', padding: '5rem 2rem', minHeight: '60vh' }}>
+    <div
+      style={{ textAlign: 'center', padding: '5rem 2rem', minHeight: '60vh' }}
+    >
       <Helmet>
         <meta name="robots" content="noindex, nofollow" />
         <title>Page Not Found | Rosewatter Chicagoland Counseling</title>
       </Helmet>
       <h1>Page Not Found</h1>
       <p>The page you're looking for doesn't exist or has been moved.</p>
-      <a href="/" style={{ color: '#A8B5A0', textDecoration: 'underline' }}>Return to Home</a>
+      <a href="/" style={{ color: '#A8B5A0', textDecoration: 'underline' }}>
+        Return to Home
+      </a>
     </div>
   );
 }
@@ -72,7 +76,12 @@ function App() {
         <html lang="en" />
         <link rel="manifest" href="/manifest.json" />
         <link rel="icon" href="/favicon.ico" sizes="32x32" />
-        <link rel="icon" type="image/png" href="/icons/icon-512.png" sizes="512x512" />
+        <link
+          rel="icon"
+          type="image/png"
+          href="/icons/icon-512.png"
+          sizes="512x512"
+        />
         <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
         <link rel="canonical" href="https://www.rosewatterchicounseling.com" />
         <meta charset="utf-8" />
@@ -288,18 +297,7 @@ function App() {
               </Container>
             }
           />
-          {/* <Route
-            path="admin"
-            element={
-              <Container
-                className={"container"}
-                maxWidth="lg"
-                style={{ height: "100vh" }}
-              >
-                <Admin />
-              </Container>
-            }
-          /> */}
+          <Route path="portal" element={<AdminPortal />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Main>

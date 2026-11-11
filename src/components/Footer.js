@@ -5,6 +5,9 @@ import { colors } from '../utils/colors';
 import Logo from '../logo_big_web.png';
 import InstagramLink from './Instagram';
 import TikTokLink from './TikTok';
+import { Link } from 'react-router-dom';
+import { REFERRAL_SOURCES } from '../utils/referralSources';
+import { recordReferralSource } from '../utils/supabase';
 
 const fadeInUp = keyframes`
   from {
@@ -167,15 +170,6 @@ const Select = styled.select`
   }
 `;
 
-const REFERRAL_SOURCES = [
-  'Psychology Today',
-  'Searched Online',
-  'Zocdoc',
-  'Personal Referral',
-  'Professional Referral',
-  'Other',
-];
-
 const Textarea = styled.textarea`
   padding: 1rem 1.25rem;
   border: 2px solid ${colors.sand};
@@ -333,6 +327,19 @@ const LogoImage = styled.img`
   }
 `;
 
+const StaffLink = styled(Link)`
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.75rem;
+  color: ${colors.muted};
+  opacity: 0.6;
+  text-decoration: none;
+
+  &:hover {
+    opacity: 1;
+    text-decoration: underline;
+  }
+`;
+
 const Copyright = styled.p`
   font-family: 'DM Sans', sans-serif;
   font-size: 0.85rem;
@@ -414,6 +421,7 @@ export default function Footer() {
         },
         { publicKey }
       );
+      recordReferralSource(toSend.heard_about_us);
       setToSend({
         from_name: '',
         from_email: '',
@@ -622,6 +630,9 @@ export default function Footer() {
             Visit here
           </a>
         </ImageCredit>
+        <StaffLink to="/portal" rel="nofollow">
+          Staff
+        </StaffLink>
       </BottomBar>
     </FooterSection>
   );

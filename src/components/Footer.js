@@ -149,6 +149,33 @@ const Input = styled.input`
   }
 `;
 
+const Select = styled.select`
+  padding: 1rem 1.25rem;
+  border: 2px solid ${colors.sand};
+  border-radius: 12px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1rem;
+  background: ${colors.warmWhite};
+  color: ${(props) => (props.value ? colors.charcoal : colors.muted)};
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:focus {
+    outline: none;
+    border-color: ${colors.sage};
+    box-shadow: 0 0 0 4px rgba(168, 181, 160, 0.15);
+  }
+`;
+
+const REFERRAL_SOURCES = [
+  'Psychology Today',
+  'Searched Online',
+  'Zocdoc',
+  'Personal Referral',
+  'Professional Referral',
+  'Other',
+];
+
 const Textarea = styled.textarea`
   padding: 1rem 1.25rem;
   border: 2px solid ${colors.sand};
@@ -352,6 +379,7 @@ export default function Footer() {
   const [toSend, setToSend] = useState({
     from_name: '',
     from_email: '',
+    heard_about_us: '',
     message: '',
   });
 
@@ -377,8 +405,21 @@ export default function Footer() {
     setIsSubmitting(true);
 
     try {
-      await emailjs.send(service, template, toSend, { publicKey });
-      setToSend({ from_name: '', from_email: '', message: '' });
+      await emailjs.send(
+        service,
+        template,
+        {
+          ...toSend,
+          message: `${toSend.message}\n\nHow they heard about us: ${toSend.heard_about_us}`,
+        },
+        { publicKey }
+      );
+      setToSend({
+        from_name: '',
+        from_email: '',
+        heard_about_us: '',
+        message: '',
+      });
       setShowSuccess(true);
       setTimeout(() => setShowSuccess(false), 5000);
     } catch (error) {
@@ -437,6 +478,27 @@ export default function Footer() {
                   />
                 </InputGroup>
               </InputRow>
+              <InputGroup>
+                <Label htmlFor="heard_about_us">
+                  How did you hear about us?
+                </Label>
+                <Select
+                  id="heard_about_us"
+                  name="heard_about_us"
+                  value={toSend.heard_about_us}
+                  onChange={handleChange}
+                  required
+                >
+                  <option value="" disabled>
+                    Select an option
+                  </option>
+                  {REFERRAL_SOURCES.map((source) => (
+                    <option key={source} value={source}>
+                      {source}
+                    </option>
+                  ))}
+                </Select>
+              </InputGroup>
               <InputGroup>
                 <Label htmlFor="message">Your Message</Label>
                 <Textarea

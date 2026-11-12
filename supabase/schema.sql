@@ -28,7 +28,7 @@ grant execute on function public.ping() to anon;
 
 create table public.referrals (
   id bigint generated always as identity primary key,
-  source text not null check (source in (
+  source text check (source in (
     'Psychology Today', 'Searched Online', 'Zocdoc',
     'Personal Referral', 'Professional Referral', 'Other'
   )),

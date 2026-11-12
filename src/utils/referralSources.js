@@ -6,3 +6,5 @@ export const REFERRAL_SOURCES = [
   'Professional Referral',
   'Other',
 ];
+
+export const GOOGLE_ADS_SOURCE = 'Searched Online';

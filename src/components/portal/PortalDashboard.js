@@ -2,6 +2,7 @@ import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import styled from 'styled-components';
 import { supabase } from '../../utils/supabase';
 import { colors } from '../../utils/colors';
+import { GOOGLE_ADS_SOURCE } from '../../utils/referralSources';
 import { buildMetrics, formatMonth, monthsBack } from './metrics';
 import MonthlyDataForm from './MonthlyDataForm';
 import {
@@ -98,10 +99,8 @@ const MetricRows = ({ rows, label }) =>
       <td>{label(row)}</td>
       <td>{currency(row.spend)}</td>
       <td>{row.inquiries}</td>
-      <td>{currency(row.costPerInquiry)}</td>
       <td>{row.newClients}</td>
       <td>{currency(row.costPerClient)}</td>
-      <td>{currency(row.revenue)}</td>
       <td>{percent(row.roi)}</td>
     </tr>
   ));
@@ -110,12 +109,10 @@ const MetricHead = ({ first }) => (
   <thead>
     <tr>
       <th>{first}</th>
-      <th>Spend</th>
+      <th>Ad spend</th>
       <th>Inquiries</th>
-      <th>Cost / inquiry</th>
       <th>New clients</th>
       <th>Cost / client</th>
-      <th>Est. revenue</th>
       <th>ROI</th>
     </tr>
   </thead>
@@ -192,20 +189,20 @@ export default function PortalDashboard({ header }) {
         <>
           <Stats>
             <Stat as="div">
-              <span>Inquiries</span>
-              <strong>{metrics.totals.inquiries}</strong>
+              <span>All inquiries</span>
+              <strong>{metrics.totalInquiries}</strong>
             </Stat>
             <Stat as="div">
-              <span>Marketing spend</span>
-              <strong>{currency(metrics.totals.spend)}</strong>
+              <span>Google Ads spend</span>
+              <strong>{currency(metrics.ads.spend)}</strong>
             </Stat>
             <Stat as="div">
-              <span>New clients</span>
-              <strong>{metrics.totals.newClients}</strong>
+              <span>New clients from ads</span>
+              <strong>{metrics.ads.newClients}</strong>
             </Stat>
             <Stat as="div">
-              <span>Marketing ROI</span>
-              <strong>{percent(metrics.totals.roi)}</strong>
+              <span>Google Ads ROI</span>
+              <strong>{percent(metrics.ads.roi)}</strong>
             </Stat>
           </Stats>
 
@@ -223,40 +220,19 @@ export default function PortalDashboard({ header }) {
                 </Track>
                 <span style={{ textAlign: 'right' }}>
                   {s.inquiries}
-                  {metrics.totals.inquiries > 0 &&
-                    ` (${Math.round((s.inquiries / metrics.totals.inquiries) * 100)}%)`}
+                  {metrics.totalInquiries > 0 &&
+                    ` (${Math.round((s.inquiries / metrics.totalInquiries) * 100)}%)`}
                 </span>
               </BarRow>
             ))}
           </Card>
 
           <Card>
-            <CardTitle>ROI by Source</CardTitle>
+            <CardTitle>Google Ads by Month</CardTitle>
             <Hint>
-              ROI = (new clients × average revenue per client − spend) ÷ spend.
-              Shown as — when a source has no spend recorded.
-            </Hint>
-            <TableWrap>
-              <Table>
-                <MetricHead first="Source" />
-                <tbody>
-                  <MetricRows rows={metrics.sources} label={(r) => r.source} />
-                </tbody>
-                <tfoot>
-                  <MetricRows
-                    rows={[{ ...metrics.totals }]}
-                    label={() => 'Total'}
-                  />
-                </tfoot>
-              </Table>
-            </TableWrap>
-          </Card>
-
-          <Card>
-            <CardTitle>Month by Month</CardTitle>
-            <Hint>
-              Compare months as spend changes to see whether more spend brings
-              proportionally more inquiries and clients.
+              Spend syncs nightly from Google Ads. Inquiries are contact-form
+              submissions marked &quot;{GOOGLE_ADS_SOURCE}&quot;. ROI = (new
+              clients × average revenue per client − spend) ÷ spend.
             </Hint>
             {metrics.months.length === 0 ? (
               <p>No data for this period yet.</p>

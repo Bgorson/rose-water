@@ -23,9 +23,10 @@ export default function AdminPortal() {
   useEffect(() => {
     setIsAdmin(null);
     if (!userId) return;
-    supabase
-      .rpc('is_admin')
-      .then(({ data, error }) => setIsAdmin(!error && data === true));
+    supabase.rpc('is_admin').then(({ data, error }) => {
+      if (error) console.error('Admin check failed', error);
+      setIsAdmin(!error && data === true);
+    });
   }, [userId]);
 
   const signOut = (

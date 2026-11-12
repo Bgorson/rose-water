@@ -417,11 +417,11 @@ export default function Footer() {
         template,
         {
           ...toSend,
-          message: `${toSend.message}\n\nHow they heard about us: ${toSend.heard_about_us}`,
+          message: `${toSend.message}\n\nHow they heard about us: ${toSend.heard_about_us || 'Not specified'}`,
         },
         { publicKey }
       );
-      recordReferralSource(toSend.heard_about_us);
+      recordReferralSource(toSend.heard_about_us || null);
       setToSend({
         from_name: '',
         from_email: '',
@@ -495,11 +495,8 @@ export default function Footer() {
                   name="heard_about_us"
                   value={toSend.heard_about_us}
                   onChange={handleChange}
-                  required
                 >
-                  <option value="" disabled>
-                    Select an option
-                  </option>
+                  <option value="">Select an option (optional)</option>
                   {REFERRAL_SOURCES.map((source) => (
                     <option key={source} value={source}>
                       {source}

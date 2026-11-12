@@ -1,6 +1,7 @@
 const API_VERSION = 'v26';
 const SOURCE = 'Searched Online';
 const MONTHS_TO_SYNC = 3;
+const REQUEST_TIMEOUT_MS = 10000;
 
 const env = (name) => {
   const value = process.env[name];
@@ -13,6 +14,7 @@ const isoDate = (date) => date.toISOString().slice(0, 10);
 async function getAccessToken() {
   const response = await fetch('https://oauth2.googleapis.com/token', {
     method: 'POST',
+    signal: AbortSignal.timeout(REQUEST_TIMEOUT_MS),
     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
     body: new URLSearchParams({
       client_id: env('GOOGLE_ADS_CLIENT_ID'),
@@ -47,6 +49,7 @@ async function fetchMonthlySpend(accessToken) {
     `https://googleads.googleapis.com/${API_VERSION}/customers/${customerId}/googleAds:search`,
     {
       method: 'POST',
+      signal: AbortSignal.timeout(REQUEST_TIMEOUT_MS),
       headers,
       body: JSON.stringify({
         query: `
@@ -85,6 +88,7 @@ async function saveSpend(spendByMonth) {
     `${env('REACT_APP_SUPABASE_URL')}/rest/v1/marketing_months`,
     {
       method: 'POST',
+      signal: AbortSignal.timeout(REQUEST_TIMEOUT_MS),
       headers: {
         apikey: key,
         'Content-Type': 'application/json',
@@ -101,13 +105,16 @@ async function saveSpend(spendByMonth) {
 
 export default async () => {
   try {
-    const rows = await saveSpend(
-      await fetchMonthlySpend(await getAccessToken())
-    );
+    console.log('Refreshing Google OAuth token');
+    const accessToken = await getAccessToken();
+    console.log('Querying Google Ads spend');
+    const spendByMonth = await fetchMonthlySpend(accessToken);
+    console.log('Saving spend to Supabase', JSON.stringify(spendByMonth));
+    const rows = await saveSpend(spendByMonth);
     console.log('Google Ads spend synced', JSON.stringify(rows));
     return new Response('ok');
   } catch (error) {
-    console.error('Google Ads sync failed', error.message);
+    console.error('Google Ads sync failed', error.name, error.message);
     return new Response(error.message, { status: 500 });
   }
 };
